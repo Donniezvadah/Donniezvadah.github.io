@@ -3,11 +3,11 @@
 title: Mr.
 
 # Name pronunciation (optional)
-name_pronunciation: Josiah Kiarie Kimani
+name_pronunciation: Donii Kiarie Kimani
 
 # Full name (for SEO)
-first_name: Josiah 
-last_name: Kimani
+first_name: Donnie
+last_name: Kimanikk
 
 # Status emoji
 status:
