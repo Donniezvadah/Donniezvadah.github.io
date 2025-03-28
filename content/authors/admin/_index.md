@@ -3,11 +3,11 @@
 title: Mr.
 
 # Name pronunciation (optional)
-name_pronunciation: Donii Kiarie Kimani
+name_pronunciation: Donnie Zvada
 
 # Full name (for SEO)
-first_name: Donnie
-last_name: Kimanikk
+first_name: Donald
+last_name: Zvada
 
 # Status emoji
 status:
@@ -32,16 +32,16 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:josiah@aims.ac.za'
+    url: 'mailto:donnie@aims.ac.za'
     label: E-mail Me
   - icon: brands/x
-    url: https://x.com/Josiahk_k
+    url: https://x.com/Donniezvadah
   - icon: brands/instagram
-    url: https://www.instagram.com/josiahk_k/
+    url: https://www.instagram.com/donniezvadah/
   - icon: brands/github
-    url: https://github.com/josiahkim29
+    url: https://github.com/Donniezvadah
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/josiah-kimani-2a059319b/
+    url: https://www.linkedin.com/in/donnie-zvada/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
   - icon: academicons/orcid
@@ -194,7 +194,7 @@ awards:
     awarder: Coursera
     icon: coursera
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network's architecture; and apply deep learning to your own applications.
   - title: Blockchain Fundamentals
     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
     date: '2023-07-01'
@@ -204,7 +204,7 @@ awards:
       Learned:
       - Synthesize your own blockchain solutions
       - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
+      - Understand Bitcoin's real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin's Proof-of-Work consensus algorithm
   - title: 'Object-Oriented Programming in R'
     url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
     certificate_url: https://www.datacamp.com
@@ -217,10 +217,10 @@ awards:
 
 ## About Me
 
-Josiah is a passionate advocate for the intersection of mathematics, technology, and artificial intelligence. His research focuses on leveraging AI for climate prediction and weather forecasting, with a particular interest in cutting-edge developments in nowcasting and forecasting to address urgent climate challenges.
+Donald is a passionate advocate for the intersection of mathematics, technology, and artificial intelligence. His research focuses on leveraging AI for climate prediction and weather forecasting, with a particular interest in cutting-edge developments in nowcasting and forecasting to address urgent climate challenges.
 
-A natural leader, Josiah is deeply engaged in discussions on techno-democracy and governance, exploring how technology can drive social good and improve service delivery across Kenya and Africa. He is committed to fostering innovation that empowers communities and promotes sustainable development.
+A natural leader, Donald is deeply engaged in discussions on techno-democracy and governance, exploring how technology can drive social good and improve service delivery across Kenya and Africa. He is committed to fostering innovation that empowers communities and promotes sustainable development.
 
-Driven by a vision to become an AI Scientist and a leader in Africa, Josiah is dedicated to advancing policies that ensure ethical and responsible AI research, deployment and use.
+Driven by a vision to become an AI Scientist and a leader in Africa, Donald is dedicated to advancing policies that ensure ethical and responsible AI research, deployment and use.
 
-Outside of his professional pursuits, Josiah enjoys mentoring peers, story telling, and staying active through running, swimming, music, and hiking.
+Outside of his professional pursuits, Donald enjoys mentoring peers, story telling, and staying active through running, swimming, music, and hiking.
