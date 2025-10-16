@@ -20,16 +20,18 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: AI Engineer, Software Engineer, Project Management
+role: AI & Software Engineer | Project Management | Data Science
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: African Institute for Mathematical Sciences(AIMS)-South Africa
+  - name: African Institute for Mathematical Sciences (AIMS) - South Africa
     url: https://www.aims.ac.za
-    
+    role: Research Intern
+  - name: University of Zimbabwe
+    url: https://www.uz.ac.zw
+    role: BSc Computer Science
 
 # Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
     url: 'mailto:donnie@aims.ac.za'

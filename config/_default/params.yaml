@@ -14,8 +14,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    description: 'Personal website of Donald (Donnie) Zvada - Sharing my journey and projects in technology and beyond.'
+    twitter: 'donniezvada'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -36,6 +36,8 @@ header:
     show_theme_chooser: true
     logo:
       text: "Donald (Donnie) Zvada"
+      image:
+        filename: "avatar.jpg"  # Place your photo at /static/media/avatar.jpg
 
 # Site footer
 footer:
