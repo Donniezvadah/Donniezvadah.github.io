@@ -28,3 +28,7 @@ main:
   - name: Leadership
     url: leadership/
     weight: 41
+  - name: CV
+    url: /cv/
+    weight: 50
+    identifier: cv
