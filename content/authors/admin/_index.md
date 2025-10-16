@@ -11,7 +11,7 @@ last_name: Zvada
 
 # Status emoji
 status:
-  icon: 🤯
+  icon: 🚀
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,16 +20,21 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: AI & Software Engineer | Project Management | Data Science
+role: Quantitative Risk Analyst | Data Scientist | MSc Mathematical Sciences Candidate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: African Institute for Mathematical Sciences (AIMS) - South Africa
+  - name: AIMS South Africa / Stellenbosch University
     url: https://www.aims.ac.za
-    role: Research Intern
-  - name: University of Zimbabwe
-    url: https://www.uz.ac.zw
-    role: BSc Computer Science
+    role: MSc in Mathematical Sciences (2024-2025)
+  - name: National University of Science and Technology, Zimbabwe
+    url: https://www.nust.ac.zw
+    role: BSc Hons in Operations Research and Statistics (2019-2023)
+    details: 1st Division, Overall Best Graduating Male Student (Class of 2023)
+  - name: EY Zimbabwe
+    role: Quantitative Risk Analyst (2023-2024)
+  - name: EcoCash Holdings
+    role: Reporting Analyst Intern (2021-2022)
 
 # Social network links
 profiles:
@@ -102,39 +107,54 @@ education:
       - Information Technology
       - Statistics
       
-work:
-  - position: Program Assistant, Leadership Development Program(LDP)
-    company_name: Emerging Leaders Foundation-Africa
-    company_url: ''
-    company_logo: ''
-    date_start: 2023-09-01
-    date_end: 2024-08-31
-    summary: |2-
-      Responsibilities include:
-      - Implement and coordinate projects and activities(iLEAD Fellowship, NOW US! Awards & St Andrews Turi Leadership Award)
-      - Design and develope concept notes and proposals for proposed projects and initiatives within the LDP department.
-      - Develope relevant programmatic content for the LDP department and other departments.
-      - Design and support development of I.T. Infrastructure
+experience:
+  - title: Quantitative Risk Analyst
+    company: EY Zimbabwe
+    company_url: 'https://www.ey.com/en_za/africa/ey-zimbabwe'
+    company_logo: ey
+    location: Harare, Zimbabwe
+    date_start: '2023-12-01'
+    date_end: '2024-08-31'
+    description: |2-
+        *Credit Risk Modeling*
+        * Developed and validated credit risk models (PD, LGD, EAD & MEV) for IFRS 9 compliance
+        * Provided IFRS 9 model validation and review support on audit assignments
+        * Developed and implemented IFRS 9 frameworks, systems, and tools
+        * Ensured regulatory compliance and risk assessment for financial institutions
 
-  - position: Full-stack Software Developer
-    company_name: Smart People Africa Limited Company
-    company_url: ''
-    company_logo: ''
-    date_start: 2020-11-01
-    date_end: 2023-08-31
-    summary: |
-      Responsibilities include:
-      - Developing, implementing and upgrading the PickPay Enterprise Resource Planning (E.R.P.) Project
-      - Organizing and training users of the Enterprise Resource Planning Water utility system.
-      - Establishing Standard Operating Procedures (S.O.P.) for better teamwork, order and quality control.
+  - title: Reporting Analyst Intern
+    company: EcoCash Holdings
+    company_url: 'https://www.ecocash.co.zw'
+    company_logo: ecocash
+    location: Harare, Zimbabwe
+    date_start: '2021-01-01'
+    date_end: '2022-12-31'
+    description: |2-
+        *Data Analysis & Reporting*
+        * Created comprehensive reports and dashboards using Power BI and Microsoft Excel
+        * Conducted product testing in development environments and analyzed results
+        * Performed data cleaning, exploration, and visualization for business insights
+        * Conducted competitor analysis and prepared presentations for management
+        * Managed customer queries and maintained data integrity through proper entry and validation
 
-# Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python
-        description: ''
+      - name: Python & R
+        description: 'Advanced data analysis and modeling'
+      - name: Machine Learning
+        description: 'Model development and implementation'
+      - name: Quantitative Risk Analysis
+        description: 'PD, LGD, EAD & MEV models, IFRS 9 compliance'
+      - name: Data Visualization
+        description: 'Power BI, Tableau, Matplotlib, Seaborn'
+      - name: Statistical Analysis
+        description: 'SPSS, R, Python (Pandas, NumPy, SciPy)'
+      - name: Version Control
+        description: 'Git/GitHub'
+      - name: Microsoft Office Suite
+        description: 'Advanced Excel, PowerPoint, Word'
         percent: 90
         icon: code-bracket
       - name: Java
@@ -221,8 +241,10 @@ awards:
 
 Donald is a passionate advocate for the intersection of mathematics, technology, and artificial intelligence. His research focuses on leveraging AI for climate prediction and weather forecasting, with a particular interest in cutting-edge developments in nowcasting and forecasting to address urgent climate challenges.
 
-A natural leader, Donald is deeply engaged in discussions on techno-democracy and governance, exploring how technology can drive social good and improve service delivery across Kenya and Africa. He is committed to fostering innovation that empowers communities and promotes sustainable development.
+Donald is a dedicated data scientist and quantitative analyst with a strong academic background in mathematical sciences and operations research. His research focuses on the intersection of machine learning and decision-making processes, particularly in assessing the capabilities of Large Language Models in solving sequential decision-making problems.
 
-Driven by a vision to become an AI Scientist and a leader in Africa, Donald is dedicated to advancing policies that ensure ethical and responsible AI research, deployment and use.
+With professional experience in quantitative risk analysis at EY Zimbabwe and data analytics at EcoCash, Donald has developed expertise in credit risk modeling, IFRS 9 compliance, and data-driven decision making. His technical skills span across Python, R, statistical analysis, and data visualization tools.
 
-Outside of his professional pursuits, Donald enjoys mentoring peers, story telling, and staying active through running, swimming, music, and hiking.
+As a recipient of the prestigious MasterCard Foundation Scholarship, Donald is committed to applying his skills to solve complex problems in the African context. He is particularly interested in responsible AI development and its applications in financial technology and risk management.
+
+Outside of his professional pursuits, Donald enjoys mentoring aspiring data scientists, contributing to open-source projects, and staying active through running and hiking. He is passionate about knowledge sharing and regularly participates in academic and professional communities.
