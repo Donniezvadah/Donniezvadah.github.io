@@ -1,13 +1,13 @@
 ---
-title: PyTorch
+title: Machine Learning Projects
 date: 2023-10-26
-external_link: https://github.com/pytorch/pytorch
+external_link: https://github.com/Donniezvadah?tab=repositories
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+  - Machine Learning
+  - Deep Learning
+  - PyTorch
 ---
 
-PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
+Machine learning and deep learning projects using PyTorch, TensorFlow, and other ML frameworks.
 
 <!--more-->

@@ -8,13 +8,17 @@ type: page
 
 ## Professional CV
 
-[Download CV (PDF)](/Donald-Zvada_CV.pdf){: .btn .btn-primary .btn-lg .px-4 .mb-4}
+<a href="/Donald-Zvada_CV.pdf" class="btn btn-primary btn-lg px-4 mb-4">Download CV (PDF)</a>
 
 ## Professional Summary
 
-Quantitative Risk Analyst and Data Scientist with experience in credit risk modeling, IFRS 9 compliance, and data analytics. Strong background in mathematical sciences and operations research, with a focus on machine learning applications in finance.
+Just an honest person trying very hard.
 
 ## Education
+
+- **PhD in Statistics and Informatics** (2025-2029)  
+  Trinity College Dublin  
+  *PhD Candidate*
 
 - **MSc in Mathematical Sciences** (2024-2025)  
   African Institute for Mathematical Sciences (AIMS) / Stellenbosch University  
@@ -29,17 +33,32 @@ Quantitative Risk Analyst and Data Scientist with experience in credit risk mode
 
 ### Quantitative Risk Analyst | EY Zimbabwe
 *Dec 2023 - Aug 2024*  
-- Developed and validated credit risk models (PD, LGD, EAD & MEV) for IFRS 9 compliance
-- Provided IFRS 9 model validation and review support on audit assignments
-- Developed and implemented IFRS 9 frameworks, systems, and tools
-- Ensured regulatory compliance and risk assessment for financial institutions
+*Harare, Zimbabwe*
+
+- Credit risk model development and validation for clients to ensure they are compliant with IFRS 9 Standard
+- PD, LGD, EAD & MEV models
+- IFRS 9 Model Validation and review support on audit assignments
+- Development, implementation or review of IFRS 9 frameworks/systems/tools
 
 ### Reporting Analyst Intern | EcoCash Holdings
 *Jan 2021 - Dec 2022*  
-- Created comprehensive reports and dashboards using Power BI and Microsoft Excel
-- Conducted product testing and analyzed results in development environments
-- Performed data cleaning, exploration, and visualization for business insights
-- Conducted competitor analysis and prepared presentations for management
+*Harare, Zimbabwe*
+
+- Reporting Analyst, Product Solutions and Operations management
+- Preparation of reports, Product testing (dev environment - beta tests), scheduling, data analysis
+- Competitor analysis, meetings presentations, sharing quotations, customer queries
+- Data entry, data cleaning, data analysis, data exploration and visualizations (Microsoft Excel and Power BI)
+
+## Leadership Experience
+
+### MasterCard Foundation Scholarship Student Representative | AIMS South Africa
+*2024 - Present*  
+*Cape Town, South Africa*
+
+- Work closely with the Mastercard Foundation Scholars and Mastercard Foundation team
+- Organise meetings
+- Reporting
+- Lead in giving back to the community sessions
 
 ## Technical Skills
 
@@ -59,10 +78,48 @@ Quantitative Risk Analyst and Data Scientist with experience in credit risk mode
 
 ## Research Experience
 
-**Assessing LLMs in Sequential Decision-Making** (2025)  
-*Supervisor: Prof. Audrey Durand, Université Laval, Canada*  
-- Researching the application of Large Language Models to solve Multi-Armed Bandit problems
+### Masters Project: Assessing the ability of Large Language Models to solve sequential decision making problems
+*Mar 2025 - Jun 2025*  
+*Supervisor: Prof. Audrey Durand, Université Laval, Canada*
+
+- Assess and characterise the ability of Large Language Models (LLMs) to solve sequential decision-making problems, with a focus on the Multi-Armed Bandit (MAB) problem
 - Developing novel approaches to enhance decision-making processes using AI
+- Research conducted as part of MSc in Mathematical Sciences at AIMS/Stellenbosch University
+
+### Key relay protocol for quantum key distribution
+*Jun 2025 - Aug 2025*  
+*RIPS-Sendai Program, Tohoku University, Sendai, Japan*
+
+- Research in Industrial Projects for Students (RIPS) program
+- The program has been held at the Institute for Pure & Applied Mathematics (IPAM) of the UCLA
+- AIMR at Tohoku University in Sendai launched the g-RIPS-Sendai program in collaboration with IPAM, targeting graduate-level students in mathematical science and related disciplines
+- Research on quantum key distribution and key relay protocols
+
+## Teaching
+
+### Demonstrator | Trinity College Dublin
+*2025 - Present*  
+*Dublin, Ireland*
+
+- Supporting undergraduate and postgraduate courses in Statistics and Informatics
+- Assisting students during practical sessions and tutorials
+- Providing guidance on statistical analysis and programming
+
+### Tutoring Lead | AIMS South Africa House of Science
+*2024 - Present*  
+*Cape Town, South Africa*
+
+- Lead the tutoring sessions for school children (outreach programme)
+- Plan and schedule the tutorial sessions
+- Mentor students
+
+### Voluntary Tutor | NUST
+*2022 - Present*  
+*Zimbabwe*
+
+- Voluntary tutoring for students
+- Supporting students in mathematics and statistics
+- Mentoring aspiring data scientists
 
 ## Languages
 
@@ -83,4 +140,4 @@ Quantitative Risk Analyst and Data Scientist with experience in credit risk mode
 
 Available upon request.
 
-[Download CV (PDF)](/Donald-Zvada_CV.pdf){: .btn .btn-primary .btn-lg .px-4 .mb-4}
+<a href="/Donald-Zvada_CV.pdf" class="btn btn-primary btn-lg px-4 mb-4">Download CV (PDF)</a>

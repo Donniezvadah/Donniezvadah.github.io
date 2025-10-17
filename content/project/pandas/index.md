@@ -1,13 +1,13 @@
 ---
-title: Pandas
+title: Data Analysis Projects
 date: 2023-10-26
-external_link: https://github.com/pandas-dev/pandas
+external_link: https://github.com/Donniezvadah?tab=repositories
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+  - Python
+  - Data Analysis
+  - Pandas
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+Collection of data analysis projects using Python, Pandas, and other data science tools.
 
 <!--more-->

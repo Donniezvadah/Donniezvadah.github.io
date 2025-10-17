@@ -20,10 +20,13 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Quantitative Risk Analyst | Data Scientist | MSc Mathematical Sciences Candidate
+role: PhD Candidate in Statistics and Informatics | Data Scientist | Quantitative Risk Analyst
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
+  - name: Trinity College Dublin
+    url: https://www.tcd.ie
+    role: PhD Candidate in Statistics and Informatics (2025-2029)
   - name: AIMS South Africa / Stellenbosch University
     url: https://www.aims.ac.za
     role: MSc in Mathematical Sciences (2024-2025)
@@ -63,17 +66,19 @@ interests:
   - Software Development
 
 education:
-  # - area: PhD Artificial Intelligence
-  #   institution: Stanford University
-  #   date_start: 2016-01-01
-  #   date_end: 2020-12-31
-  #   summary: |
-  #     Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-  #   button:
-  #     text: 'Read Thesis'
-  #     url: 'https://example.com'
-  - area: Msc Artificial Intelligence for Sciences
-    institution: Stellenbosch University & African Institute for Mathematical Sciences(AIMS) South Africa
+  - area: PhD in Statistics and Informatics
+    institution: Trinity College Dublin
+    date_start: 2025-09-01
+    date_end: 2029-08-31
+    summary: |
+      PhD Candidate
+      
+      Research Focus:
+      - Statistical Modeling
+      - Data Science
+      - Informatics
+  - area: MSc in Mathematical Sciences
+    institution: African Institute for Mathematical Sciences (AIMS) / Stellenbosch University
     date_start: 2024-09-01
     date_end: 2025-07-31
     summary: |
@@ -93,19 +98,19 @@ education:
       - CUDA Programming for GPUs
       - AI for Radio Astronomy
       - Deep Generative AI
-  - area: BSc Mathematical Sciences with I.T.
-    institution: Maseno University, Kisumu, Kenya
-    date_start: 2016-08-15
-    date_end: 2021-04-30
+  - area: BSc (Hons) in Operations Research and Statistics
+    institution: National University of Science and Technology, Zimbabwe
+    date_start: 2019-01-01
+    date_end: 2023-12-31
     summary: |
-      GPA: 3.8/4.0
-      Class: First-class Honours
+      Class: First Class Honours
+      Overall Best Graduating Male Student (Class of 2023)
       
       Courses included:
-      - Pure Mathematics
-      - Applied Mathematics
-      - Information Technology
+      - Operations Research
       - Statistics
+      - Mathematical Modeling
+      - Data Analysis
       
 experience:
   - title: Quantitative Risk Analyst
@@ -116,11 +121,10 @@ experience:
     date_start: '2023-12-01'
     date_end: '2024-08-31'
     description: |2-
-        *Credit Risk Modeling*
-        * Developed and validated credit risk models (PD, LGD, EAD & MEV) for IFRS 9 compliance
-        * Provided IFRS 9 model validation and review support on audit assignments
-        * Developed and implemented IFRS 9 frameworks, systems, and tools
-        * Ensured regulatory compliance and risk assessment for financial institutions
+        * Credit risk model development and validation for clients to ensure they are compliant with IFRS 9 Standard
+        * PD, LGD, EAD & MEV models
+        * IFRS 9 Model Validation and review support on audit assignments
+        * Development, implementation or review of IFRS 9 frameworks/systems/tools
 
   - title: Reporting Analyst Intern
     company: EcoCash Holdings
@@ -130,12 +134,10 @@ experience:
     date_start: '2021-01-01'
     date_end: '2022-12-31'
     description: |2-
-        *Data Analysis & Reporting*
-        * Created comprehensive reports and dashboards using Power BI and Microsoft Excel
-        * Conducted product testing in development environments and analyzed results
-        * Performed data cleaning, exploration, and visualization for business insights
-        * Conducted competitor analysis and prepared presentations for management
-        * Managed customer queries and maintained data integrity through proper entry and validation
+        * Reporting Analyst, Product Solutions and Operations management
+        * Preparation of reports, Product testing (dev environment - beta tests), scheduling, data analysis
+        * Competitor analysis, meetings presentations, sharing quotations, customer queries
+        * Data entry, data cleaning, data analysis, data exploration and visualizations (Microsoft Excel and Power BI)
 
 # Add your own SVG icons to `assets/media/icons/`
 skills:
@@ -201,7 +203,7 @@ skills:
 languages:
   - name: English
     percent: 100
-  - name: Kiswahili
+  - name: Shona
     percent: 100
   
 
@@ -239,12 +241,4 @@ awards:
 
 ## About Me
 
-Donald is a passionate advocate for the intersection of mathematics, technology, and artificial intelligence. His research focuses on leveraging AI for climate prediction and weather forecasting, with a particular interest in cutting-edge developments in nowcasting and forecasting to address urgent climate challenges.
-
-Donald is a dedicated data scientist and quantitative analyst with a strong academic background in mathematical sciences and operations research. His research focuses on the intersection of machine learning and decision-making processes, particularly in assessing the capabilities of Large Language Models in solving sequential decision-making problems.
-
-With professional experience in quantitative risk analysis at EY Zimbabwe and data analytics at EcoCash, Donald has developed expertise in credit risk modeling, IFRS 9 compliance, and data-driven decision making. His technical skills span across Python, R, statistical analysis, and data visualization tools.
-
-As a recipient of the prestigious MasterCard Foundation Scholarship, Donald is committed to applying his skills to solve complex problems in the African context. He is particularly interested in responsible AI development and its applications in financial technology and risk management.
-
-Outside of his professional pursuits, Donald enjoys mentoring aspiring data scientists, contributing to open-source projects, and staying active through running and hiking. He is passionate about knowledge sharing and regularly participates in academic and professional communities.
+Just an honest person trying very hard.

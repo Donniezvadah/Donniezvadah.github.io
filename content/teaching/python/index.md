@@ -1,14 +1,33 @@
 ---
-title: Learn Python
-summary: Easily learn Python in 10 minutes!
-date: 2023-10-24
+title: Demonstrator - Trinity College Dublin
+summary: Supporting Statistics and Informatics courses at Trinity College Dublin
+date: 2025-09-01
 type: docs
 math: false
 tags:
-  - Python
-image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  - Teaching
+  - Statistics
+  - Informatics
 ---
+
+## Position: Demonstrator
+**Trinity College Dublin | Dublin, Ireland**  
+*2025 - Present*
+
+### Responsibilities
+
+- Supporting undergraduate and postgraduate courses in Statistics and Informatics
+- Assisting students during practical sessions and tutorials
+- Providing guidance on statistical analysis and programming
+- Helping students with coursework and assignments
+- Conducting lab sessions and workshops
+
+### Skills Developed
+
+- Teaching and mentoring
+- Statistical software (R, Python)
+- Curriculum support
+- Student assessment
 
 [Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
 

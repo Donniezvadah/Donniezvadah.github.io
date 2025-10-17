@@ -1,14 +1,41 @@
 ---
-title: Learn JavaScript
-summary: Easily learn JavaScript in 10 minutes!
-date: 2023-10-24
+title: Tutoring Lead - AIMS House of Science
+summary: Leading tutoring sessions for school children in Cape Town
+date: 2024-09-01
 type: docs
 math: false
 tags:
-  - JavaScript
-image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  - Teaching
+  - Outreach
+  - Mentoring
 ---
+
+## Position: Tutoring Lead
+**AIMS South Africa House of Science | Cape Town, South Africa**  
+*2024 - Present*
+
+### Responsibilities
+
+- Lead the tutoring sessions for school children (outreach programme)
+- Plan and schedule the tutorial sessions
+- Mentor students in mathematics and sciences
+- Coordinate with other tutors and volunteers
+- Develop engaging learning materials for students
+- Monitor student progress and provide feedback
+
+### Impact
+
+- Supporting underserved communities through education
+- Promoting STEM education among young learners
+- Building strong mentorship relationships
+- Contributing to community development through education
+
+### Skills Developed
+
+- Leadership and team coordination
+- Curriculum planning
+- Youth mentoring
+- Community engagement
 
 [Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
 

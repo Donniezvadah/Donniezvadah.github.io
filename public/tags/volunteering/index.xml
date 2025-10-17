@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Volunteering | Donald (Donnie) Zvada - Personal Website</title>
+    <link>http://localhost:1313/tags/volunteering/</link>
+      <atom:link href="http://localhost:1313/tags/volunteering/index.xml" rel="self" type="application/rss+xml" />
+    <description>Volunteering</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Volunteering</title>
+      <link>http://localhost:1313/tags/volunteering/</link>
+    </image>
+    
+    <item>
+      <title>Voluntary Tutor - NUST</title>
+      <link>http://localhost:1313/teaching/nust/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/nust/</guid>
+      <description>&lt;h2 id=&#34;position-voluntary-tutor&#34;&gt;Position: Voluntary Tutor&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;National University of Science and Technology (NUST) | Zimbabwe&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;2022 - Present&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;responsibilities&#34;&gt;Responsibilities&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Voluntary tutoring for students in mathematics and statistics&lt;/li&gt;
+&lt;li&gt;Supporting students with coursework and exam preparation&lt;/li&gt;
+&lt;li&gt;Mentoring aspiring data scientists&lt;/li&gt;
+&lt;li&gt;Providing guidance on academic and career development&lt;/li&gt;
+&lt;li&gt;Helping students understand complex mathematical concepts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact&#34;&gt;Impact&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Supporting fellow students in their academic journey&lt;/li&gt;
+&lt;li&gt;Giving back to the academic community&lt;/li&gt;
+&lt;li&gt;Promoting excellence in STEM education&lt;/li&gt;
+&lt;li&gt;Building a culture of peer support and collaboration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;skills-developed&#34;&gt;Skills Developed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Teaching and communication&lt;/li&gt;
+&lt;li&gt;Mentoring and guidance&lt;/li&gt;
+&lt;li&gt;Problem-solving and explanation&lt;/li&gt;
+&lt;li&gt;Community service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Through this voluntary position, I&amp;rsquo;ve been able to give back to the NUST community and help fellow students succeed in their studies. The experience has been incredibly rewarding and has strengthened my commitment to education and mentorship.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
