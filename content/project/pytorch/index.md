@@ -1,6 +1,7 @@
 ---
 title: Machine Learning Projects
 date: 2023-10-26
+draft: true
 external_link: https://github.com/Donniezvadah?tab=repositories
 tags:
   - Machine Learning

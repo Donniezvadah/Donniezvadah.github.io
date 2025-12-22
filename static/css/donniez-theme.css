@@ -1,0 +1,439 @@
+/* Global accent styling for Donnie's site */
+
+/* Smooth background and typography tweaks */
+body {
+  scroll-behavior: smooth;
+  background: radial-gradient(circle at top left, rgba(16, 185, 129, 0.2), transparent 55%),
+              radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.25), transparent 55%);
+  background-size: 130% 130%;
+  animation: dz-bg-pan 26s ease-in-out infinite alternate;
+}
+
+.page-body {
+  background: transparent;
+}
+
+/* Subtle animated glow behind main content */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(236, 72, 153, 0.26), transparent 55%),
+    radial-gradient(circle at 90% 100%, rgba(59, 130, 246, 0.32), transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(16, 185, 129, 0.28), transparent 50%);
+  filter: blur(22px);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* Animated hero wrapper on homepage biography section */
+.dz-home-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.dz-home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(236, 72, 153, 0.22), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(34, 197, 94, 0.22), transparent 55%);
+  opacity: 0.6;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  animation: dz-hero-pulse 14s ease-in-out infinite alternate;
+}
+
+/* Section intro styling used on Projects & Leadership */
+.dz-section-intro {
+  max-width: 60rem;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.dz-kicker {
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #10b981;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.dz-heading-xl {
+  font-size: clamp(2.2rem, 3vw, 2.8rem);
+  line-height: 1.1;
+  font-weight: 800;
+  background: linear-gradient(120deg, #22c55e, #0ea5e9, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 0.75rem;
+}
+
+.dz-intro-text {
+  font-size: 1.05rem;
+  color: rgb(75 85 99);
+}
+
+html.dark .dz-intro-text {
+  color: rgb(209 213 219);
+}
+
+/* Animated research block on homepage */
+.dz-research-block {
+  max-width: 60rem;
+  margin: 0 auto 4rem auto;
+  padding: 1.8rem 2rem;
+  border-radius: 1.5rem;
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  box-shadow:
+    0 20px 55px rgba(15, 23, 42, 0.6),
+    0 0 0 1px rgba(15, 23, 42, 0.6);
+  color: rgb(226 232 240);
+  animation: dz-fade-up 700ms ease both;
+}
+
+.dz-research-block h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(120deg, #22c55e, #0ea5e9, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.dz-research-block p + p {
+  margin-top: 0.75rem;
+}
+
+/* Skills & hobbies table on Education page */
+.dz-skills-block {
+  margin-top: 3rem;
+}
+
+.dz-skills-section {
+  max-width: 64rem;
+  margin: 0 auto 4rem auto;
+  padding: 1.8rem 2rem;
+  border-radius: 1.5rem;
+  background: radial-gradient(circle at top right, rgba(129, 140, 248, 0.16), rgba(15, 23, 42, 0.92));
+  border: 1px solid rgba(129, 140, 248, 0.5);
+  box-shadow:
+    0 24px 65px rgba(15, 23, 42, 0.65),
+    0 0 0 1px rgba(15, 23, 42, 0.6);
+  color: rgb(226 232 240);
+  animation: dz-fade-up 720ms ease both;
+}
+
+.dz-skills-table {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.25rem;
+}
+
+.dz-skills-col h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.dz-skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.dz-skills-list li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.75rem;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.7);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.dz-skills-list li:hover {
+  transform: translateY(-2px) scale(1.01);
+  border-color: rgba(56, 189, 248, 0.8);
+  box-shadow: 0 14px 32px rgba(37, 99, 235, 0.8);
+}
+
+.dz-skill-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.dz-skill-desc {
+  font-size: 0.85rem;
+  color: rgb(148 163 184);
+}
+
+.dz-hobbies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.dz-hobbies-list li {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(59, 130, 246, 0.7);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.8);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.dz-hobbies-list li:hover {
+  transform: translateY(-1px);
+  border-color: rgba(16, 185, 129, 0.8);
+  box-shadow: 0 14px 30px rgba(16, 185, 129, 0.75);
+}
+
+@media (max-width: 768px) {
+  .dz-skills-section {
+    padding: 1.4rem 1.2rem;
+  }
+
+  .dz-skills-table {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Projects grid */
+.dz-projects-grid {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 0 auto 1.5rem auto;
+}
+
+.dz-project-card {
+  position: relative;
+}
+
+.dz-project-card-inner {
+  border-radius: 1.25rem;
+  padding: 1.6rem 1.6rem 1.4rem;
+  background: radial-gradient(circle at top left, rgba(16, 185, 129, 0.12), rgba(15, 23, 42, 0.02));
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.14),
+    0 0 0 1px rgba(15, 23, 42, 0.04);
+  backdrop-filter: blur(12px);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  animation: dz-fade-up 520ms ease both;
+}
+
+.dz-project-card-inner:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow:
+    0 22px 55px rgba(15, 23, 42, 0.24),
+    0 0 0 1px rgba(56, 189, 248, 0.35);
+  border-color: rgba(16, 185, 129, 0.6);
+}
+
+.dz-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.dz-card-meta {
+  font-size: 0.83rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgb(107 114 128);
+  margin-bottom: 0.7rem;
+}
+
+html.dark .dz-card-meta {
+  color: rgb(148 163 184);
+}
+
+.dz-card-body {
+  font-size: 0.96rem;
+  color: rgb(55 65 81);
+  margin-bottom: 1rem;
+}
+
+html.dark .dz-card-body {
+  color: rgb(209 213 219);
+}
+
+.dz-pill-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: linear-gradient(120deg, #22c55e, #0ea5e9);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.35);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.dz-pill-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.4);
+  filter: brightness(1.05);
+}
+
+/* CV button centering */
+.dz-cv-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.dz-cv-button {
+  border-radius: 999px;
+  box-shadow: 0 18px 45px rgba(37, 99, 235, 0.35);
+  background: linear-gradient(135deg, #2563eb, #22c55e);
+}
+
+.dz-cv-button:hover {
+  transform: translateY(-1px);
+}
+
+/* Leadership card styling */
+.dz-leadership-wrap {
+  max-width: 50rem;
+  margin: 0 auto 3rem auto;
+}
+
+.dz-leadership-card {
+  border-radius: 1.5rem;
+  padding: 1.8rem 1.8rem 1.6rem;
+  background: radial-gradient(circle at top right, rgba(129, 140, 248, 0.18), rgba(15, 23, 42, 0.02));
+  border: 1px solid rgba(129, 140, 248, 0.45);
+  box-shadow:
+    0 18px 45px rgba(30, 64, 175, 0.35),
+    0 0 0 1px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(12px);
+  animation: dz-fade-up 520ms ease both;
+}
+
+.dz-card-header {
+  margin-bottom: 0.75rem;
+}
+
+.dz-bullet-list {
+  padding-left: 1.2rem;
+  margin: 0.2rem 0 0;
+}
+
+.dz-bullet-list li + li {
+  margin-top: 0.25rem;
+}
+
+/* Simple fade-up animation */
+@keyframes dz-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Small screen tweaks */
+@media (max-width: 640px) {
+  .dz-section-intro {
+    text-align: left;
+    padding: 0 0.25rem;
+  }
+
+  .dz-heading-xl {
+    font-size: 1.9rem;
+  }
+
+  .dz-leadership-card,
+  .dz-project-card-inner {
+    padding: 1.4rem 1.35rem 1.3rem;
+  }
+}
+
+/* Hide placeholder dates like Jan 1, 0001 */
+time[datetime="0001-01-01"] {
+  display: none;
+}
+
+/* Hide the docs-style previous/next pager bar at bottom of pages */
+.page-body .pt-1.no-prose.w-full {
+  display: none;
+}
+
+/* Animate major Hugo Blox sections subtly on load */
+.hbb-section {
+  animation: dz-fade-up 620ms ease both;
+}
+
+/* Slight hover motion for all links to enhance interactivity */
+a:hover {
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  transform: translateY(-1px);
+}
+
+/* Animated navbar background (works with Hugo Blox navbar classes) */
+header {
+  background: linear-gradient(120deg, rgba(15, 23, 42, 0.92), rgba(37, 99, 235, 0.96), rgba(16, 185, 129, 0.9));
+  background-size: 200% 200%;
+  animation: dz-nav-pan 18s ease-in-out infinite alternate;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.5);
+}
+
+@keyframes dz-bg-pan {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes dz-nav-pan {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes dz-hero-pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 0.55;
+    transform: scale(1.01);
+  }
+}

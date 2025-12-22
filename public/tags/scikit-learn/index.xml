@@ -7,7 +7,7 @@
     <description>Scikit-Learn</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:1313/media/icon_hu_645fa481986063ef.png</url>
       <title>Scikit-Learn</title>
       <link>http://localhost:1313/tags/scikit-learn/</link>
     </image>
@@ -17,7 +17,8 @@
       <link>http://localhost:1313/project/scikit/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project/scikit/</guid>
-      <description>&lt;p&gt;Statistical analysis and risk modeling projects including credit risk models and IFRS 9 compliance work.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Statistical analysis and risk modeling projects including credit risk models and IFRS 9 compliance work.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
