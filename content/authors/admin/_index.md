@@ -27,7 +27,7 @@ organizations:
   - name: Trinity College Dublin
     url: https://www.tcd.ie
     role: PhD Student in Statistics and Informatics (2025-2029)
-    details: "Supervisor: Prof Silvia D'Angelo (dangelos@tcd.ie)"
+    details: "Supervisor: Assistant Professor Silvia D'Angelo (dangelos@tcd.ie)"
   - name: AIMS South Africa / Stellenbosch University
     url: https://www.aims.ac.za
     role: MSc in Mathematical Sciences (2024-2025)

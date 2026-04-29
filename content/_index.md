@@ -43,7 +43,7 @@ sections:
           </p>
           <p>
             I conduct this work and research under the guidance of
-            <a href="https://sites.google.com/view/silviadangelo/home?authuser=0" target="_blank" rel="noopener">Prof Silvia D'Angelo</a>.
+            <a href="https://sites.google.com/view/silviadangelo/home?authuser=0" target="_blank" rel="noopener">Assistant Professor Silvia D'Angelo</a>.
             I also study how Large Language Models perform on sequential decision tasks
             and explore how probabilistic modelling can be combined with modern AI to solve real-world challenges in statistics and informatics.
           </p>
@@ -101,7 +101,7 @@ sections:
           </article>
           <article class="dz-clean-card">
             <h3>Supervisor</h3>
-            <p><strong>Prof Silvia D'Angelo</strong><br>Assistant Professor in Statistics, Trinity College Dublin</p>
+            <p><strong>Silvia D'Angelo</strong><br>Assistant Professor in Statistics, Trinity College Dublin</p>
             <p>Email: <a href="mailto:dangelos@tcd.ie">dangelos@tcd.ie</a></p>
             <p><a href="https://sites.google.com/view/silviadangelo/home?authuser=0" target="_blank" rel="noopener">Supervisor Profile</a></p>
           </article>
