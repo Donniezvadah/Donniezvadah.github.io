@@ -5,8 +5,8 @@
 
 # Appearance
 appearance:
-  mode: system
-  color: emerald
+  mode: dark
+  color: blue
 
 # SEO
 marketing:
@@ -33,7 +33,7 @@ header:
     blox: "navbar"
     fixed_to_top: true
     show_search: true
-    show_theme_chooser: true
+    show_theme_chooser: false
     logo:
       text: "Donald (Donnie) Zvada"
       image:

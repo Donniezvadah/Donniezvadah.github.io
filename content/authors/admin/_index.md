@@ -20,13 +20,14 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Student in Statistics and Informatics | Data Scientist | Quantitative Risk Analyst
+role: PhD Student in Statistics and Informatics | Data Scientist | Statistician
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: Trinity College Dublin
     url: https://www.tcd.ie
     role: PhD Student in Statistics and Informatics (2025-2029)
+    details: "Supervisor: Prof Silvia D'Angelo (dangelos@tcd.ie)"
   - name: AIMS South Africa / Stellenbosch University
     url: https://www.aims.ac.za
     role: MSc in Mathematical Sciences (2024-2025)
@@ -42,7 +43,7 @@ organizations:
 # Social network links
 profiles:
   - icon: at-symbol
-    url: 'mailto:donnie@aims.ac.za'
+    url: 'mailto:zvadad@tcd.ie'
     label: E-mail Me
   - icon: brands/x
     url: https://x.com/Donniezvadah
@@ -62,6 +63,8 @@ interests:
   - Artificial Intelligence
   - Machine Learning
   - Data Science
+  - Longitudinal Data Modelling
+  - Sequential Decision-Making
 
 education:
   - area: PhD in Statistics and Informatics
@@ -69,12 +72,9 @@ education:
     date_start: 2025-09-01
     date_end: 2029-08-31
     summary: |
-      PhD Student
-      
-      Research Focus:
-      - Statistical Modeling
-      - Data Science
-      - Informatics
+      Doctoral researcher on the T-DIET project.
+      Developing novel statistical methods for longitudinal dietary patterns
+      and their association with health outcomes.
   - area: MSc in Mathematical Sciences
     institution: African Institute for Mathematical Sciences (AIMS) / Stellenbosch University
     date_start: 2024-09-01

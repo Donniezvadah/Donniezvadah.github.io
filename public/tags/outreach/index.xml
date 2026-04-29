@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Outreach | Donald (Donnie) Zvada - Personal Website</title>
-    <link>http://localhost:1313/tags/outreach/</link>
-      <atom:link href="http://localhost:1313/tags/outreach/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://donniezvadah.github.io/tags/outreach/</link>
+      <atom:link href="https://donniezvadah.github.io/tags/outreach/index.xml" rel="self" type="application/rss+xml" />
     <description>Outreach</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu_645fa481986063ef.png</url>
+      <url>https://donniezvadah.github.io/media/icon_hu_645fa481986063ef.png</url>
       <title>Outreach</title>
-      <link>http://localhost:1313/tags/outreach/</link>
+      <link>https://donniezvadah.github.io/tags/outreach/</link>
     </image>
     
     <item>
       <title>Tutoring Lead - AIMS House of Science</title>
-      <link>http://localhost:1313/teaching/js/</link>
+      <link>https://donniezvadah.github.io/teaching/js/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/js/</guid>
+      <guid>https://donniezvadah.github.io/teaching/js/</guid>
       <description>&lt;h2 id=&#34;position-tutoring-lead&#34;&gt;Position: Tutoring Lead&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;AIMS South Africa House of Science | Cape Town, South Africa&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;2024 - Present&lt;/em&gt;&lt;/p&gt;
@@ -87,7 +87,7 @@
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:1313/teaching/js/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://donniezvadah.github.io/teaching/js/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;

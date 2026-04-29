@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mathematics | Donald (Donnie) Zvada - Personal Website</title>
-    <link>http://localhost:1313/tags/mathematics/</link>
-      <atom:link href="http://localhost:1313/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://donniezvadah.github.io/tags/mathematics/</link>
+      <atom:link href="https://donniezvadah.github.io/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
     <description>Mathematics</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu_645fa481986063ef.png</url>
+      <url>https://donniezvadah.github.io/media/icon_hu_645fa481986063ef.png</url>
       <title>Mathematics</title>
-      <link>http://localhost:1313/tags/mathematics/</link>
+      <link>https://donniezvadah.github.io/tags/mathematics/</link>
     </image>
     
     <item>
       <title>Voluntary Tutor - NUST</title>
-      <link>http://localhost:1313/teaching/nust/</link>
+      <link>https://donniezvadah.github.io/teaching/nust/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/nust/</guid>
+      <guid>https://donniezvadah.github.io/teaching/nust/</guid>
       <description>&lt;h2 id=&#34;position-voluntary-tutor&#34;&gt;Position: Voluntary Tutor&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;National University of Science and Technology (NUST) | Zimbabwe&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;2022 - Present&lt;/em&gt;&lt;/p&gt;
