@@ -126,14 +126,15 @@ data.head()
 &lt;/span&gt; Python&lt;/p&gt;
 &lt;h2 id="did-you-find-this-page-helpful-consider-sharing-it-"&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;</description></item><item><title>Leadership</title><link>https://donniezvadah.github.io/leadership-page/</link><pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate><guid>https://donniezvadah.github.io/leadership-page/</guid><description>&lt;div class="dz-section-intro"&gt;
 &lt;p class="dz-kicker"&gt;Leadership&lt;/p&gt;
-&lt;h1 class="dz-heading-xl"&gt;Student Representative, Mastercard Foundation&lt;/h1&gt;
+&lt;h1 class="dz-heading-xl"&gt;Student Leadership &amp; Community Work&lt;/h1&gt;
 &lt;p class="dz-intro-text"&gt;
-Representing Mastercard Foundation Scholars at AIMS South Africa and helping connect students, staff, and partners.
+Building stronger student communities through representation, mentoring, outreach, and structured collaboration.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="dz-leadership-wrap"&gt;
+&lt;div class="dz-leadership-wrap dz-stagger"&gt;
 &lt;article class="dz-leadership-card"&gt;
 &lt;div class="dz-card-header"&gt;
+&lt;p class="dz-card-icon"&gt;[01]&lt;/p&gt;
 &lt;h2 class="dz-card-title"&gt;Mastercard Foundation · AIMS South Africa&lt;/h2&gt;
 &lt;p class="dz-card-meta"&gt;Sep 2024 – Jul 2025 · 11 months · Cape Town, South Africa&lt;/p&gt;
 &lt;/div&gt;
@@ -142,6 +143,18 @@ Representing Mastercard Foundation Scholars at AIMS South Africa and helping con
 &lt;li&gt;Meetings with Mastercard stakeholders and students.&lt;/li&gt;
 &lt;li&gt;Preparing timesheets, reports, and feedback.&lt;/li&gt;
 &lt;li&gt;Leading voluntary and community-focused activities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;
+&lt;article class="dz-leadership-card"&gt;
+&lt;div class="dz-card-header"&gt;
+&lt;p class="dz-card-icon"&gt;[02]&lt;/p&gt;
+&lt;h2 class="dz-card-title"&gt;IndabaX Zimbabwe &amp; IOAI Training&lt;/h2&gt;
+&lt;p class="dz-card-meta"&gt;2025 – Present · Harare, Zimbabwe&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul class="dz-bullet-list"&gt;
+&lt;li&gt;Co-organising local AI community events and learning sessions.&lt;/li&gt;
+&lt;li&gt;Training students for AI competitions and international exposure.&lt;/li&gt;
+&lt;li&gt;Contributing to STEM mentoring and knowledge-sharing initiatives.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/article&gt;
 &lt;/div&gt;</description></item><item><title>Leadership</title><link>https://donniezvadah.github.io/leadership/</link><pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate><guid>https://donniezvadah.github.io/leadership/</guid><description>&lt;h2 id="student-representative-9"&gt;Student Representative 9&lt;/h2&gt;
@@ -471,7 +484,7 @@ console.log('code block');
 format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!&lt;/p&gt;
 &lt;p&gt;Save your Plotly JSON in your page folder, for example &lt;code&gt;line-chart.json&lt;/code&gt;, and then add the &lt;code&gt;{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code&gt; shortcode where you would like the chart to appear.&lt;/p&gt;
 &lt;p&gt;Demo:&lt;/p&gt;
-&lt;div id="chart-158396274" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-165289347" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -487,7 +500,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-158396274', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-165289347', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
