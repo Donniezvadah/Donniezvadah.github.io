@@ -2,9 +2,6 @@
 # Display name
 title: Donald (Donnie) Zvada
 
-# Name pronunciation (optional)
-name_pronunciation: Donnie Zvada
-
 # Full name (for SEO)
 first_name: Donald
 last_name: Zvada
