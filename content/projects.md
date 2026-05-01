@@ -57,7 +57,7 @@ sections:
               <p class="dz-card-body">
                 Developing novel statistical methods for modelling longitudinal dietary patterns and
                 their association with health outcomes. Funded by the Research Ireland Frontiers for
-                the Future Programme. Supervised by Assistant Professor Silvia D'Angelo.
+                the Future Programme. Supervised by <a href="https://sites.google.com/view/silviadangelo/home?authuser=0" target="_blank" rel="noopener">Assistant Professor Silvia D'Angelo</a>.
               </p>
               <div class="dz-tag-row">
                 <span class="dz-tag dz-tag-cyan">Longitudinal Data</span>

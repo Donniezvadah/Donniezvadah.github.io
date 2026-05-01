@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Candidate in Statistics & Informatics | Data Scientist | Statistician & Researcher
+role: PhD Student in Statistics & Informatics | Data Scientist | Statistician & Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -33,7 +33,7 @@ profiles:
     url: 'mailto:zvadad@tcd.ie'
     label: E-mail Me
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/donnie-zvada/
+    url: https://www.linkedin.com/in/donnie-z-1528bb1a7
   - icon: brands/github
     url: https://github.com/Donniezvadah
   - icon: brands/x
@@ -60,7 +60,8 @@ education:
     summary: |
       T-DIET: Novel statistical methods for modelling longitudinal dietary patterns and
       their association with health outcomes. Funded by Research Ireland Frontiers for
-      the Future Programme (2025). Supervised by Assistant Professor Silvia D'Angelo.
+      the Future Programme (2025). Supervised by Assistant Professor Silvia D'Angelo
+      (sites.google.com/view/silviadangelo/home).
 
   - area: MSc in Mathematical Sciences
     institution: AIMS South Africa / Stellenbosch University
@@ -177,7 +178,7 @@ skills:
 
 ## About Me
 
-Donald Zvada is a PhD candidate in Statistics and Informatics at Trinity College Dublin, funded by the **Research Ireland Frontiers for the Future Programme** (2025). His doctoral research focuses on **T-DIET** — developing novel statistical methods for analysing longitudinal dietary patterns and their association with health outcomes, under the supervision of Assistant Professor Silvia D'Angelo.
+Donald Zvada is a PhD student in Statistics and Informatics at Trinity College Dublin, funded by the **Research Ireland Frontiers for the Future Programme** (2025). His doctoral research focuses on **T-DIET** — developing novel statistical methods for analysing longitudinal dietary patterns and their association with health outcomes, under the supervision of [Assistant Professor Silvia D'Angelo](https://sites.google.com/view/silviadangelo/home?authuser=0).
 
 He holds an **MSc in Mathematical Sciences** (Distinction) from AIMS South Africa and Stellenbosch University, and a **First-Class Honours BSc** in Operations Research and Statistics from NUST, Zimbabwe — graduating as the *Overall Best Graduating Male Student of the Class of 2023*, a distinction recognised with five national and university-level awards.
 

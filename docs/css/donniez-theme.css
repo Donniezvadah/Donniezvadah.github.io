@@ -1,44 +1,49 @@
 /* ================================================================
-   DONALD (DONNIE) ZVADA — Academic Portfolio Theme v3
-   Clean · Animated · Detailed · Dark Academic System
+   DONALD (DONNIE) ZVADA — Academic Portfolio Theme v4
+   Light · Clean · Wide · Grey-White Academic System
    ================================================================ */
 
-/* ── Design Tokens ─────────────────────────────────────────────── */
-:root,
-html.dark {
-  --dz-bg:            #05101e;
-  --dz-surface:       #0b1929;
-  --dz-surface-2:     #0f2040;
-  --dz-surface-3:     #132647;
-  --dz-border:        #1c3454;
-  --dz-border-soft:   rgba(28, 52, 84, 0.55);
+/* ── Design Tokens (Light Theme) ───────────────────────────────── */
+:root {
+  --dz-bg:           #f2f5fb;
+  --dz-surface:      #ffffff;
+  --dz-surface-2:    #edf1f9;
+  --dz-surface-3:    #e3eaf6;
+  --dz-border:       #d4ddf0;
+  --dz-border-soft:  #e6ecf7;
 
-  --dz-text:          #e4f0ff;
-  --dz-text-soft:     #c5daf2;
-  --dz-muted:         #7ba3c8;
-  --dz-muted-2:       #4e6e90;
+  --dz-text:         #0d1b35;
+  --dz-text-soft:    #1e3358;
+  --dz-muted:        #4e6487;
+  --dz-muted-2:      #8499bc;
 
-  --dz-accent:        #4f9cf8;
-  --dz-accent-light:  #7ab8fb;
-  --dz-cyan:          #22d3ee;
-  --dz-cyan-soft:     rgba(34, 211, 238, 0.16);
-  --dz-blue-soft:     rgba(79, 156, 248, 0.16);
+  --dz-accent:       #1d4ed8;
+  --dz-accent-light: #3b82f6;
+  --dz-accent-soft:  rgba(29, 78, 216, 0.08);
+  --dz-accent-hover: rgba(29, 78, 216, 0.14);
 
-  --dz-gold:          #f59e0b;
-  --dz-gold-light:    #fbbf24;
-  --dz-gold-soft:     rgba(245, 158, 11, 0.14);
+  --dz-cyan:         #0369a1;
+  --dz-cyan-light:   #0284c7;
+  --dz-cyan-soft:    rgba(3, 105, 161, 0.08);
 
-  --dz-radius:        0.9rem;
-  --dz-radius-sm:     0.5rem;
-  --dz-radius-pill:   999px;
+  --dz-gold:         #92400e;
+  --dz-gold-light:   #b45309;
+  --dz-gold-soft:    rgba(146, 64, 14, 0.07);
+  --dz-gold-border:  rgba(180, 83, 9, 0.28);
 
-  --dz-shadow-sm:     0 4px 18px rgba(2, 6, 20, 0.42);
-  --dz-shadow-md:     0 10px 34px rgba(2, 6, 20, 0.52);
-  --dz-shadow-lg:     0 22px 52px rgba(2, 6, 20, 0.62);
+  --dz-radius:       0.875rem;
+  --dz-radius-sm:    0.5rem;
+  --dz-radius-pill:  999px;
 
-  --dz-glow-blue:     0 0 30px rgba(79, 156, 248, 0.16);
-  --dz-glow-cyan:     0 0 30px rgba(34, 211, 238, 0.16);
-  --dz-glow-gold:     0 0 30px rgba(245, 158, 11, 0.22);
+  --dz-shadow-sm:    0 1px 4px rgba(13,27,53,0.06), 0 1px 2px rgba(13,27,53,0.04);
+  --dz-shadow-md:    0 4px 18px rgba(13,27,53,0.08), 0 2px 6px rgba(13,27,53,0.05);
+  --dz-shadow-lg:    0 8px 30px rgba(13,27,53,0.10), 0 3px 8px rgba(13,27,53,0.06);
+  --dz-shadow-focus: 0 0 0 3px rgba(29,78,216,0.15);
+}
+
+/* Force light even if browser has dark preference */
+html, html.dark {
+  color-scheme: light !important;
 }
 
 /* ── Global Base ───────────────────────────────────────────────── */
@@ -46,52 +51,53 @@ html.dark {
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--dz-bg);
-  color: var(--dz-text);
+  background: var(--dz-bg) !important;
+  color: var(--dz-text) !important;
   line-height: 1.75;
 }
 
-/* Ambient multi-point radial glow background */
-body::before {
-  content: "";
-  position: fixed;
-  inset: -30%;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(ellipse at 10% 16%,  rgba(79,156,248,0.13), transparent 50%),
-    radial-gradient(ellipse at 90% 8%,   rgba(34,211,238,0.10), transparent 48%),
-    radial-gradient(ellipse at 60% 88%,  rgba(79,156,248,0.09), transparent 50%),
-    radial-gradient(ellipse at 28% 62%,  rgba(245,158,11,0.04), transparent 40%);
-  animation: dz-float-bg 30s ease-in-out infinite alternate;
+.page-body, .page-wrapper {
+  background: var(--dz-bg) !important;
 }
 
-.page-body { background: transparent; }
+/* ── Wide Layout Override ──────────────────────────────────────── */
+/* Override HugoBlox's narrow prose container */
+.hbb-section .max-w-prose,
+.blox-markdown .max-w-prose,
+section .max-w-prose {
+  max-width: 82rem !important;
+  width: 100%;
+}
 
 /* ── Navbar ────────────────────────────────────────────────────── */
-header {
-  background: rgba(5, 16, 30, 0.88) !important;
+header,
+#site-header {
+  background: rgba(255, 255, 255, 0.94) !important;
   border-bottom: 1px solid var(--dz-border) !important;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 12px rgba(13,27,53,0.07) !important;
 }
 
 header nav a,
 .navbar a,
 .nav-link,
 .navbar-brand {
-  color: #c8dff5 !important;
+  color: var(--dz-text) !important;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   transition: color 140ms ease;
 }
 
 header nav a:hover,
 .navbar a:hover,
-.nav-link:hover { color: #fff !important; }
+.nav-link:hover { color: var(--dz-accent) !important; }
 
 .nav-link.active,
-header nav a[aria-current="page"] { color: #fff !important; position: relative; }
+header nav a[aria-current="page"] {
+  color: var(--dz-accent) !important;
+  position: relative;
+}
 
 .nav-link.active::after,
 header nav a[aria-current="page"]::after {
@@ -101,46 +107,99 @@ header nav a[aria-current="page"]::after {
   bottom: -0.38rem;
   height: 2px;
   border-radius: var(--dz-radius-pill);
-  background: linear-gradient(90deg, var(--dz-accent), var(--dz-cyan));
+  background: linear-gradient(90deg, var(--dz-accent), var(--dz-cyan-light));
 }
 
 /* ── Hero Section ──────────────────────────────────────────────── */
 .dz-home-hero {
+  background: linear-gradient(150deg, #ffffff 0%, #eef2fb 55%, #e8eef8 100%) !important;
+  border-bottom: 1px solid var(--dz-border);
+}
+
+/* ── Hero Layout — Overlap Fix ────────────────────────────────── */
+
+/* Outer biography row */
+.dz-home-hero .resume-biography {
+  align-items: flex-start !important;
+  gap: 3rem !important;
+}
+
+/* Left profile column — override Tailwind's narrow m-w-[130px] */
+.dz-home-hero .resume-biography > div:first-child,
+.dz-home-hero .m-w-\[130px\] {
+  flex: 0 0 260px !important;
+  width: 260px !important;
+  min-width: 260px !important;
+  max-width: 260px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Profile inner flex column — keep items centered */
+.dz-home-hero #profile {
+  width: 260px !important;
+  min-width: 260px !important;
+  align-items: center !important;
+}
+
+/* Avatar wrapper — fixed size so nothing overflows */
+.dz-home-hero .avatar-wrapper {
+  width: 210px !important;
+  height: 210px !important;
+  margin: 0 auto !important;
+  flex-shrink: 0 !important;
   position: relative;
-  overflow: hidden;
 }
 
-.dz-home-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(130deg,
-    rgba(79,156,248,0.15) 0%,
-    transparent 42%,
-    rgba(34,211,238,0.13) 100%);
-  animation: dz-sheen 12s ease-in-out infinite;
+/* The photo itself */
+.dz-home-hero img.avatar {
+  width: 210px !important;
+  height: 210px !important;
+  max-width: 210px !important;
+  max-height: 210px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  padding: 0 !important;
+  display: block !important;
+  margin: 0 auto !important;
+  border: 4px solid #ffffff !important;
+  box-shadow: 0 8px 36px rgba(13,27,53,0.16) !important;
 }
 
-/* ── Section Wrapper (used by research/phd blocks) ─────────────── */
+/* Name / role text block — constrain to column width so it wraps cleanly */
+.dz-home-hero .portrait-title {
+  width: 250px !important;
+  max-width: 250px !important;
+  text-align: center !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+/* Make the role subtitle a bit smaller so it doesn't crowd */
+.dz-home-hero .portrait-title h3 {
+  font-size: 0.88rem !important;
+  line-height: 1.5 !important;
+  color: var(--dz-muted) !important;
+}
+
+/* ── Section Wrappers ──────────────────────────────────────────── */
 .dz-research-block,
 .dz-phd-block {
-  max-width: 70rem;
-  margin: 0 auto 2.2rem;
-  padding: 2rem 2.2rem;
+  max-width: 82rem;
+  margin: 0 auto 2rem;
+  padding: 2.2rem 2.4rem;
   border-radius: var(--dz-radius);
-  background: linear-gradient(160deg, var(--dz-surface), var(--dz-surface-2));
+  background: var(--dz-surface);
   border: 1px solid var(--dz-border);
   box-shadow: var(--dz-shadow-md);
-  animation: dz-fade-up 700ms ease both;
+  animation: dz-fade-up 600ms ease both;
+  color: var(--dz-text);
 }
 
 .dz-research-block h2,
 .dz-phd-block h2 {
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.8rem;
   color: var(--dz-text);
   font-weight: 700;
-  letter-spacing: -0.01em;
 }
 
 /* ── Section Header ────────────────────────────────────────────── */
@@ -153,32 +212,29 @@ header nav a[aria-current="page"]::after {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: var(--dz-cyan);
+  color: var(--dz-cyan-light);
 }
 
-.dz-label-gold { color: var(--dz-gold); }
+.dz-label-gold { color: var(--dz-gold-light); }
 
 .dz-title-gradient {
   margin: 0 0 0.55rem;
-  font-size: clamp(1.45rem, 2.6vw, 2rem);
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
   font-weight: 800;
-  line-height: 1.18;
-  letter-spacing: -0.025em;
-  background: linear-gradient(130deg, var(--dz-text) 40%, var(--dz-accent-light));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  line-height: 1.2;
+  letter-spacing: -0.022em;
+  color: var(--dz-text);
 }
 
 .dz-desc {
   margin: 0;
   color: var(--dz-muted);
-  max-width: 56rem;
+  max-width: 62rem;
   line-height: 1.78;
   font-size: 0.97rem;
 }
 
-/* ── Clean Section (research focus body) ───────────────────────── */
+/* ── Clean Section (body text) ─────────────────────────────────── */
 .dz-clean-section { line-height: 1.8; color: var(--dz-muted); }
 
 .dz-clean-section .dz-lead {
@@ -192,35 +248,33 @@ header nav a[aria-current="page"]::after {
 .dz-stat-strip {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 0.85rem;
-  margin-bottom: 0.5rem;
+  gap: 1rem;
 }
 
 .dz-stat-card {
-  padding: 1.15rem 0.9rem;
-  background: linear-gradient(160deg, rgba(15,32,64,0.8), rgba(11,25,41,0.9));
+  padding: 1.3rem 1rem;
+  background: var(--dz-surface);
   border: 1px solid var(--dz-border);
-  border-radius: var(--dz-radius-sm);
+  border-radius: var(--dz-radius);
   text-align: center;
-  transition: border-color 200ms ease, transform 200ms ease;
+  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+  box-shadow: var(--dz-shadow-sm);
 }
 
 .dz-stat-card:hover {
-  border-color: var(--dz-accent);
-  transform: translateY(-3px);
+  border-color: var(--dz-accent-light);
+  transform: translateY(-2px);
+  box-shadow: var(--dz-shadow-md);
 }
 
 .dz-stat-number {
   display: block;
-  font-size: 1.85rem;
+  font-size: 2rem;
   font-weight: 900;
   letter-spacing: -0.03em;
   line-height: 1.05;
-  margin-bottom: 0.28rem;
-  background: linear-gradient(130deg, var(--dz-accent), var(--dz-cyan));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  margin-bottom: 0.3rem;
+  color: var(--dz-accent);
 }
 
 .dz-stat-label {
@@ -231,32 +285,89 @@ header nav a[aria-current="page"]::after {
   letter-spacing: 0.1em;
 }
 
+/* ── Navigation Section Cards ──────────────────────────────────── */
+.dz-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem;
+}
+
+.dz-nav-card {
+  display: block;
+  text-decoration: none !important;
+  padding: 1.6rem 1.5rem;
+  background: var(--dz-surface);
+  border: 1px solid var(--dz-border);
+  border-radius: var(--dz-radius);
+  box-shadow: var(--dz-shadow-sm);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.dz-nav-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--dz-accent-light);
+  box-shadow: var(--dz-shadow-lg);
+}
+
+.dz-nav-card-num {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--dz-accent-light);
+  margin-bottom: 0.55rem;
+}
+
+.dz-nav-card-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--dz-text);
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
+}
+
+.dz-nav-card-desc {
+  font-size: 0.86rem;
+  color: var(--dz-muted);
+  line-height: 1.65;
+}
+
+.dz-nav-card-arrow {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--dz-accent);
+  letter-spacing: 0.02em;
+}
+
 /* ── Clean 3-up Grid ───────────────────────────────────────────── */
 .dz-clean-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.1rem;
 }
 
 .dz-clean-card {
-  background: linear-gradient(160deg, rgba(15,32,64,0.88), rgba(11,25,41,0.94));
+  background: var(--dz-surface);
   border: 1px solid var(--dz-border);
   border-radius: var(--dz-radius);
-  padding: 1.35rem 1.3rem;
+  padding: 1.4rem 1.35rem;
   transition: transform 230ms ease, box-shadow 230ms ease, border-color 230ms ease;
   box-shadow: var(--dz-shadow-sm);
+  color: var(--dz-text);
 }
 
 .dz-clean-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--dz-accent);
-  box-shadow: var(--dz-shadow-md), var(--dz-glow-blue);
+  transform: translateY(-3px);
+  border-color: var(--dz-accent-light);
+  box-shadow: var(--dz-shadow-md);
 }
 
 .dz-clean-card h3 {
   margin-bottom: 0.6rem;
   color: var(--dz-text);
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
@@ -268,44 +379,50 @@ header nav a[aria-current="page"]::after {
   font-size: 0.93rem;
 }
 
+.dz-clean-card strong { color: var(--dz-text-soft); }
+
 /* ── Tags ──────────────────────────────────────────────────────── */
 .dz-tag-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin-top: 0.5rem;
+  margin-top: 0.55rem;
 }
 
 .dz-tag {
   display: inline-flex;
   align-items: center;
-  padding: 0.28rem 0.68rem;
+  padding: 0.26rem 0.68rem;
   border-radius: var(--dz-radius-pill);
   border: 1px solid var(--dz-border);
-  background: rgba(15,32,64,0.8);
+  background: var(--dz-surface-2);
   color: var(--dz-text-soft);
   font-size: 0.77rem;
   font-weight: 600;
-  letter-spacing: 0.025em;
-  transition: border-color 150ms ease, background 150ms ease;
+  letter-spacing: 0.02em;
+  transition: border-color 140ms ease, background 140ms ease;
 }
 
-.dz-tag:hover { border-color: var(--dz-accent); background: var(--dz-blue-soft); }
+.dz-tag:hover {
+  border-color: var(--dz-accent-light);
+  background: var(--dz-accent-soft);
+  color: var(--dz-accent);
+}
 
 .dz-tag-gold {
-  border-color: rgba(245,158,11,0.45);
+  border-color: var(--dz-gold-border);
   background: var(--dz-gold-soft);
-  color: var(--dz-gold-light);
+  color: var(--dz-gold);
 }
 
 .dz-tag-cyan {
-  border-color: rgba(34,211,238,0.35);
+  border-color: rgba(3,105,161,0.3);
   background: var(--dz-cyan-soft);
   color: var(--dz-cyan);
 }
 
 .dz-tag-link { text-decoration: none !important; }
-.dz-tag-link:hover { border-color: var(--dz-accent); }
+.dz-tag-link:hover { border-color: var(--dz-accent-light); }
 
 /* ── Lists ─────────────────────────────────────────────────────── */
 .dz-list-clean {
@@ -321,36 +438,37 @@ header nav a[aria-current="page"]::after {
   margin: 0.2rem 0 0;
   padding-left: 1.1rem;
   color: var(--dz-muted);
-  line-height: 1.7;
+  line-height: 1.72;
   font-size: 0.93rem;
 }
-.dz-bullet-list li + li { margin-top: 0.28rem; }
+.dz-bullet-list li + li { margin-top: 0.3rem; }
 
 /* ── Timeline ──────────────────────────────────────────────────── */
 .dz-timeline {
   position: relative;
-  padding-left: 2.2rem;
+  padding-left: 2.4rem;
 }
 
 .dz-timeline::before {
   content: "";
   position: absolute;
-  left: 0.55rem;
-  top: 0.6rem;
+  left: 0.6rem;
+  top: 0.7rem;
   bottom: 0;
   width: 2px;
   background: linear-gradient(180deg,
     var(--dz-accent) 0%,
-    var(--dz-cyan) 60%,
+    var(--dz-cyan-light) 65%,
     transparent 100%);
   border-radius: var(--dz-radius-pill);
+  opacity: 0.5;
 }
 
 .dz-timeline-item {
   position: relative;
-  margin-bottom: 1.3rem;
-  padding: 1.3rem 1.35rem 1.25rem;
-  background: linear-gradient(160deg, rgba(15,32,64,0.88), rgba(11,25,41,0.94));
+  margin-bottom: 1.2rem;
+  padding: 1.35rem 1.4rem 1.3rem;
+  background: var(--dz-surface);
   border: 1px solid var(--dz-border);
   border-radius: var(--dz-radius);
   box-shadow: var(--dz-shadow-sm);
@@ -358,31 +476,31 @@ header nav a[aria-current="page"]::after {
 }
 
 .dz-timeline-item:hover {
-  transform: translateX(5px);
-  border-color: var(--dz-accent);
-  box-shadow: var(--dz-shadow-md), var(--dz-glow-blue);
+  transform: translateX(4px);
+  border-color: var(--dz-accent-light);
+  box-shadow: var(--dz-shadow-md);
 }
 
 .dz-timeline-item::before {
   content: "";
   position: absolute;
-  left: -1.75rem;
-  top: 1.45rem;
-  width: 0.72rem;
-  height: 0.72rem;
+  left: -1.85rem;
+  top: 1.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--dz-accent), var(--dz-cyan));
-  box-shadow: 0 0 0 3px rgba(79,156,248,0.22);
+  background: var(--dz-accent);
+  box-shadow: 0 0 0 3px rgba(29,78,216,0.15);
 }
 
 .dz-timeline-date {
   display: inline-flex;
   align-items: center;
-  padding: 0.18rem 0.6rem;
+  padding: 0.18rem 0.62rem;
   border-radius: var(--dz-radius-pill);
-  background: var(--dz-blue-soft);
-  border: 1px solid rgba(79,156,248,0.28);
-  color: var(--dz-accent-light);
+  background: var(--dz-accent-soft);
+  border: 1px solid rgba(29,78,216,0.2);
+  color: var(--dz-accent);
   font-size: 0.73rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -399,8 +517,8 @@ header nav a[aria-current="page"]::after {
 }
 
 .dz-timeline-institution {
-  margin: 0 0 0.12rem;
-  font-size: 1.06rem;
+  margin: 0 0 0.1rem;
+  font-size: 1.08rem;
   font-weight: 800;
   color: var(--dz-text);
   letter-spacing: -0.015em;
@@ -412,7 +530,6 @@ header nav a[aria-current="page"]::after {
   font-size: 0.87rem;
   color: var(--dz-cyan);
   font-weight: 600;
-  letter-spacing: 0.005em;
 }
 
 .dz-timeline-body {
@@ -425,33 +542,31 @@ header nav a[aria-current="page"]::after {
 .dz-timeline-badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.18rem 0.58rem;
+  padding: 0.18rem 0.6rem;
   border-radius: var(--dz-radius-pill);
   background: var(--dz-gold-soft);
-  border: 1px solid rgba(245,158,11,0.42);
-  color: var(--dz-gold-light);
-  font-size: 0.72rem;
+  border: 1px solid var(--dz-gold-border);
+  color: var(--dz-gold);
+  font-size: 0.71rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  margin-top: 0.55rem;
+  margin-top: 0.6rem;
 }
 
 /* ── Awards Grid ───────────────────────────────────────────────── */
 .dz-awards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .dz-award-card {
   position: relative;
   overflow: hidden;
-  padding: 1.3rem 1.3rem 1.2rem;
-  background: linear-gradient(155deg,
-    rgba(22,14,4,0.92),
-    rgba(11,25,41,0.95));
-  border: 1px solid rgba(245,158,11,0.28);
+  padding: 1.35rem 1.3rem 1.25rem;
+  background: var(--dz-surface);
+  border: 1px solid var(--dz-gold-border);
   border-radius: var(--dz-radius);
   box-shadow: var(--dz-shadow-sm);
   transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
@@ -460,15 +575,16 @@ header nav a[aria-current="page"]::after {
 .dz-award-card::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(245,158,11,0.07), transparent 55%);
-  pointer-events: none;
+  top: 0; left: 0;
+  width: 4px; height: 100%;
+  background: linear-gradient(180deg, var(--dz-gold-light), var(--dz-gold));
+  border-radius: var(--dz-radius) 0 0 var(--dz-radius);
 }
 
 .dz-award-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--dz-gold);
-  box-shadow: var(--dz-shadow-md), var(--dz-glow-gold);
+  transform: translateY(-3px);
+  border-color: var(--dz-gold-light);
+  box-shadow: var(--dz-shadow-md);
 }
 
 .dz-award-year {
@@ -477,8 +593,8 @@ header nav a[aria-current="page"]::after {
   padding: 0.16rem 0.58rem;
   border-radius: var(--dz-radius-pill);
   background: var(--dz-gold-soft);
-  border: 1px solid rgba(245,158,11,0.42);
-  color: var(--dz-gold-light);
+  border: 1px solid var(--dz-gold-border);
+  color: var(--dz-gold);
   font-size: 0.71rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -487,8 +603,8 @@ header nav a[aria-current="page"]::after {
 }
 
 .dz-award-title {
-  margin: 0 0 0.3rem;
-  font-size: 0.99rem;
+  margin: 0 0 0.28rem;
+  font-size: 0.97rem;
   font-weight: 700;
   color: var(--dz-text);
   line-height: 1.35;
@@ -496,8 +612,8 @@ header nav a[aria-current="page"]::after {
 
 .dz-award-org {
   margin: 0 0 0.45rem;
-  font-size: 0.81rem;
-  color: var(--dz-gold);
+  font-size: 0.8rem;
+  color: var(--dz-gold-light);
   font-weight: 600;
 }
 
@@ -508,25 +624,23 @@ header nav a[aria-current="page"]::after {
   line-height: 1.65;
 }
 
-/* ── Feature Box (Masters Project, highlight) ──────────────────── */
+/* ── Feature Box ───────────────────────────────────────────────── */
 .dz-feature-box {
   position: relative;
   overflow: hidden;
-  padding: 1.6rem 1.65rem;
-  background: linear-gradient(135deg,
-    rgba(11,25,41,0.97),
-    rgba(15,32,64,0.97));
-  border: 1px solid var(--dz-accent);
+  padding: 1.8rem 1.9rem;
+  background: var(--dz-surface);
+  border: 1px solid var(--dz-border);
   border-radius: var(--dz-radius);
-  box-shadow: var(--dz-shadow-md), var(--dz-glow-blue);
+  box-shadow: var(--dz-shadow-md);
 }
 
 .dz-feature-box::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--dz-accent), var(--dz-cyan));
+  height: 4px;
+  background: linear-gradient(90deg, var(--dz-accent), var(--dz-cyan-light));
   border-radius: var(--dz-radius) var(--dz-radius) 0 0;
 }
 
@@ -537,12 +651,12 @@ header nav a[aria-current="page"]::after {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: var(--dz-cyan);
+  color: var(--dz-cyan-light);
 }
 
 .dz-feature-title {
   margin: 0 0 0.45rem;
-  font-size: 1.18rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: var(--dz-text);
   line-height: 1.28;
@@ -566,43 +680,38 @@ header nav a[aria-current="page"]::after {
 .dz-distinction-badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.24rem 0.72rem;
+  padding: 0.26rem 0.75rem;
   border-radius: var(--dz-radius-pill);
-  background: linear-gradient(120deg,
-    rgba(245,158,11,0.22),
-    rgba(251,191,36,0.18));
-  border: 1px solid rgba(245,158,11,0.55);
-  color: var(--dz-gold-light);
+  background: var(--dz-gold-soft);
+  border: 1px solid var(--dz-gold-border);
+  color: var(--dz-gold);
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   margin-top: 0.8rem;
-  box-shadow: 0 4px 14px rgba(245,158,11,0.18);
 }
 
 /* ── Workshop Cards ────────────────────────────────────────────── */
 .dz-workshop-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .dz-workshop-card {
-  padding: 1.3rem 1.3rem 1.2rem;
-  background: linear-gradient(160deg,
-    rgba(3,14,30,0.9),
-    rgba(11,25,41,0.95));
-  border: 1px solid var(--dz-cyan-soft);
+  padding: 1.35rem 1.3rem;
+  background: var(--dz-surface);
+  border: 1px solid rgba(3,105,161,0.25);
   border-radius: var(--dz-radius);
   box-shadow: var(--dz-shadow-sm);
   transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
 }
 
 .dz-workshop-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--dz-cyan);
-  box-shadow: var(--dz-shadow-md), var(--dz-glow-cyan);
+  transform: translateY(-3px);
+  border-color: var(--dz-cyan-light);
+  box-shadow: var(--dz-shadow-md);
 }
 
 .dz-workshop-label {
@@ -611,7 +720,7 @@ header nav a[aria-current="page"]::after {
   padding: 0.16rem 0.55rem;
   border-radius: var(--dz-radius-pill);
   background: var(--dz-cyan-soft);
-  border: 1px solid rgba(34,211,238,0.32);
+  border: 1px solid rgba(3,105,161,0.25);
   color: var(--dz-cyan);
   font-size: 0.71rem;
   font-weight: 700;
@@ -645,34 +754,32 @@ header nav a[aria-current="page"]::after {
 .dz-projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
+  gap: 1.1rem;
   margin: 1.5rem auto 0;
-  max-width: 70rem;
+  max-width: 82rem;
 }
-
-.dz-project-card { }
 
 .dz-project-card-inner {
   position: relative;
   overflow: hidden;
   border: 1px solid var(--dz-border);
-  background: linear-gradient(160deg, var(--dz-surface), rgba(15,32,64,0.93));
+  background: var(--dz-surface);
   border-radius: var(--dz-radius);
-  padding: 1.3rem 1.3rem 1.2rem;
+  padding: 1.35rem 1.3rem 1.25rem;
   box-shadow: var(--dz-shadow-sm);
   transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
   height: 100%;
 }
 
 .dz-project-card-inner:hover {
-  transform: translateY(-5px);
-  border-color: var(--dz-accent);
-  box-shadow: var(--dz-shadow-md), var(--dz-glow-blue);
+  transform: translateY(-4px);
+  border-color: var(--dz-accent-light);
+  box-shadow: var(--dz-shadow-lg);
 }
 
 .dz-card-icon {
   margin: 0 0 0.62rem;
-  color: var(--dz-accent-light);
+  color: var(--dz-accent);
   font-weight: 700;
   font-size: 0.71rem;
   letter-spacing: 0.14em;
@@ -681,8 +788,8 @@ header nav a[aria-current="page"]::after {
   align-items: center;
   padding: 0.18rem 0.55rem;
   border-radius: var(--dz-radius-pill);
-  border: 1px solid rgba(79,156,248,0.38);
-  background: var(--dz-blue-soft);
+  border: 1px solid rgba(29,78,216,0.22);
+  background: var(--dz-accent-soft);
 }
 
 .dz-card-title {
@@ -714,51 +821,46 @@ header nav a[aria-current="page"]::after {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.44rem 0.9rem;
+  padding: 0.44rem 0.95rem;
   border-radius: var(--dz-radius-pill);
   text-decoration: none !important;
-  border: 1px solid rgba(34,211,238,0.42);
-  color: var(--dz-text) !important;
-  background: linear-gradient(120deg,
-    rgba(79,156,248,0.26),
-    rgba(34,211,238,0.23));
+  border: 1px solid var(--dz-accent);
+  color: var(--dz-accent) !important;
+  background: var(--dz-accent-soft);
   font-weight: 700;
-  font-size: 0.81rem;
+  font-size: 0.82rem;
   letter-spacing: 0.03em;
-  box-shadow: 0 6px 20px rgba(37,99,235,0.18);
-  transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease;
+  transition: transform 140ms ease, background 140ms ease, color 140ms ease;
 }
 
 .dz-pill-link:hover {
-  background: linear-gradient(120deg,
-    rgba(79,156,248,0.48),
-    rgba(34,211,238,0.46));
+  background: var(--dz-accent);
   color: #fff !important;
-  box-shadow: 0 12px 28px rgba(37,99,235,0.3);
   transform: translateY(-1px);
+  box-shadow: var(--dz-shadow-md);
 }
 
 /* ── Leadership Cards ──────────────────────────────────────────── */
 .dz-leadership-wrap {
-  max-width: 70rem;
+  max-width: 82rem;
   margin: 1.2rem auto 0;
   display: grid;
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .dz-leadership-card {
   border: 1px solid var(--dz-border);
+  border-left: 4px solid var(--dz-accent-light);
   border-radius: var(--dz-radius);
-  padding: 1.35rem 1.35rem 1.25rem;
-  background: linear-gradient(160deg, var(--dz-surface), rgba(15,32,64,0.93));
+  padding: 1.35rem 1.4rem 1.3rem;
+  background: var(--dz-surface);
   box-shadow: var(--dz-shadow-sm);
-  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
 .dz-leadership-card:hover {
-  transform: translateX(5px);
-  border-color: var(--dz-accent);
-  box-shadow: var(--dz-shadow-md), var(--dz-glow-blue);
+  transform: translateX(4px);
+  box-shadow: var(--dz-shadow-md);
 }
 
 .dz-card-header { margin-bottom: 0.8rem; }
@@ -767,12 +869,12 @@ header nav a[aria-current="page"]::after {
 .dz-reference-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .dz-reference-card {
-  padding: 1.25rem 1.2rem;
-  background: linear-gradient(160deg, rgba(15,32,64,0.82), rgba(11,25,41,0.92));
+  padding: 1.3rem 1.25rem;
+  background: var(--dz-surface-2);
   border: 1px solid var(--dz-border);
   border-radius: var(--dz-radius);
   box-shadow: var(--dz-shadow-sm);
@@ -780,8 +882,8 @@ header nav a[aria-current="page"]::after {
 }
 
 .dz-reference-card:hover {
-  border-color: var(--dz-accent);
-  transform: translateY(-3px);
+  border-color: var(--dz-accent-light);
+  transform: translateY(-2px);
 }
 
 .dz-reference-name {
@@ -794,7 +896,7 @@ header nav a[aria-current="page"]::after {
 .dz-reference-role {
   margin: 0 0 0.5rem;
   font-size: 0.81rem;
-  color: var(--dz-accent-light);
+  color: var(--dz-accent);
   font-weight: 600;
   line-height: 1.4;
 }
@@ -804,10 +906,10 @@ header nav a[aria-current="page"]::after {
   color: var(--dz-muted);
 }
 
-/* ── Section Intro (page-level headings) ───────────────────────── */
+/* ── Page-level Section Intro ──────────────────────────────────── */
 .dz-section-intro {
-  max-width: 70rem;
-  margin: 0 auto 1.6rem;
+  max-width: 82rem;
+  margin: 0 auto 1.8rem;
 }
 
 .dz-kicker {
@@ -815,35 +917,66 @@ header nav a[aria-current="page"]::after {
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: var(--dz-cyan);
+  color: var(--dz-cyan-light);
   font-weight: 700;
 }
 
 .dz-heading-xl {
   margin: 0 0 0.55rem;
-  font-size: clamp(1.8rem, 3.2vw, 2.55rem);
+  font-size: clamp(1.75rem, 3vw, 2.45rem);
   line-height: 1.14;
   font-weight: 900;
-  letter-spacing: -0.028em;
-  background: linear-gradient(130deg, var(--dz-text) 40%, var(--dz-accent-light));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  letter-spacing: -0.025em;
+  color: var(--dz-text);
 }
 
 .dz-intro-text {
   margin: 0;
   color: var(--dz-muted);
-  max-width: 56rem;
+  max-width: 60rem;
   line-height: 1.78;
-  font-size: 0.99rem;
+  font-size: 1rem;
 }
 
 /* ── Divider ───────────────────────────────────────────────────── */
 .dz-divider {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--dz-border), transparent);
-  margin: 1.5rem 0;
+  margin: 1.6rem 0;
+}
+
+/* ── Supervisor Highlight ──────────────────────────────────────── */
+.dz-supervisor-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.2rem;
+  background: var(--dz-surface-2);
+  border: 1px solid var(--dz-border);
+  border-left: 4px solid var(--dz-accent);
+  border-radius: var(--dz-radius);
+  box-shadow: var(--dz-shadow-sm);
+  margin-top: 0.8rem;
+}
+
+.dz-supervisor-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--dz-accent);
+  margin-bottom: 0.2rem;
+}
+
+.dz-supervisor-name {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--dz-text);
+}
+
+.dz-supervisor-role {
+  font-size: 0.82rem;
+  color: var(--dz-muted);
 }
 
 /* ── Global Links ──────────────────────────────────────────────── */
@@ -852,7 +985,7 @@ a,
 .prose a,
 .content a,
 .dz-clean-card a {
-  color: var(--dz-accent-light) !important;
+  color: var(--dz-accent) !important;
   text-decoration: underline !important;
   text-underline-offset: 3px;
   transition: color 140ms ease;
@@ -862,7 +995,30 @@ a:hover,
 .article-style a:hover,
 .prose a:hover,
 .content a:hover,
-.dz-clean-card a:hover { color: #bae6fd !important; }
+.dz-clean-card a:hover {
+  color: var(--dz-accent-light) !important;
+}
+
+/* ── HugoBlox Light Mode Overrides ────────────────────────────── */
+/* Force light text and bg in all section types */
+.hbb-section,
+.blox-markdown,
+.home-section-bg {
+  color: var(--dz-text) !important;
+}
+
+.prose h1, .prose h2, .prose h3,
+.prose-slate h1, .prose-slate h2, .prose-slate h3 {
+  color: var(--dz-text) !important;
+}
+
+/* Override any dark card/bg classes */
+.dark\:bg-gray-800,
+.dark\:bg-gray-900,
+.dark\:text-white {
+  background-color: var(--dz-surface) !important;
+  color: var(--dz-text) !important;
+}
 
 /* ── Buttons ───────────────────────────────────────────────────── */
 .btn,
@@ -870,33 +1026,29 @@ button,
 input[type="submit"] {
   border-radius: var(--dz-radius-pill) !important;
   font-weight: 700 !important;
-  letter-spacing: 0.02em;
 }
 
 .btn-outline-primary,
 .btn-secondary {
-  border-color: rgba(79,156,248,0.42) !important;
-  color: var(--dz-text-soft) !important;
-  background: rgba(15,32,64,0.7) !important;
+  border-color: var(--dz-accent) !important;
+  color: var(--dz-accent) !important;
+  background: var(--dz-accent-soft) !important;
 }
 
 .btn-outline-primary:hover,
 .btn-secondary:hover {
   color: #fff !important;
-  border-color: var(--dz-accent-light) !important;
-  background: var(--dz-blue-soft) !important;
+  background: var(--dz-accent) !important;
 }
 
 .btn-primary,
 .btn.btn-primary,
-.badge-primary,
-.tag-primary,
 [class*="text-emerald"],
 [class*="bg-emerald"],
 [class*="border-emerald"] {
-  background-color: rgba(79,156,248,0.24) !important;
-  color: var(--dz-text) !important;
-  border-color: rgba(34,211,238,0.68) !important;
+  background-color: var(--dz-accent) !important;
+  color: #ffffff !important;
+  border-color: var(--dz-accent) !important;
 }
 
 /* ── Utilities ─────────────────────────────────────────────────── */
@@ -904,28 +1056,26 @@ time[datetime="0001-01-01"] { display: none; }
 .page-body .pt-1.no-prose.w-full { display: none; }
 
 /* ── Stagger Animations ────────────────────────────────────────── */
-.dz-stagger > * { animation: dz-fade-up 650ms ease both; }
-.dz-stagger > *:nth-child(2) { animation-delay:  80ms; }
-.dz-stagger > *:nth-child(3) { animation-delay: 160ms; }
-.dz-stagger > *:nth-child(4) { animation-delay: 240ms; }
-.dz-stagger > *:nth-child(5) { animation-delay: 320ms; }
-.dz-stagger > *:nth-child(6) { animation-delay: 400ms; }
-.dz-stagger > *:nth-child(7) { animation-delay: 480ms; }
-.dz-stagger > *:nth-child(8) { animation-delay: 560ms; }
+.dz-stagger > * { animation: dz-fade-up 600ms ease both; }
+.dz-stagger > *:nth-child(2) { animation-delay:  70ms; }
+.dz-stagger > *:nth-child(3) { animation-delay: 140ms; }
+.dz-stagger > *:nth-child(4) { animation-delay: 210ms; }
+.dz-stagger > *:nth-child(5) { animation-delay: 280ms; }
+.dz-stagger > *:nth-child(6) { animation-delay: 350ms; }
+.dz-stagger > *:nth-child(7) { animation-delay: 420ms; }
+.dz-stagger > *:nth-child(8) { animation-delay: 490ms; }
 
-.hbb-section { animation: dz-fade-up 600ms ease both; }
+.hbb-section { animation: dz-fade-up 550ms ease both; }
 
 /* ── Responsive ────────────────────────────────────────────────── */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .dz-research-block,
-  .dz-phd-block { padding: 1.4rem 1.15rem; }
+  .dz-phd-block { padding: 1.5rem 1.2rem; }
 
-  .dz-title-gradient { font-size: 1.55rem; }
+  .dz-title-gradient { font-size: 1.45rem; }
   .dz-heading-xl     { font-size: 1.7rem;  }
-
   .dz-timeline       { padding-left: 1.7rem; }
-
-  .dz-stat-strip     { grid-template-columns: repeat(2, 1fr); }
+  .dz-stat-strip     { grid-template-columns: repeat(3, 1fr); }
 
   .dz-timeline-location {
     float: none;
@@ -934,27 +1084,18 @@ time[datetime="0001-01-01"] { display: none; }
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .dz-clean-grid,
   .dz-awards-grid,
   .dz-projects-grid,
   .dz-workshop-grid,
-  .dz-reference-grid { grid-template-columns: 1fr; }
+  .dz-reference-grid,
+  .dz-nav-grid,
+  .dz-stat-strip { grid-template-columns: 1fr; }
 }
 
 /* ── Keyframes ─────────────────────────────────────────────────── */
 @keyframes dz-fade-up {
-  from { opacity: 0; transform: translateY(16px); }
+  from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0);    }
-}
-
-@keyframes dz-float-bg {
-  0%   { transform: translate3d(0,   0,  0) scale(1);    }
-  100% { transform: translate3d(0, -10px, 0) scale(1.04); }
-}
-
-@keyframes dz-sheen {
-  0%   { opacity: 0.16; transform: translateX(-8%); }
-  50%  { opacity: 0.40; transform: translateX(0);   }
-  100% { opacity: 0.16; transform: translateX(8%);  }
 }
