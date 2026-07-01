@@ -13,9 +13,12 @@ main:
   - name: Projects
     url: projects/
     weight: 30
+  - name: Publications
+    url: /publications/
+    weight: 40
   - name: Leadership
     url: /leadership-page/
-    weight: 40
+    weight: 50
   - name: Contact
     url: /#contact
-    weight: 50
+    weight: 60

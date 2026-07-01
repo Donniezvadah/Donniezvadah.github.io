@@ -15,7 +15,7 @@ sections:
       text: ""
       button:
         text: Download CV (2026)
-        url: Donald_Zvada_CV_2026.pdf
+        url: Donald_2026_Updated_CV.pdf
     design:
       css_class: dz-home-hero
       background:
@@ -104,43 +104,7 @@ sections:
       columns: '1'
       css_class: dz-phd-block
 
-  # ── 3. Key Stats ──────────────────────────────────────────────
-  - block: markdown
-    content:
-      title: 'At a Glance'
-      subtitle: ''
-      text: |-
-        <div class="dz-stat-strip dz-stagger">
-          <div class="dz-stat-card">
-            <span class="dz-stat-number">7</span>
-            <span class="dz-stat-label">Awards & Honours</span>
-          </div>
-          <div class="dz-stat-card">
-            <span class="dz-stat-number">3</span>
-            <span class="dz-stat-label">Degrees Earned</span>
-          </div>
-          <div class="dz-stat-card">
-            <span class="dz-stat-number">4</span>
-            <span class="dz-stat-label">Courses Taught</span>
-          </div>
-          <div class="dz-stat-card">
-            <span class="dz-stat-number">2+</span>
-            <span class="dz-stat-label">Years Industry</span>
-          </div>
-          <div class="dz-stat-card">
-            <span class="dz-stat-number">3</span>
-            <span class="dz-stat-label">Research Projects</span>
-          </div>
-          <div class="dz-stat-card">
-            <span class="dz-stat-number">2</span>
-            <span class="dz-stat-label">Int'l Workshops</span>
-          </div>
-        </div>
-    design:
-      columns: '1'
-      css_class: dz-phd-block
-
-  # ── 4. Navigate to Pages ──────────────────────────────────────
+  # ── 3. Navigate to Pages ──────────────────────────────────────
   - block: markdown
     content:
       title: 'Explore'
@@ -178,8 +142,18 @@ sections:
             <span class="dz-nav-card-arrow">View Leadership →</span>
           </a>
 
-          <a class="dz-nav-card" href="/Donald_Zvada_CV_2026.pdf" target="_blank" rel="noopener">
+          <a class="dz-nav-card" href="/publications/">
             <p class="dz-nav-card-num">04</p>
+            <p class="dz-nav-card-title">Published Work & Presentations</p>
+            <p class="dz-nav-card-desc">
+              Peer-reviewed reports and talks — including the g-RIPS-Sendai quantum key
+              distribution paper — plus my Google Scholar profile.
+            </p>
+            <span class="dz-nav-card-arrow">View Publications →</span>
+          </a>
+
+          <a class="dz-nav-card" href="/Donald_2026_Updated_CV.pdf" target="_blank" rel="noopener">
+            <p class="dz-nav-card-num">05</p>
             <p class="dz-nav-card-title">Download Full CV</p>
             <p class="dz-nav-card-desc">
               Complete academic CV including education, experience, awards, teaching,
@@ -193,7 +167,7 @@ sections:
       columns: '1'
       css_class: dz-phd-block
 
-  # ── 5. Contact ────────────────────────────────────────────────
+  # ── 4. Contact ────────────────────────────────────────────────
   - block: markdown
     id: contact
     content:

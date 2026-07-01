@@ -17,7 +17,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Student in Statistics & Informatics | Data Scientist | Statistician & Researcher
+role: PhD Student in Statistics | Data Scientist | Statistician & Researcher | Quant
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -38,7 +38,7 @@ profiles:
   - icon: brands/instagram
     url: https://www.instagram.com/donniezvadah/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=S-NrzlEAAAAJ&hl=en
   - icon: academicons/orcid
     url: https://orcid.org/0009-0006-5840-7796
 
