@@ -40,7 +40,7 @@ profiles:
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=S-NrzlEAAAAJ&hl=en
   - icon: academicons/orcid
-    url: https://orcid.org/0009-0006-5840-7796
+    url: https://orcid.org/0009-0009-7304-8199
 
 interests:
   - Statistical Modelling & Bayesian Inference
@@ -50,7 +50,7 @@ interests:
   - Science Communication & Outreach
 
 education:
-  - area: PhD in Statistics and Informatics
+  - area: PhD in Statistics (Ongoing)
     institution: Trinity College Dublin
     date_start: 2025-09-01
     date_end: 2029-08-31
@@ -175,7 +175,7 @@ skills:
 
 ## About Me
 
-Donald Zvada is a PhD student in Statistics and Informatics at Trinity College Dublin, funded by the **Research Ireland Frontiers for the Future Programme** (2025). His doctoral research focuses on **T-DIET** — developing novel statistical methods for analysing longitudinal dietary patterns and their association with health outcomes, under the supervision of [Assistant Professor Silvia D'Angelo](https://sites.google.com/view/silviadangelo/home?authuser=0).
+Donald Zvada is a PhD student in Statistics at Trinity College Dublin, funded by the **Research Ireland Frontiers for the Future Programme** (2025). His doctoral research focuses on **T-DIET** — developing novel statistical methods for analysing longitudinal dietary patterns and their association with health outcomes, under the supervision of [Assistant Professor Silvia D'Angelo](https://sites.google.com/view/silviadangelo/home?authuser=0).
 
 He holds an **MSc in Mathematical Sciences** (Distinction) from AIMS South Africa and Stellenbosch University, and a **First-Class Honours BSc** in Operations Research and Statistics from NUST, Zimbabwe — graduating as the *Overall Best Graduating Male Student of the Class of 2023*, a distinction recognised with five national and university-level awards.
 

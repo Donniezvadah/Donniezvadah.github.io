@@ -1099,3 +1099,110 @@ time[datetime="0001-01-01"] { display: none; }
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0);    }
 }
+
+/* ================================================================
+   Motion System v2 — scroll reveal + micro-interactions
+   Activated only when JS adds `dz-anim` to <html>; otherwise the
+   site renders fully static (no-JS / reduced-motion safe).
+   ================================================================ */
+
+/* When scroll-reveal is active, retire the load-time animations so
+   elements animate exactly once, on entering the viewport. */
+html.dz-anim .dz-stagger > *,
+html.dz-anim .hbb-section,
+html.dz-anim .dz-phd-block,
+html.dz-anim .dz-research-block { animation: none; }
+
+/* Reveal targets: hidden until observed, then rise in with a soft ease. */
+html.dz-anim .dz-io {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 640ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 640ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--dz-io-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+html.dz-anim .dz-io.dz-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Hero entrance ─────────────────────────────────────────────── */
+html.dz-anim .dz-home-hero img.avatar {
+  animation: dz-pop-in 750ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+html.dz-anim .dz-home-hero .portrait-title {
+  animation: dz-fade-up 700ms cubic-bezier(0.16, 1, 0.3, 1) 140ms both;
+}
+
+@keyframes dz-pop-in {
+  from { opacity: 0; transform: scale(0.92) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0);       }
+}
+
+/* ── Nav link underline (hover) ────────────────────────────────── */
+header nav a:not(.navbar-brand) {
+  position: relative;
+}
+
+header nav a:not(.navbar-brand)::after {
+  content: "";
+  position: absolute;
+  left: 0.2rem; right: 0.2rem;
+  bottom: -0.38rem;
+  height: 2px;
+  border-radius: var(--dz-radius-pill);
+  background: linear-gradient(90deg, var(--dz-accent), var(--dz-cyan-light));
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+header nav a:not(.navbar-brand):hover::after,
+header nav a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+/* ── Micro-interactions ────────────────────────────────────────── */
+.dz-nav-card-arrow,
+.dz-pill-link {
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), color 160ms ease;
+}
+
+.dz-nav-card:hover .dz-nav-card-arrow { transform: translateX(5px); }
+.dz-pill-link:hover                   { transform: translateX(3px); }
+
+.dz-tag { transition: transform 160ms ease, background 160ms ease, border-color 160ms ease; }
+.dz-clean-card:hover .dz-tag,
+.dz-project-card:hover .dz-tag { transform: translateY(-1px); }
+
+/* Timeline dots pulse gently into place with their card */
+html.dz-anim .dz-timeline-item.dz-io::before { transition: inherit; }
+
+/* ── Scroll progress bar ───────────────────────────────────────── */
+#dz-progress {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 9999;
+  height: 2.5px;
+  width: 0;
+  background: linear-gradient(90deg, var(--dz-accent), var(--dz-cyan-light));
+  border-radius: 0 var(--dz-radius-pill) var(--dz-radius-pill) 0;
+  pointer-events: none;
+}
+
+/* ── Reduced motion: render everything statically ──────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html.dz-anim .dz-io { opacity: 1; transform: none; }
+  #dz-progress { display: none; }
+}

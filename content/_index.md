@@ -200,7 +200,7 @@ sections:
 
           <article class="dz-clean-card">
             <h3>Academic References</h3>
-            <p><strong><a href="https://sites.google.com/view/silviadangelo/home?authuser=0" target="_blank" rel="noopener">Prof Silvia D'Angelo</a></strong> — PhD Supervisor, TCD<br>
+            <p><strong><a href="https://sites.google.com/view/silviadangelo/home?authuser=0" target="_blank" rel="noopener">Asst Prof Silvia D'Angelo</a></strong> — PhD Supervisor, TCD<br>
               <a href="mailto:dangelos@tcd.ie">dangelos@tcd.ie</a>
             </p>
             <p><strong>Dr Mpfareleni Rejoyce Gavhi</strong> — AIMS South Africa<br>

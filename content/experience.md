@@ -24,7 +24,7 @@ sections:
             <span class="dz-timeline-date">Sep 2025 – Present</span>
             <span class="dz-timeline-location">Dublin, Ireland</span>
             <p class="dz-timeline-institution">Trinity College Dublin</p>
-            <p class="dz-timeline-degree">PhD Student — Statistics and Informatics</p>
+            <p class="dz-timeline-degree">PhD in Statistics (Ongoing)</p>
             <p class="dz-timeline-body">
               T-DIET: developing novel statistical methods for longitudinal dietary patterns and their
               association with health outcomes. Supervised by
