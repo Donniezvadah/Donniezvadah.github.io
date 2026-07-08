@@ -1,7 +1,7 @@
 /* ================================================================
-   DONNIE ZVADA — Motion System v2
-   Scroll-reveal + scroll progress. Progressive enhancement only:
-   without JS (or with reduced motion) the site renders fully static.
+   DONNIE ZVADA — Motion System v3
+   Quiet scroll-reveal. Progressive enhancement only: without JS
+   (or with reduced motion) the site renders fully static.
    ================================================================ */
 (function () {
   'use strict';
@@ -13,7 +13,6 @@
 
   document.documentElement.classList.add('dz-anim');
 
-  /* ── Scroll-reveal ─────────────────────────────────────────── */
   var SELECTORS = [
     '.dz-stagger > *',
     '.dz-clean-card',
@@ -40,15 +39,14 @@
     }
   });
 
-  // Stagger siblings: delay grows with position among revealed siblings
-  // of the same parent, capped so late cards never feel sluggish.
+  // Slight stagger between siblings, capped so nothing feels slow.
   var siblingIndex = new Map();
   targets.forEach(function (el) {
     var parent = el.parentElement;
     var idx = siblingIndex.get(parent) || 0;
     siblingIndex.set(parent, idx + 1);
     el.classList.add('dz-io');
-    el.style.setProperty('--dz-io-delay', Math.min(idx * 70, 420) + 'ms');
+    el.style.setProperty('--dz-io-delay', Math.min(idx * 50, 250) + 'ms');
   });
 
   var observer = new IntersectionObserver(function (entries) {
@@ -63,26 +61,4 @@
   }, { rootMargin: '0px 0px -6% 0px', threshold: 0 });
 
   targets.forEach(function (el) { observer.observe(el); });
-
-  /* ── Scroll progress bar ───────────────────────────────────── */
-  var bar = document.createElement('div');
-  bar.id = 'dz-progress';
-  document.body.appendChild(bar);
-
-  var ticking = false;
-  function paintProgress() {
-    var doc = document.documentElement;
-    var max = doc.scrollHeight - doc.clientHeight;
-    bar.style.width = max > 0 ? (100 * doc.scrollTop / max) + '%' : '0';
-    ticking = false;
-  }
-
-  window.addEventListener('scroll', function () {
-    if (!ticking) {
-      ticking = true;
-      window.requestAnimationFrame(paintProgress);
-    }
-  }, { passive: true });
-
-  paintProgress();
 })();
