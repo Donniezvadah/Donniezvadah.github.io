@@ -33,7 +33,7 @@ sections:
           <li>
             <strong>Assessing the Ability of Large Language Models to Solve Sequential Decision-Making Problems</strong><br>
             <span class="dz-pub-venue">MSc research project, AIMS South Africa / Stellenbosch University, 2025.
-            Supervised by Prof Audrey Durand (Université Laval, Canada). <strong>Awarded Distinction.</strong></span>
+            Supervised by <a href="https://mila.quebec/en/directory/audrey-durand" target="_blank" rel="noopener">Prof Audrey Durand</a> (Université Laval, Canada). <strong>Awarded Distinction.</strong></span>
           </li>
         </ol>
 

@@ -77,7 +77,7 @@ sections:
             <p>
               MSc research assessing the ability of Large Language Models to solve
               Multi-Armed Bandit problems — awarded <strong>Distinction</strong> (AIMS South Africa,
-              2025). Supervised by Prof Audrey Durand, Université Laval, Canada.
+              2025). Supervised by <a href="https://mila.quebec/en/directory/audrey-durand" target="_blank" rel="noopener">Prof Audrey Durand</a>, Université Laval, Canada.
             </p>
             <div class="dz-tag-row">
               <span class="dz-tag dz-tag-cyan">LLMs</span>

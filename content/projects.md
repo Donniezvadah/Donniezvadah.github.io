@@ -40,7 +40,7 @@ sections:
           </p>
           <p class="dz-feature-body" style="margin-top:0.55rem;">
             <strong>Supervisor:</strong>
-            <a href="https://audrey-durand.github.io" target="_blank" rel="noopener">Prof Audrey Durand</a>
+            <a href="https://mila.quebec/en/directory/audrey-durand" target="_blank" rel="noopener">Prof Audrey Durand</a>
             — Université Laval, Canada.
           </p>
           <span class="dz-distinction-badge">★ Awarded Distinction</span>
@@ -75,7 +75,7 @@ sections:
               <p class="dz-card-body">
                 Evaluating how Large Language Models perform on multi-armed bandit style tasks and
                 where they can complement classical methods. Awarded Distinction.
-                Supervised by Prof Audrey Durand (Université Laval, Canada).
+                Supervised by <a href="https://mila.quebec/en/directory/audrey-durand" target="_blank" rel="noopener">Prof Audrey Durand</a> (Université Laval, Canada).
               </p>
               <div class="dz-tag-row">
                 <span class="dz-tag dz-tag-cyan">LLMs</span>
