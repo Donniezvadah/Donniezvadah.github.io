@@ -55,29 +55,28 @@ education:
     date_start: 2025-09-01
     date_end: 2029-08-31
     summary: |
-      T-DIET: Novel statistical methods for modelling longitudinal dietary patterns and
-      their association with health outcomes. Funded by Research Ireland Frontiers for
-      the Future Programme (2025). Supervised by Assistant Professor Silvia D'Angelo
-      (sites.google.com/view/silviadangelo/home).
+      T-DIET: statistical methods for modelling longitudinal dietary patterns and how they
+      relate to health outcomes. Supervised by Assistant Professor Silvia D'Angelo and
+      funded by the Research Ireland Frontiers for the Future Programme.
 
   - area: MSc in Mathematical Sciences
     institution: AIMS South Africa / Stellenbosch University
     date_start: 2024-09-01
     date_end: 2025-07-31
     summary: |
-      Pure Mathematics, Physics, Statistics, and Machine Learning. Masters project on
-      LLMs and sequential decision-making (MAB problem) — awarded Distinction.
-      Supervised by Prof Audrey Durand (Université Laval, Canada).
-      Funded by the Mastercard Foundation Scholarship.
+      Coursework in pure mathematics, physics, statistics, and machine learning. Masters
+      project on large language models and the multi-armed bandit problem, awarded
+      Distinction and supervised by Prof Audrey Durand (Université Laval). Funded by the
+      Mastercard Foundation Scholarship.
 
   - area: BSc Honours in Operations Research and Statistics
     institution: National University of Science and Technology (NUST), Zimbabwe
     date_start: 2019-01-01
     date_end: 2023-12-31
     summary: |
-      First Class Honours. Overall Best Graduating Male Student, Class of 2023.
-      Recipient of the Chancellor's Award, Vice Chancellor's Award, Moonlight Award,
-      and two NUST Book Prizes.
+      First Class Honours, and best graduating male student in the class of 2023.
+      Awards received: the Chancellor's Award, the Vice Chancellor's Award, the
+      Moonlight Award, and two NUST Book Prizes.
 
 experience:
   - title: Quantitative Risk Analyst
@@ -98,7 +97,7 @@ experience:
     date_start: '2025-09-01'
     date_end: ''
     description: |2-
-        * T-DIET: Novel statistical methods for longitudinal dietary patterns and health outcomes
+        * T-DIET: statistical methods for longitudinal dietary patterns and health outcomes
         * Teaching Assistant and Demonstrator for Statistics and Engineering courses
 
   - title: Reporting Analyst Intern
@@ -118,10 +117,10 @@ experience:
     date_start: '2025-11-01'
     date_end: ''
     description: |2-
-        * Time Series Analysis — Lab sessions using RStudio
-        * Multivariate Analysis — Lab sessions using RStudio
-        * Engineering Practice 2 — Grading and report writing support
-        * Mathematics II — Mathematical Logic for computer science
+        * Time Series Analysis: lab sessions using RStudio
+        * Multivariate Analysis: lab sessions using RStudio
+        * Engineering Practice 2: grading and report writing support
+        * Mathematics II: mathematical logic for computer science
 
   - title: Tutoring Lead
     company: AIMS South Africa House of Science (Outreach Programme)
@@ -175,8 +174,8 @@ skills:
 
 ## About Me
 
-Donald Zvada is a PhD student in Statistics at Trinity College Dublin, funded by the **Research Ireland Frontiers for the Future Programme** (2025). His doctoral research focuses on **T-DIET** — developing novel statistical methods for analysing longitudinal dietary patterns and their association with health outcomes, under the supervision of [Assistant Professor Silvia D'Angelo](https://sites.google.com/view/silviadangelo/home?authuser=0).
+Donald Zvada is a PhD student in Statistics at Trinity College Dublin, supervised by [Assistant Professor Silvia D'Angelo](https://sites.google.com/view/silviadangelo/home?authuser=0) and funded by the Research Ireland Frontiers for the Future Programme. His project, T-DIET, develops statistical methods for analysing how dietary patterns change over time and how they relate to health outcomes.
 
-He holds an **MSc in Mathematical Sciences** (Distinction) from AIMS South Africa and Stellenbosch University, and a **First-Class Honours BSc** in Operations Research and Statistics from NUST, Zimbabwe — graduating as the *Overall Best Graduating Male Student of the Class of 2023*, a distinction recognised with five national and university-level awards.
+He holds an MSc in Mathematical Sciences from AIMS South Africa and Stellenbosch University, awarded with Distinction, and a First-Class Honours BSc in Operations Research and Statistics from the National University of Science and Technology (NUST) in Zimbabwe. He graduated from NUST as the best graduating male student in the class of 2023 and received five national and university awards.
 
-Donald brings professional experience as a **Quantitative Risk Analyst** at EY Zimbabwe (IFRS 9 credit risk modelling) and as a **Reporting Analyst** at EcoCash Holdings. He is passionate about using rigorous statistics, machine learning, and data science to drive evidence-based decisions in health, finance, and beyond.
+Before starting the PhD he worked as a Quantitative Risk Analyst at EY Zimbabwe, where he built and validated IFRS 9 credit risk models, and as a reporting analyst at EcoCash Holdings. He also teaches and demonstrates statistics courses at Trinity, and helps organise IndabaX Zimbabwe.

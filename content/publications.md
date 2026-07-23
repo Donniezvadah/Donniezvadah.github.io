@@ -14,8 +14,7 @@ sections:
         <div class="dz-section-intro">
           <h1 class="dz-heading-xl">Published Work &amp; Presentations</h1>
           <p class="dz-intro-text">
-            Technical reports, research write-ups, and talks. For a complete and continually
-            updated list, see my
+            Reports, research write-ups, and talks. For the current list, see my
             <a href="https://scholar.google.com/citations?user=S-NrzlEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.
           </p>
         </div>
@@ -26,7 +25,7 @@ sections:
           <li>
             <strong><a href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_report.pdf"
                target="_blank" rel="noopener">Key Relay Protocol for Quantum Key Distribution</a></strong><br>
-            <span class="dz-pub-venue">g-RIPS-Sendai 2025 (Team Mitsubishi B) — IPAM (UCLA), AIMR &amp; Tohoku University, in partnership with Mitsubishi Electric.</span><br>
+            <span class="dz-pub-venue">g-RIPS-Sendai 2025, Team Mitsubishi B. Run by IPAM (UCLA), AIMR, and Tohoku University, in partnership with Mitsubishi Electric.</span><br>
             <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_report.pdf" target="_blank" rel="noopener">[paper]</a>
             <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_pres.pdf" target="_blank" rel="noopener">[slides]</a>
           </li>

@@ -9,8 +9,7 @@ date: 2024-09-01
   <p class="dz-kicker">Community · Mentoring · Representation</p>
   <h1 class="dz-heading-xl">Leadership, Outreach & Voluntary Work</h1>
   <p class="dz-intro-text">
-    Building stronger scientific communities through student representation, AI outreach, mentoring, and
-    structured collaboration — across Zimbabwe, South Africa, and Ireland.
+    Student representation, AI outreach, and mentoring work in Zimbabwe, South Africa, and Ireland.
   </p>
 </div>
 
@@ -30,13 +29,13 @@ date: 2024-09-01
       <p class="dz-card-meta">Jan 2025 – Present · Harare, Zimbabwe</p>
     </div>
     <p style="color:var(--dz-muted);font-size:0.93rem;margin-bottom:0.55rem;">
-      Deep Learning IndabaX Zimbabwe creates a vibrant space where local researchers, students, and
-      practitioners engage with cutting-edge AI research, share knowledge, and build community.
+      IndabaX Zimbabwe is the Zimbabwean chapter of the Deep Learning Indaba. It runs events where
+      local researchers, students, and practitioners meet to learn about machine learning research.
     </p>
     <ul class="dz-bullet-list">
-      <li>Co-organising AI community events, learning sessions, and workshops.</li>
-      <li>Connecting local talent with the broader African and global AI research ecosystem.</li>
-      <li>Supporting knowledge-sharing initiatives in machine learning and data science.</li>
+      <li>Co-organise community events, learning sessions, and workshops.</li>
+      <li>Connect Zimbabwean students and researchers with the wider Indaba network in Africa.</li>
+      <li>Run introductory sessions on machine learning and data science.</li>
     </ul>
     <div class="dz-tag-row" style="margin-top:0.7rem;">
       <span class="dz-tag dz-tag-cyan">AI Community</span>
@@ -52,13 +51,12 @@ date: 2024-09-01
       <p class="dz-card-meta">Jan 2026 – Present · Harare, Zimbabwe</p>
     </div>
     <p style="color:var(--dz-muted);font-size:0.93rem;margin-bottom:0.55rem;">
-      Training students to compete at the highest international level in the
-      <strong>International Olympiad in Artificial Intelligence (IOAI)</strong>.
+      Preparing Zimbabwean students for the International Olympiad in Artificial Intelligence.
     </p>
     <ul class="dz-bullet-list">
-      <li>Training students to prepare for International and Continental AI contests.</li>
-      <li>Delivering structured AI curriculum covering theory, coding, and problem-solving.</li>
-      <li>Mentoring young Zimbabwean talent in AI and machine learning fundamentals.</li>
+      <li>Coach students for the continental and international IOAI contests.</li>
+      <li>Teach the training curriculum: theory, coding, and past problems.</li>
+      <li>Mentor students in machine learning fundamentals.</li>
     </ul>
     <div class="dz-tag-row" style="margin-top:0.7rem;">
       <span class="dz-tag dz-tag-cyan">IOAI</span>
@@ -85,16 +83,16 @@ date: 2024-09-01
       <p class="dz-card-meta">Sep 2024 – Aug 2025 · 11 months · Cape Town, South Africa</p>
     </div>
     <p style="color:var(--dz-muted);font-size:0.93rem;margin-bottom:0.55rem;">
-      Served as the official student representative for Mastercard Foundation Scholars at the African
-      Institute for Mathematical Sciences — the primary bridge between scholars, management, and the
-      Mastercard Foundation team.
+      Student representative for the Mastercard Foundation Scholars at the African Institute for
+      Mathematical Sciences, acting as the point of contact between scholars, AIMS management, and
+      the Foundation.
     </p>
     <ul class="dz-bullet-list">
-      <li>Worked closely with the Mastercard Foundation Scholars and Foundation stakeholders.</li>
-      <li>Organised and facilitated meetings between scholars and institutional management.</li>
-      <li>Prepared timesheets, reports, and structured feedback for the Foundation.</li>
-      <li>Led voluntary and community-focused activities for the scholar cohort.</li>
-      <li>Championed scholar welfare, raising concerns and advocating for improved support.</li>
+      <li>Met regularly with scholars and Foundation staff.</li>
+      <li>Organised meetings between scholars and AIMS management.</li>
+      <li>Prepared timesheets, reports, and feedback for the Foundation.</li>
+      <li>Organised voluntary and community activities for the scholar cohort.</li>
+      <li>Raised scholar welfare concerns with management.</li>
     </ul>
     <div class="dz-tag-row" style="margin-top:0.7rem;">
       <span class="dz-tag dz-tag-gold">Mastercard Foundation</span>
@@ -110,15 +108,14 @@ date: 2024-09-01
       <p class="dz-card-meta">Sep 2024 – Aug 2025 · Cape Town, South Africa</p>
     </div>
     <p style="color:var(--dz-muted);font-size:0.93rem;margin-bottom:0.55rem;">
-      Led the tutoring programme for school children as part of the AIMS House of Science outreach
-      initiative — a structured effort to improve mathematics and science outcomes for learners in
-      underserved communities.
+      Led the tutoring programme for school children run by the AIMS House of Science, which teaches
+      mathematics and science to learners from under-resourced schools in Cape Town.
     </p>
     <ul class="dz-bullet-list">
-      <li>Planned and scheduled all tutorial sessions for the outreach programme.</li>
-      <li>Led group tutoring sessions in mathematics and science for school children.</li>
-      <li>Mentored individual students, providing personalised academic support.</li>
-      <li>Coordinated with programme management to ensure consistent delivery.</li>
+      <li>Planned and scheduled the tutorial sessions.</li>
+      <li>Taught group sessions in mathematics and science.</li>
+      <li>Mentored individual students who needed extra support.</li>
+      <li>Coordinated with programme management on delivery.</li>
     </ul>
     <div class="dz-tag-row" style="margin-top:0.7rem;">
       <span class="dz-tag dz-tag-cyan">Education Outreach</span>
@@ -145,9 +142,8 @@ date: 2024-09-01
       <p class="dz-card-meta">2022 – Present · Bulawayo / Zimbabwe</p>
     </div>
     <p style="color:var(--dz-muted);font-size:0.93rem;margin-bottom:0.55rem;">
-      Providing ongoing voluntary tutoring and academic support to Mathematics students at the National
-      University of Science and Technology — giving back to the department that shaped my own academic
-      foundation.
+      Voluntary tutoring and academic support for mathematics students at the National University of
+      Science and Technology, the department where I did my undergraduate degree.
     </p>
     <ul class="dz-bullet-list">
       <li>Voluntary tutoring sessions for NUST undergraduate Mathematics students.</li>

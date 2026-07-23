@@ -15,8 +15,7 @@ sections:
           <p class="dz-kicker">Research & Applied Work</p>
           <h1 class="dz-heading-xl">Projects & Research Portfolio</h1>
           <p class="dz-intro-text">
-            A selection of research, teaching, and applied analytics projects — focused on solving real
-            problems with principled statistical methods and modern AI tools.
+            Research, teaching, and applied analytics projects in statistics and machine learning.
           </p>
         </div>
 
@@ -32,16 +31,15 @@ sections:
           </h2>
           <p class="dz-feature-meta">Mar 2025 – Jun 2025 · AIMS South Africa / Stellenbosch University</p>
           <p class="dz-feature-body">
-            Assessed and characterised the ability of Large Language Models (LLMs) to solve sequential
-            decision-making problems, with a focus on the <strong>Multi-Armed Bandit (MAB)</strong> problem.
-            The research evaluated whether modern LLMs can replicate, complement, or exceed classical
-            decision strategies and explored their fundamental capabilities and limitations in sequential
-            reasoning under uncertainty.
+            Tested how well large language models solve sequential decision-making problems, using the
+            multi-armed bandit problem as the main setting. The project compared LLM behaviour against
+            classical bandit algorithms and looked at where the models fail when they have to reason
+            under uncertainty over many rounds.
           </p>
           <p class="dz-feature-body" style="margin-top:0.55rem;">
-            <strong>Supervisor:</strong>
-            <a href="https://mila.quebec/en/directory/audrey-durand" target="_blank" rel="noopener">Prof Audrey Durand</a>
-            — Université Laval, Canada.
+            Supervisor:
+            <a href="https://mila.quebec/en/directory/audrey-durand" target="_blank" rel="noopener">Prof Audrey Durand</a>,
+            Université Laval, Canada.
           </p>
           <span class="dz-distinction-badge">★ Awarded Distinction</span>
         </div>
@@ -91,9 +89,8 @@ sections:
               <h2 class="dz-card-title">Key Relay Protocol for Quantum Key Distribution</h2>
               <p class="dz-card-meta">Research · g-RIPS-Sendai · Tohoku University · Jun – Aug 2025</p>
               <p class="dz-card-body">
-                Studied key relay protocols for quantum key distribution through the prestigious
-                g-RIPS-Sendai collaborative programme — a joint initiative of IPAM (UCLA), AIMR, and
-                Tohoku University, Japan.
+                Studied key relay protocols for quantum key distribution at the g-RIPS-Sendai
+                programme, run jointly by IPAM (UCLA), AIMR, and Tohoku University in Japan.
               </p>
               <a class="dz-pill-link" href="https://www.mccs.tohoku.ac.jp/g-rips/g-rips2025_en.html"
                  target="_blank" rel="noopener">
@@ -125,9 +122,9 @@ sections:
               <h2 class="dz-card-title">IFRS 9 Credit Risk Modelling</h2>
               <p class="dz-card-meta">Professional · EY Zimbabwe · Dec 2023 – Aug 2024</p>
               <p class="dz-card-body">
-                Built and validated IFRS 9 credit risk models for financial institution clients —
-                including Probability of Default (PD), Loss Given Default (LGD), Exposure at Default
-                (EAD), and Macroeconomic Variable (MEV) components.
+                Built and validated IFRS 9 credit risk models for bank clients, covering probability
+                of default (PD), loss given default (LGD), exposure at default (EAD), and
+                macroeconomic variable (MEV) components.
               </p>
               <div class="dz-tag-row">
                 <span class="dz-tag">IFRS 9</span>
@@ -143,9 +140,8 @@ sections:
               <h2 class="dz-card-title">Science Communication Workshop</h2>
               <p class="dz-card-meta">Workshop · Africa Scientifique · Cape Town, South Africa</p>
               <p class="dz-card-body">
-                Completed the Africa Scientifique science communication workshop — building skills
-                in clear scientific writing, public engagement, and communicating research to
-                non-specialist audiences.
+                Completed the Africa Scientifique workshop on science communication, which covered
+                scientific writing and presenting research to non-specialist audiences.
               </p>
               <div class="dz-tag-row">
                 <span class="dz-tag">Science Communication</span>

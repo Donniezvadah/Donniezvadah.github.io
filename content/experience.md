@@ -41,9 +41,9 @@ sections:
             <p class="dz-timeline-institution">AIMS South Africa / Stellenbosch University</p>
             <p class="dz-timeline-degree">MSc in Mathematical Sciences</p>
             <p class="dz-timeline-body">
-              Focus on Pure Mathematics, Physics, Statistics, and Machine Learning.
-              Masters project on LLMs and the Multi-Armed Bandit problem — <strong>Distinction</strong>.
-              Fully funded by the <strong>Mastercard Foundation Scholarship</strong>.
+              Coursework in pure mathematics, physics, statistics, and machine learning.
+              Masters project on large language models and the multi-armed bandit problem, awarded
+              Distinction. Fully funded by the Mastercard Foundation Scholarship.
             </p>
             <span class="dz-timeline-badge">Mastercard Foundation Scholar · Distinction</span>
           </div>
@@ -91,8 +91,8 @@ sections:
             <p class="dz-timeline-institution">Trinity College Dublin</p>
             <p class="dz-timeline-degree">Teaching Assistant & Demonstrator</p>
             <p class="dz-timeline-body">
-              Teaching four courses — Time Series Analysis, Multivariate Analysis, Engineering Practice 2,
-              and Mathematics II (Mathematical Logic). Lab sessions using RStudio and grading/feedback support.
+              Teaching four courses: Time Series Analysis, Multivariate Analysis, Engineering Practice 2,
+              and Mathematics II (Mathematical Logic). Lab sessions in RStudio, plus grading and feedback.
             </p>
             <div class="dz-tag-row" style="margin-top:0.65rem;">
               <span class="dz-tag">Time Series</span>
@@ -119,9 +119,9 @@ sections:
             <p class="dz-timeline-institution">EY Zimbabwe</p>
             <p class="dz-timeline-degree">Quantitative Risk Analyst</p>
             <p class="dz-timeline-body">
-              Credit risk model development and validation for clients — ensuring IFRS 9 Standard
-              compliance. Built and reviewed PD, LGD, EAD, and MEV models. Supported audit assignments
-              and contributed to IFRS 9 framework development, implementation, and review.
+              Developed and validated credit risk models for clients under the IFRS 9 standard. Built
+              and reviewed PD, LGD, EAD, and MEV models, supported audit assignments, and worked on
+              IFRS 9 frameworks and tooling.
             </p>
             <div class="dz-tag-row" style="margin-top:0.65rem;">
               <span class="dz-tag">IFRS 9</span>
