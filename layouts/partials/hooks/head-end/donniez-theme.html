@@ -1,1 +1,5 @@
-<link rel="stylesheet" href="/css/donniez-theme.css" />
+{{/* Fingerprinted so a changed stylesheet always busts the browser cache. */}}
+{{ with resources.Get "css/donniez-theme.css" }}
+  {{ $css := . | minify | fingerprint "sha256" }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+{{ end }}

@@ -13,11 +13,6 @@ sections:
     content:
       title: Education
       text: |-
-        <div class="dz-section-header">
-          <p class="dz-label">Academic Background</p>
-          <h2 class="dz-title-gradient">Education & Degrees</h2>
-        </div>
-
         <div class="dz-timeline dz-stagger">
 
           <div class="dz-timeline-item">
@@ -26,7 +21,7 @@ sections:
             <p class="dz-timeline-institution">Trinity College Dublin</p>
             <p class="dz-timeline-degree">PhD in Statistics (Ongoing)</p>
             <p class="dz-timeline-body">
-              T-DIET: developing novel statistical methods for longitudinal dietary patterns and their
+              T-DIET: statistical methods for longitudinal dietary patterns and their
               association with health outcomes. Supervised by
               <a href="https://sites.google.com/view/silviadangelo/home?authuser=0"
                  target="_blank" rel="noopener">Assistant Professor Silvia D'Angelo</a>.
@@ -78,11 +73,6 @@ sections:
     content:
       title: Experience
       text: |-
-        <div class="dz-section-header">
-          <p class="dz-label">Professional & Research Roles</p>
-          <h2 class="dz-title-gradient">Work Experience</h2>
-        </div>
-
         <div class="dz-timeline dz-stagger">
 
           <div class="dz-timeline-item">
@@ -94,12 +84,6 @@ sections:
               Teaching four courses: Time Series Analysis, Multivariate Analysis, Engineering Practice 2,
               and Mathematics II (Mathematical Logic). Lab sessions in RStudio, plus grading and feedback.
             </p>
-            <div class="dz-tag-row" style="margin-top:0.65rem;">
-              <span class="dz-tag">Time Series</span>
-              <span class="dz-tag">Multivariate Analysis</span>
-              <span class="dz-tag">RStudio</span>
-              <span class="dz-tag">Demonstrator</span>
-            </div>
           </div>
 
           <div class="dz-timeline-item">
@@ -123,12 +107,6 @@ sections:
               and reviewed PD, LGD, EAD, and MEV models, supported audit assignments, and worked on
               IFRS 9 frameworks and tooling.
             </p>
-            <div class="dz-tag-row" style="margin-top:0.65rem;">
-              <span class="dz-tag">IFRS 9</span>
-              <span class="dz-tag">Credit Risk</span>
-              <span class="dz-tag">PD / LGD / EAD</span>
-              <span class="dz-tag">Model Validation</span>
-            </div>
           </div>
 
           <div class="dz-timeline-item">
@@ -152,12 +130,6 @@ sections:
               performed data analysis, competitor analysis, and delivered business insights using
               Microsoft Excel and Power BI.
             </p>
-            <div class="dz-tag-row" style="margin-top:0.65rem;">
-              <span class="dz-tag">Power BI</span>
-              <span class="dz-tag">Excel</span>
-              <span class="dz-tag">Data Analysis</span>
-              <span class="dz-tag">Reporting</span>
-            </div>
           </div>
 
         </div>
@@ -170,12 +142,6 @@ sections:
     content:
       title: Awards
       text: |-
-        <div class="dz-section-header">
-          <p class="dz-label dz-label-gold">Distinctions & Honours</p>
-          <h2 class="dz-title-gradient">Awards & Scholarships</h2>
-          <p class="dz-desc">Seven national, institutional, and competitive recognitions across academic and professional domains.</p>
-        </div>
-
         <div class="dz-awards-grid dz-stagger">
 
           <article class="dz-award-card">
@@ -237,31 +203,22 @@ sections:
     content:
       title: Teaching
       text: |-
-        <div class="dz-section-header">
-          <p class="dz-label">Academic Teaching · Trinity College Dublin · Nov 2025–Present</p>
-          <h2 class="dz-title-gradient">Teaching Assistant & Demonstrator</h2>
-        </div>
-
         <div class="dz-clean-grid dz-stagger">
           <article class="dz-clean-card">
             <h3>Time Series Analysis</h3>
             <p>Lab sessions using RStudio. Covers forecasting, ARIMA modelling, seasonal decomposition, and diagnostics.</p>
-            <div class="dz-tag-row"><span class="dz-tag dz-tag-cyan">RStudio</span><span class="dz-tag">Lab Demonstrator</span></div>
           </article>
           <article class="dz-clean-card">
             <h3>Multivariate Analysis</h3>
             <p>Lab sessions using RStudio. Dimensionality reduction, clustering, PCA, and multivariate methods.</p>
-            <div class="dz-tag-row"><span class="dz-tag dz-tag-cyan">RStudio</span><span class="dz-tag">Lab Demonstrator</span></div>
           </article>
           <article class="dz-clean-card">
             <h3>Engineering Practice 2</h3>
             <p>Grading assignments and assisting students with report writing, presentations, and structured feedback.</p>
-            <div class="dz-tag-row"><span class="dz-tag">Grading</span><span class="dz-tag">Report Writing</span></div>
           </article>
           <article class="dz-clean-card">
             <h3>Mathematics II</h3>
             <p>Mathematical Logic for computer science. Formal proof techniques and discrete mathematics.</p>
-            <div class="dz-tag-row"><span class="dz-tag">Logic</span><span class="dz-tag">Discrete Mathematics</span></div>
           </article>
         </div>
 
@@ -340,26 +297,9 @@ sections:
           </div>
           <div class="dz-clean-card">
             <h3>Software & Tools</h3>
-            <div class="dz-tag-row">
-              <span class="dz-tag">Python</span>
-              <span class="dz-tag">R / RStudio</span>
-              <span class="dz-tag">Power BI</span>
-              <span class="dz-tag">Git / GitHub</span>
-              <span class="dz-tag">SPSS</span>
-              <span class="dz-tag">Excel</span>
-              <span class="dz-tag">Macaulay2</span>
-              <span class="dz-tag">MS Office</span>
-            </div>
           </div>
           <div class="dz-clean-card">
             <h3>Interests</h3>
-            <div class="dz-tag-row">
-              <span class="dz-tag">Running</span>
-              <span class="dz-tag">Hiking</span>
-              <span class="dz-tag">Music</span>
-              <span class="dz-tag">Storytelling</span>
-              <span class="dz-tag">Photography</span>
-            </div>
           </div>
         </div>
     design:
