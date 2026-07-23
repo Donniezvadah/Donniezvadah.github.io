@@ -583,6 +583,32 @@ header nav a[aria-current="page"]::after {
   margin-left: 1px;
 }
 
+/* Institution logo beside each entry. The three logos have very
+   different aspect ratios (wide wordmarks vs a tall crest), so the slot
+   is fixed and the image is contained inside it rather than scaled to
+   fill. */
+.dz-timeline-item.dz-has-logo { display: flex; gap: 1.15rem; align-items: flex-start; }
+
+.dz-timeline-logo {
+  flex: 0 0 128px;
+  width: 128px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dz-timeline-logo img {
+  max-width: 100%;
+  max-height: 68px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.dz-timeline-main { flex: 1 1 auto; min-width: 0; }
+
 .dz-timeline-date { display: inline-block; font-size: 0.84rem; font-weight: 700; color: var(--dz-muted); }
 .dz-timeline-location { float: right; font-size: 0.84rem; color: var(--dz-muted-2); }
 .dz-timeline-institution { margin: 0.2rem 0 0; font-size: 1.04em; font-weight: 700; color: var(--dz-text); }
@@ -694,6 +720,11 @@ time[datetime="0001-01-01"] { display: none; }
   .dz-heading-xl { font-size: 1.6em; }
   .dz-timeline { padding-left: 1.4rem; }
   .dz-timeline-location { float: none; display: block; margin-top: 0.2rem; }
+
+  /* Stack the logo above the text on narrow screens */
+  .dz-timeline-item.dz-has-logo { flex-direction: column; gap: 0.75rem; }
+  .dz-timeline-logo { justify-content: flex-start; height: 56px; }
+  .dz-timeline-logo img { max-height: 56px; }
 }
 
 @media (max-width: 640px) {

@@ -15,52 +15,70 @@ sections:
       text: |-
         <div class="dz-timeline dz-stagger">
 
-          <div class="dz-timeline-item">
-            <span class="dz-timeline-date">Sep 2025 – Present</span>
-            <span class="dz-timeline-location">Dublin, Ireland</span>
-            <p class="dz-timeline-institution">Trinity College Dublin</p>
-            <p class="dz-timeline-degree">PhD in Statistics (Ongoing)</p>
-            <p class="dz-timeline-body">
-              T-DIET: statistical methods for longitudinal dietary patterns and their
-              association with health outcomes. Supervised by
-              <a href="https://sites.google.com/view/silviadangelo/home?authuser=0"
-                 target="_blank" rel="noopener">Assistant Professor Silvia D'Angelo</a>.
-              Funded by the <strong>Research Ireland Frontiers for the Future Programme</strong>.
-            </p>
-            <span class="dz-timeline-badge">Research Ireland Scholar 2025</span>
+          <div class="dz-timeline-item dz-has-logo">
+            <div class="dz-timeline-logo">
+              <img src="/media/logos/tcd.png" alt="Trinity College Dublin" width="256" height="68" loading="lazy">
+            </div>
+            <div class="dz-timeline-main">
+              <span class="dz-timeline-date">Sep 2025 – Present</span>
+              <span class="dz-timeline-location">Dublin, Ireland</span>
+              <p class="dz-timeline-institution">Trinity College Dublin</p>
+              <p class="dz-timeline-degree">PhD in Statistics (Ongoing)</p>
+              <p class="dz-timeline-body">
+                T-DIET: statistical methods for longitudinal dietary patterns and their
+                association with health outcomes. Supervised by
+                <a href="https://sites.google.com/view/silviadangelo/home?authuser=0"
+                   target="_blank" rel="noopener">Assistant Professor Silvia D'Angelo</a>.
+                Funded by the <strong>Research Ireland Frontiers for the Future Programme</strong>.
+              </p>
+              <span class="dz-timeline-badge">Research Ireland Scholar 2025</span>
+            </div>
           </div>
 
-          <div class="dz-timeline-item">
-            <span class="dz-timeline-date">Sep 2024 – Jul 2025</span>
-            <span class="dz-timeline-location">Cape Town, South Africa</span>
-            <p class="dz-timeline-institution">AIMS South Africa / Stellenbosch University</p>
-            <p class="dz-timeline-degree">MSc in Mathematical Sciences</p>
-            <p class="dz-timeline-body">
-              Coursework in pure mathematics, physics, statistics, and machine learning.
-              Masters project on large language models and the multi-armed bandit problem, awarded
-              Distinction. Fully funded by the Mastercard Foundation Scholarship.
-            </p>
-            <span class="dz-timeline-badge">Mastercard Foundation Scholar · Distinction</span>
+          <div class="dz-timeline-item dz-has-logo">
+            <div class="dz-timeline-logo">
+              <img src="/media/logos/aims.png" alt="African Institute for Mathematical Sciences, South Africa" width="256" height="51" loading="lazy">
+            </div>
+            <div class="dz-timeline-main">
+              <span class="dz-timeline-date">Sep 2024 – Jul 2025</span>
+              <span class="dz-timeline-location">Cape Town, South Africa</span>
+              <p class="dz-timeline-institution">AIMS South Africa / Stellenbosch University</p>
+              <p class="dz-timeline-degree">MSc in Mathematical Sciences</p>
+              <p class="dz-timeline-body">
+                Coursework in pure mathematics, physics, statistics, and machine learning.
+                Masters project on large language models and the multi-armed bandit problem, awarded
+                Distinction. Fully funded by the Mastercard Foundation Scholarship.
+              </p>
+              <span class="dz-timeline-badge">Mastercard Foundation Scholar · Distinction</span>
+            </div>
           </div>
 
-          <div class="dz-timeline-item">
-            <span class="dz-timeline-date">2019 – 2023</span>
-            <span class="dz-timeline-location">Bulawayo, Zimbabwe</span>
-            <p class="dz-timeline-institution">National University of Science & Technology (NUST)</p>
-            <p class="dz-timeline-degree">BSc Honours — Operations Research and Statistics</p>
-            <p class="dz-timeline-body">
-              <strong>First Class Honours.</strong> Overall Best Graduating Male Student, Class of 2023.
-              Recognised with five national and university awards including the Chancellor's Award,
-              Vice Chancellor's Award, Moonlight Award, and two NUST Book Prizes.
-            </p>
-            <span class="dz-timeline-badge">1st Division · Best Graduating Male Student 2023</span>
+          <div class="dz-timeline-item dz-has-logo">
+            <div class="dz-timeline-logo">
+              <img src="/media/logos/nust.png" alt="National University of Science and Technology, Zimbabwe" width="107" height="136" loading="lazy">
+            </div>
+            <div class="dz-timeline-main">
+              <span class="dz-timeline-date">2019 – 2023</span>
+              <span class="dz-timeline-location">Bulawayo, Zimbabwe</span>
+              <p class="dz-timeline-institution">National University of Science & Technology (NUST)</p>
+              <p class="dz-timeline-degree">BSc Honours — Operations Research and Statistics</p>
+              <p class="dz-timeline-body">
+                <strong>First Class Honours.</strong> Overall Best Graduating Male Student, Class of 2023.
+                Recognised with five national and university awards including the Chancellor's Award,
+                Vice Chancellor's Award, Moonlight Award, and two NUST Book Prizes.
+              </p>
+              <span class="dz-timeline-badge">1st Division · Best Graduating Male Student 2023</span>
+            </div>
           </div>
 
-          <div class="dz-timeline-item">
-            <span class="dz-timeline-date">2017 – 2018</span>
-            <span class="dz-timeline-location">Zimbabwe</span>
-            <p class="dz-timeline-institution">Centenary High School</p>
-            <p class="dz-timeline-degree">Advanced Level — Pure Mathematics, Statistics, Economics &amp; Geography</p>
+          <div class="dz-timeline-item dz-has-logo">
+            <div class="dz-timeline-logo" aria-hidden="true"></div>
+            <div class="dz-timeline-main">
+              <span class="dz-timeline-date">2017 – 2018</span>
+              <span class="dz-timeline-location">Zimbabwe</span>
+              <p class="dz-timeline-institution">Centenary High School</p>
+              <p class="dz-timeline-degree">Advanced Level — Pure Mathematics, Statistics, Economics &amp; Geography</p>
+            </div>
           </div>
 
         </div>
