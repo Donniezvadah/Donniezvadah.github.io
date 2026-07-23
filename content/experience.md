@@ -92,7 +92,7 @@ sections:
             <p class="dz-timeline-institution">Trinity College Dublin</p>
             <p class="dz-timeline-degree">Doctoral Researcher — T-DIET Project</p>
             <p class="dz-timeline-body">
-              Developing novel statistical methods for the analysis of longitudinal dietary patterns
+              Developing statistical methods for the analysis of longitudinal dietary patterns
               and their association with health outcomes.
             </p>
           </div>

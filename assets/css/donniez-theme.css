@@ -1,73 +1,74 @@
 /* ================================================================
-   DONALD (DONNIE) ZVADA — Academic Portfolio Theme v5
-   Minimal Academic · White · Typographic
-   Styled after the AcademicPages / minimal-mistakes aesthetic:
-   white background, system sans, gray text, single accent colour,
-   bordered section headings, list-style entries — no cards,
-   no gradients, no shadows.
+   DONALD (DONNIE) ZVADA — Academic Portfolio Theme v6
+   Structure follows homepages.ucl.ac.uk/~ucaklox:
+   soft grey page, lighter content panels ("units") each topped by a
+   thin accent stripe, a centred readable column, plain section
+   headings, and bracketed inline links.
    ================================================================ */
 
-/* ── Design Tokens ─────────────────────────────────────────────── */
+/* ── Design tokens ─────────────────────────────────────────────── */
 :root {
-  --dz-bg:           #ffffff;
-  --dz-surface:      #ffffff;
+  /* Greys follow the reference: page darker than the panels sitting on it */
+  --dz-page:         #e6e6e6;
+  --dz-panel:        #f4f4f4;
+  --dz-panel-2:      #fafafa;
+  --dz-bg:           #e6e6e6;
+  --dz-surface:      #f4f4f4;
   --dz-surface-2:    #fafafa;
-  --dz-surface-3:    #f7f8f8;
-  --dz-border:       #eaebec;
-  --dz-border-soft:  #f2f3f3;
+  --dz-surface-3:    #eeeeee;
 
-  --dz-text:         #494e52;
-  --dz-text-soft:    #494e52;
-  --dz-muted:        #7a8288;
-  --dz-muted-2:      #9ba1a6;
+  --dz-border:       #d6d6d6;
+  --dz-border-soft:  #dedede;
 
-  --dz-accent:       #3b8ba3;
-  --dz-accent-light: #52adc8;
-  --dz-accent-soft:  rgba(82, 173, 200, 0.08);
-  --dz-accent-hover: rgba(82, 173, 200, 0.14);
+  --dz-text:         #231f20;
+  --dz-text-soft:    #3a3a3a;
+  --dz-muted:        #6b6b6b;
+  --dz-muted-2:      #8c8c8c;
 
-  /* Legacy token aliases kept for inline styles in content */
-  --dz-cyan:         #3b8ba3;
-  --dz-cyan-light:   #52adc8;
-  --dz-cyan-soft:    rgba(82, 173, 200, 0.08);
+  --dz-accent:       #2b7a8c;
+  --dz-accent-light: #349bb0;
+  --dz-accent-soft:  rgba(43, 122, 140, 0.10);
+  --dz-accent-hover: rgba(43, 122, 140, 0.16);
 
-  --dz-gold:         #6f777d;
-  --dz-gold-light:   #7a8288;
-  --dz-gold-soft:    rgba(122, 130, 136, 0.07);
-  --dz-gold-border:  #eaebec;
+  /* Legacy aliases kept so existing content classes keep working */
+  --dz-cyan:         #2b7a8c;
+  --dz-cyan-light:   #349bb0;
+  --dz-cyan-soft:    rgba(43, 122, 140, 0.10);
+  --dz-gold:         #6b6b6b;
+  --dz-gold-light:   #6b6b6b;
+  --dz-gold-soft:    rgba(107, 107, 107, 0.08);
+  --dz-gold-border:  #d6d6d6;
 
-  --dz-radius:       4px;
-  --dz-radius-sm:    4px;
-  --dz-radius-pill:  4px;
+  --dz-radius:       3px;
+  --dz-radius-sm:    3px;
+  --dz-radius-pill:  3px;
 
   --dz-shadow-sm:    none;
   --dz-shadow-md:    none;
   --dz-shadow-lg:    none;
-  --dz-shadow-focus: 0 0 0 3px rgba(82, 173, 200, 0.18);
+  --dz-shadow-focus: 0 0 0 3px rgba(43, 122, 140, 0.20);
 
-  --dz-font: -apple-system, BlinkMacSystemFont, "San Francisco", "Roboto",
-             "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  --dz-stripe:       3px;   /* accent stripe on top of each unit */
+  --dz-column:       64rem; /* centred readable column */
+
+  --dz-font: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI",
+             "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Force light even if browser has dark preference */
-html, html.dark {
-  color-scheme: light !important;
-}
+html, html.dark { color-scheme: light !important; }
 
-/* ── Global Base ───────────────────────────────────────────────── */
+/* ── Base ──────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--dz-bg) !important;
+  background: var(--dz-page) !important;
   color: var(--dz-text) !important;
   font-family: var(--dz-font) !important;
   line-height: 1.7;
 }
 
-.page-body, .page-wrapper {
-  background: var(--dz-bg) !important;
-}
+.page-body, .page-wrapper { background: var(--dz-page) !important; }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--dz-text);
@@ -76,72 +77,51 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: normal;
 }
 
-a {
-  color: var(--dz-accent);
-  text-decoration: none;
-}
-
+a { color: var(--dz-accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
-
 ::selection { background: var(--dz-accent-soft); }
 
 /* ── Navbar ────────────────────────────────────────────────────── */
-header,
-.navbar,
-#navbar-main {
-  background: #ffffff !important;
-  border-bottom: 1px solid var(--dz-border-soft) !important;
+header, .navbar, #navbar-main {
+  background: var(--dz-panel-2) !important;
+  border-bottom: 1px solid var(--dz-border) !important;
   box-shadow: none !important;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
 
-header nav a,
-.navbar a,
-.nav-link,
-.navbar-brand {
+header nav a, .navbar a, .nav-link, .navbar-brand {
   color: var(--dz-text) !important;
   font-weight: 600;
-  letter-spacing: 0.01em;
   transition: color 140ms ease;
   text-decoration: none !important;
 }
 
-header nav a:hover,
-.navbar a:hover,
-.nav-link:hover {
-  color: var(--dz-accent) !important;
-}
+header nav a:hover, .navbar a:hover, .nav-link:hover { color: var(--dz-accent) !important; }
 
 .nav-link.active,
-header nav a[aria-current="page"] {
-  color: var(--dz-accent) !important;
-  position: relative;
-}
+header nav a[aria-current="page"] { color: var(--dz-accent) !important; position: relative; }
 
 .nav-link.active::after,
 header nav a[aria-current="page"]::after {
   content: "";
   position: absolute;
-  left: 0.2rem; right: 0.2rem;
-  bottom: -0.38rem;
+  left: 0.2rem; right: 0.2rem; bottom: -0.38rem;
   height: 2px;
   background: var(--dz-accent);
 }
 
-/* ── Hero Section ──────────────────────────────────────────────── */
+/* ── Hero / biography ──────────────────────────────────────────── */
 .dz-home-hero {
-  background: #ffffff !important;
-  border-bottom: 1px solid var(--dz-border-soft);
+  background: var(--dz-panel) !important;
+  border-bottom: 1px solid var(--dz-border);
 }
 
-/* Outer biography row */
 .dz-home-hero .resume-biography {
   align-items: flex-start !important;
   gap: 3rem !important;
 }
 
-/* Left profile column — override Tailwind's narrow m-w-[130px] */
 .dz-home-hero .resume-biography > div:first-child,
 .dz-home-hero .m-w-\[130px\] {
   flex: 0 0 300px !important;
@@ -151,14 +131,12 @@ header nav a[aria-current="page"]::after {
   flex-shrink: 0 !important;
 }
 
-/* Profile inner flex column — keep items centered */
 .dz-home-hero #profile {
   width: 300px !important;
   min-width: 300px !important;
   align-items: center !important;
 }
 
-/* Avatar wrapper — fixed size so nothing overflows */
 .dz-home-hero .avatar-wrapper {
   width: 280px !important;
   height: 280px !important;
@@ -167,7 +145,6 @@ header nav a[aria-current="page"]::after {
   position: relative;
 }
 
-/* The photo itself — plain circle, rendered at 720px for retina */
 .dz-home-hero img.avatar {
   width: 280px !important;
   height: 280px !important;
@@ -178,18 +155,15 @@ header nav a[aria-current="page"]::after {
   padding: 0 !important;
   display: block !important;
   margin: 0 auto !important;
-  border: none !important;
+  border: 4px solid var(--dz-panel-2) !important;
   box-shadow: none !important;
-  image-rendering: auto;
 }
 
-/* Name / role text block */
 .dz-home-hero .portrait-title {
   width: 300px !important;
   max-width: 300px !important;
   text-align: center !important;
   overflow-wrap: break-word !important;
-  word-break: break-word !important;
 }
 
 .dz-home-hero .portrait-title h3 {
@@ -199,21 +173,16 @@ header nav a[aria-current="page"]::after {
   font-weight: 400 !important;
 }
 
-/* Social icons — quiet gray, accent on hover */
 .dz-home-hero #profile a,
-.dz-home-hero .network-icon a {
-  color: var(--dz-muted) !important;
-}
+.dz-home-hero .network-icon a { color: var(--dz-muted) !important; }
 
 .dz-home-hero #profile a:hover,
-.dz-home-hero .network-icon a:hover {
-  color: var(--dz-accent) !important;
-}
+.dz-home-hero .network-icon a:hover { color: var(--dz-accent) !important; }
 
-/* ── Section Wrappers — plain content column ───────────────────── */
+/* ── Section wrapper — centred column on the grey page ─────────── */
 .dz-research-block,
 .dz-phd-block {
-  max-width: 64rem;
+  max-width: var(--dz-column);
   margin: 0 auto 1rem;
   padding: 0.5rem 1.5rem 1.5rem;
   border-radius: 0;
@@ -223,21 +192,7 @@ header nav a[aria-current="page"]::after {
   color: var(--dz-text);
 }
 
-/* Section titles — bordered underline, minimal-mistakes style */
-.dz-research-block h1,
-.dz-phd-block h1,
-.dz-research-block h2,
-.dz-phd-block h2 {
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--dz-border-soft);
-  color: var(--dz-text);
-  font-weight: 700;
-  font-size: 1.563em;
-  letter-spacing: normal;
-}
-
-/* Block titles (Hugo Blox section titles) — left-aligned, bordered */
+/* Block titles: plain heading with a rule under it */
 .dz-phd-block > .flex.flex-col,
 .dz-research-block > .flex.flex-col {
   max-width: 100% !important;
@@ -246,34 +201,55 @@ header nav a[aria-current="page"]::after {
   padding-right: 0 !important;
 }
 
+/* Let the block use its full column. Tailwind's prose caps content at
+   ~65ch, which collapses the box grids to a single column. Running text
+   stays readable because the intro/lead classes cap their own width. */
+.dz-phd-block .prose,
+.dz-research-block .prose {
+  max-width: 100% !important;
+  width: 100% !important;   /* parent is a centred flex column, so stretch explicitly */
+  font-size: 1rem !important;
+}
+
 .dz-phd-block .text-3xl.font-bold,
 .dz-research-block .text-3xl.font-bold {
   width: 100%;
   text-align: left !important;
-  font-size: 1.563em !important;
+  font-size: 1.6em !important;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--dz-border-soft);
-  margin-bottom: 0.6rem;
+  border-bottom: 1px solid var(--dz-border);
+  margin-bottom: 0.9rem;
 }
 
-/* Inner markdown headings — smaller, unbordered (block title carries
-   the bordered heading; these act as sub-headings) */
+/* Markdown section headings inside a block */
+.dz-phd-block h2,
+.dz-research-block h2 {
+  margin: 1.9rem 0 0.9rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--dz-border);
+  font-size: 1.35em;
+  font-weight: 700;
+}
+
+.dz-phd-block h2:first-child,
+.dz-research-block h2:first-child { margin-top: 0.4rem; }
+
 .dz-phd-block h2.dz-title-gradient,
 .dz-research-block h2.dz-title-gradient {
   border-bottom: none;
   padding-bottom: 0;
-  font-size: 1.25em;
-  margin-bottom: 0.55rem;
+  font-size: 1.2em;
 }
 
-/* ── Section Header ────────────────────────────────────────────── */
-.dz-section-header { margin-bottom: 1.4rem; }
+/* ── Page intro ────────────────────────────────────────────────── */
+.dz-section-intro { margin-bottom: 1.5rem; }
 
+.dz-kicker,
 .dz-label {
   display: inline-block;
   margin-bottom: 0.3rem;
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--dz-muted);
@@ -281,45 +257,16 @@ header nav a[aria-current="page"]::after {
 
 .dz-label-gold { color: var(--dz-muted); }
 
-.dz-title-gradient {
-  margin: 0 0 0.55rem;
-  font-size: 1.25em;
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: normal;
-  color: var(--dz-text);
-}
-
-.dz-desc {
-  margin: 0;
-  color: var(--dz-muted);
-  max-width: 60rem;
-  line-height: 1.7;
-  font-size: 0.97rem;
-}
-
-/* ── Page intro ────────────────────────────────────────────────── */
-.dz-section-intro { margin-bottom: 1.6rem; }
-
-.dz-kicker {
-  margin-bottom: 0.3rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--dz-muted);
-}
-
 .dz-heading-xl {
-  margin: 0 0 0.6rem;
-  font-size: 1.953em;
+  margin: 0 0 0.55rem;
+  font-size: 1.95em;
   font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: normal;
+  line-height: 1.22;
   color: var(--dz-text);
 }
 
-.dz-intro-text {
+.dz-intro-text,
+.dz-desc {
   margin: 0;
   color: var(--dz-muted);
   max-width: 46rem;
@@ -327,307 +274,100 @@ header nav a[aria-current="page"]::after {
   font-size: 1rem;
 }
 
-/* ── Clean Section (body text) ─────────────────────────────────── */
-.dz-clean-section { line-height: 1.75; color: var(--dz-muted); }
-
-.dz-clean-section .dz-lead {
-  font-size: 1.04rem;
+.dz-title-gradient {
+  margin: 0 0 0.5rem;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.3;
   color: var(--dz-text);
-  line-height: 1.8;
-  margin-bottom: 0.8rem;
 }
 
-/* ── Grids → single-column reading lists ───────────────────────── */
-.dz-clean-grid,
-.dz-projects-grid,
-.dz-nav-grid,
-.dz-awards-grid,
-.dz-workshop-grid,
-.dz-reference-grid,
-.dz-leadership-wrap {
-  display: block;
+/* ================================================================
+   BOXES — the reference's `.unit` + `.color-box` pattern
+   A lighter panel sitting on the grey page, topped by a thin
+   accent stripe.
+   ================================================================ */
+.dz-box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 1.15rem;
+  margin: 0.6rem 0 1.6rem;
 }
 
-/* ── Entries (formerly cards) — plain, divided by thin rules ───── */
-.dz-clean-card,
-.dz-project-card,
-.dz-leadership-card,
-.dz-award-card,
-.dz-workshop-card,
-.dz-nav-card,
-.dz-feature-box {
-  display: block;
+.dz-box-grid-2 { grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr)); }
+
+.dz-box {
+  display: flex;
+  flex-direction: column;
+  background: var(--dz-panel-2);
+  border: 1px solid var(--dz-border-soft);
+  border-top: var(--dz-stripe) solid var(--dz-accent);
+  border-radius: 0;
+  padding: 1.15rem 1.2rem 1.2rem;
+  transition: border-color 180ms ease, background 180ms ease;
+}
+
+.dz-box:hover {
+  background: #ffffff;
+  border-color: var(--dz-border);
+  border-top-color: var(--dz-accent-light);
+}
+
+/* Muted stripe variant for secondary entries */
+.dz-box-muted { border-top-color: var(--dz-muted-2); }
+.dz-box-muted:hover { border-top-color: var(--dz-muted); }
+
+.dz-box-title {
+  margin: 0 0 0.2rem !important;
+  font-size: 1.04em;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--dz-text);
+}
+
+.dz-box-title a { color: var(--dz-text); }
+.dz-box-title a:hover { color: var(--dz-accent); }
+
+.dz-box-meta {
+  margin: 0 0 0.55rem !important;
+  font-size: 0.84rem;
+  font-style: italic;
+  color: var(--dz-muted) !important;
+}
+
+.dz-box p {
+  margin: 0 0 0.5rem;
+  font-size: 0.93rem;
+  line-height: 1.68;
+  color: var(--dz-text-soft);
+}
+
+.dz-box .dz-bullet-list { margin: 0.3rem 0 0.5rem; }
+
+/* Links pinned to the bottom of a box so rows line up */
+.dz-box-links {
+  margin-top: auto !important;
+  padding-top: 0.5rem;
+}
+
+/* ── Bracketed inline links, as the reference uses ─────────────── */
+.dz-pub-link,
+.dz-pill-link {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0;
   background: transparent;
   border: none;
-  border-bottom: 1px solid var(--dz-border-soft);
-  border-radius: 0;
-  box-shadow: none;
-  padding: 1.15rem 0 1.3rem;
-  margin: 0;
-  transition: none;
-  transform: none;
-}
-
-.dz-clean-card:last-child,
-.dz-project-card:last-child,
-.dz-leadership-card:last-child,
-.dz-award-card:last-child,
-.dz-nav-card:last-child,
-.dz-feature-box:last-child { border-bottom: none; }
-
-.dz-project-card-inner { padding: 0; }
-
-.dz-clean-card h3,
-.dz-card-title,
-.dz-feature-title,
-.dz-award-title {
-  margin: 0 0 0.25rem;
-  font-size: 1.1em;
-  font-weight: 700;
-  line-height: 1.4;
-  color: var(--dz-text);
-}
-
-.dz-card-meta,
-.dz-feature-meta,
-.dz-award-org {
-  margin: 0 0 0.5rem;
-  font-size: 0.85rem;
-  font-style: italic;
-  color: var(--dz-muted);
-}
-
-.dz-card-body,
-.dz-feature-body,
-.dz-award-body,
-.dz-clean-card p {
-  margin: 0 0 0.5rem;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--dz-text);
-}
-
-.dz-card-icon {
-  margin: 0 0 0.15rem;
-  font-family: Monaco, Consolas, "Lucida Console", monospace;
-  font-size: 0.72rem;
-  color: var(--dz-muted-2);
-}
-
-.dz-feature-label {
-  margin: 0 0 0.25rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--dz-muted);
-}
-
-.dz-award-year {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--dz-muted);
-}
-
-/* ── Explore / nav entries — plain link entries ─────────────────── */
-.dz-nav-card { text-decoration: none; }
-.dz-nav-card:hover { text-decoration: none; }
-
-.dz-nav-card-num {
-  margin: 0 0 0.15rem;
-  font-family: Monaco, Consolas, "Lucida Console", monospace;
-  font-size: 0.72rem;
-  color: var(--dz-muted-2);
-}
-
-.dz-nav-card-title {
-  margin: 0 0 0.25rem;
-  font-size: 1.1em;
-  font-weight: 700;
-  color: var(--dz-accent);
-}
-
-.dz-nav-card:hover .dz-nav-card-title { text-decoration: underline; }
-
-.dz-nav-card-desc {
-  margin: 0 0 0.35rem;
-  font-size: 0.95rem;
-  color: var(--dz-text);
-  line-height: 1.7;
-}
-
-.dz-nav-card-arrow {
   font-size: 0.88rem;
   font-weight: 600;
   color: var(--dz-accent);
-}
-
-/* ── Tags — plain keyword text, dot-separated ──────────────────── */
-.dz-tag-row {
-  display: block;
-  margin-top: 0.35rem;
-}
-
-.dz-tag,
-.dz-tag-cyan,
-.dz-tag-gold {
-  display: inline;
-  padding: 0;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0;
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: var(--dz-muted) !important;
-  letter-spacing: 0.01em;
-  transition: none;
-  transform: none !important;
-}
-
-.dz-tag + .dz-tag::before,
-.dz-tag-row .dz-tag:not(:first-child)::before {
-  content: "\00b7\00a0";
-  color: var(--dz-muted-2);
-}
-
-/* ── Links & badges ────────────────────────────────────────────── */
-.dz-pill-link {
-  display: inline-block;
-  padding: 0;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--dz-accent);
   transition: color 140ms ease;
-  transform: none;
 }
 
-.dz-pill-link:hover {
-  color: var(--dz-accent-light);
-  text-decoration: underline;
-  transform: none;
-}
+.dz-pub-link:hover,
+.dz-pill-link:hover { color: var(--dz-accent-light); text-decoration: underline; }
 
-.dz-distinction-badge,
-.dz-timeline-badge {
-  display: inline-block;
-  margin-top: 0.4rem;
-  padding: 0;
-  background: transparent;
-  border: none;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--dz-text);
-}
-
-/* ── Timeline — thin rule, plain entries ───────────────────────── */
-.dz-timeline {
-  position: relative;
-  padding-left: 1.6rem;
-  border-left: 2px solid var(--dz-border-soft);
-}
-
-.dz-timeline-item {
-  position: relative;
-  padding: 0 0 1.5rem;
-}
-
-.dz-timeline-item::before {
-  content: "";
-  position: absolute;
-  left: -1.6rem;
-  top: 0.4rem;
-  transform: translateX(-50%);
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--dz-muted-2);
-  margin-left: 1px;
-}
-
-.dz-timeline-date {
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--dz-muted);
-}
-
-.dz-timeline-location {
-  float: right;
-  font-size: 0.85rem;
-  color: var(--dz-muted-2);
-}
-
-.dz-timeline-institution {
-  margin: 0.15rem 0 0;
-  font-size: 1.1em;
-  font-weight: 700;
-  color: var(--dz-text);
-}
-
-.dz-timeline-degree {
-  margin: 0 0 0.35rem;
-  font-size: 0.92rem;
-  font-style: italic;
-  color: var(--dz-muted);
-}
-
-.dz-timeline-body {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--dz-text);
-}
-
-/* ── Lists ─────────────────────────────────────────────────────── */
-.dz-bullet-list,
-.dz-list-clean {
-  margin: 0.4rem 0 0;
-  padding-left: 1.2rem;
-  color: var(--dz-text);
-  font-size: 0.95rem;
-  line-height: 1.7;
-}
-
-.dz-bullet-list li,
-.dz-list-clean li { margin-bottom: 0.3rem; }
-
-.dz-bullet-list li::marker,
-.dz-list-clean li::marker { color: var(--dz-muted-2); }
-
-/* ── Publication list ──────────────────────────────────────────── */
-.dz-pub-list {
-  margin: 0.5rem 0 1.5rem;
-  padding-left: 1.4rem;
-  color: var(--dz-text);
-}
-
-.dz-pub-list li {
-  margin-bottom: 1.1rem;
-  font-size: 0.97rem;
-  line-height: 1.65;
-}
-
-.dz-pub-list li::marker {
-  color: var(--dz-muted);
-  font-weight: 600;
-}
-
-.dz-pub-venue {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: var(--dz-muted);
-}
-
-.dz-pub-link {
-  margin-right: 0.35rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-/* ── Entry list — shared format for every tab ──────────────────── */
+/* ── Entry list (publications, contact) ────────────────────────── */
 .dz-entry-list {
   list-style: none;
   margin: 0.4rem 0 1.6rem;
@@ -635,9 +375,9 @@ header nav a[aria-current="page"]::after {
 }
 
 .dz-entry-list > li {
-  padding: 0 0 1.1rem;
-  margin-bottom: 1.1rem;
-  border-bottom: 1px solid var(--dz-border-soft);
+  padding: 0 0 1.05rem;
+  margin-bottom: 1.05rem;
+  border-bottom: 1px solid var(--dz-border);
 }
 
 .dz-entry-list > li:last-child {
@@ -650,95 +390,265 @@ header nav a[aria-current="page"]::after {
   margin: 0 0 0.4rem;
   font-size: 0.95rem;
   line-height: 1.7;
-  color: var(--dz-text);
+  color: var(--dz-text-soft);
 }
 
 .dz-entry-title {
   margin: 0 0 0.15rem !important;
-  font-size: 1.05em;
+  font-size: 1.04em;
   font-weight: 700;
   color: var(--dz-text);
 }
 
 .dz-entry-meta {
   margin: 0 0 0.45rem !important;
-  font-size: 0.87rem;
+  font-size: 0.85rem;
   font-style: italic;
   color: var(--dz-muted) !important;
 }
 
 .dz-entry-list .dz-bullet-list { margin-top: 0.35rem; }
 
-/* ── Divider ───────────────────────────────────────────────────── */
-.dz-divider {
-  height: 1px;
-  background: var(--dz-border-soft);
-  margin: 1.6rem 0;
+/* Numbered publication list */
+.dz-pub-list {
+  margin: 0.5rem 0 1.5rem;
+  padding-left: 1.4rem;
+  color: var(--dz-text);
 }
 
-/* ── Supervisor highlight — quiet left rule ────────────────────── */
-.dz-supervisor-card {
-  display: block;
-  padding: 0.2rem 0 0.2rem 1rem;
-  margin: 1rem 0;
-  background: transparent;
-  border: none;
-  border-left: 3px solid var(--dz-border);
+.dz-pub-list li {
+  margin-bottom: 1rem;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.dz-pub-list li::marker { color: var(--dz-muted); font-weight: 700; }
+
+.dz-pub-venue {
+  font-size: 0.89rem;
+  font-style: italic;
+  color: var(--dz-muted);
+}
+
+/* ── Legacy card classes mapped onto the box look ──────────────── */
+.dz-clean-grid,
+.dz-projects-grid,
+.dz-nav-grid,
+.dz-awards-grid,
+.dz-workshop-grid,
+.dz-reference-grid,
+.dz-leadership-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 1.15rem;
+  margin: 0.6rem 0 1.6rem;
+}
+
+.dz-clean-card,
+.dz-project-card,
+.dz-leadership-card,
+.dz-award-card,
+.dz-workshop-card,
+.dz-nav-card,
+.dz-feature-box {
+  display: flex;
+  flex-direction: column;
+  background: var(--dz-panel-2);
+  border: 1px solid var(--dz-border-soft);
+  border-top: var(--dz-stripe) solid var(--dz-accent);
   border-radius: 0;
-  box-shadow: none;
+  padding: 1.15rem 1.2rem 1.2rem;
+  margin: 0;
+  transition: border-color 180ms ease, background 180ms ease;
 }
 
-.dz-supervisor-label {
-  margin: 0 0 0.1rem;
+.dz-clean-card:hover,
+.dz-project-card:hover,
+.dz-leadership-card:hover,
+.dz-award-card:hover,
+.dz-nav-card:hover,
+.dz-feature-box:hover { background: #ffffff; border-top-color: var(--dz-accent-light); }
+
+.dz-project-card-inner { padding: 0; display: flex; flex-direction: column; height: 100%; }
+
+.dz-clean-card h3,
+.dz-card-title,
+.dz-feature-title,
+.dz-award-title {
+  margin: 0 0 0.2rem;
+  font-size: 1.04em;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--dz-text);
+}
+
+.dz-card-meta,
+.dz-feature-meta,
+.dz-award-org {
+  margin: 0 0 0.5rem;
+  font-size: 0.84rem;
+  font-style: italic;
+  color: var(--dz-muted);
+}
+
+.dz-card-body,
+.dz-feature-body,
+.dz-award-body,
+.dz-clean-card p {
+  margin: 0 0 0.5rem;
+  font-size: 0.93rem;
+  line-height: 1.68;
+  color: var(--dz-text-soft);
+}
+
+.dz-card-icon,
+.dz-nav-card-num {
+  margin: 0 0 0.15rem;
+  font-family: Monaco, Consolas, monospace;
+  font-size: 0.7rem;
+  color: var(--dz-muted-2);
+}
+
+.dz-feature-label {
+  margin: 0 0 0.25rem;
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--dz-muted);
 }
 
-.dz-supervisor-name {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 700;
+.dz-award-year { font-size: 0.84rem; font-weight: 700; color: var(--dz-accent); }
+
+.dz-nav-card { text-decoration: none; }
+.dz-nav-card-title { margin: 0 0 0.2rem; font-size: 1.04em; font-weight: 700; color: var(--dz-accent); }
+.dz-nav-card:hover .dz-nav-card-title { text-decoration: underline; }
+.dz-nav-card-desc { margin: 0 0 0.4rem; font-size: 0.93rem; color: var(--dz-text-soft); line-height: 1.68; }
+.dz-nav-card-arrow { margin-top: auto; font-size: 0.88rem; font-weight: 600; color: var(--dz-accent); }
+
+/* ── Tags — plain dot-separated keywords ───────────────────────── */
+.dz-tag-row { display: block; margin-top: 0.4rem; }
+
+.dz-tag, .dz-tag-cyan, .dz-tag-gold {
+  display: inline;
+  padding: 0;
+  background: transparent !important;
+  border: none !important;
+  font-size: 0.79rem;
+  font-weight: 400;
+  color: var(--dz-muted) !important;
 }
 
-.dz-supervisor-role {
-  margin: 0.1rem 0 0;
-  font-size: 0.88rem;
+.dz-tag-row .dz-tag:not(:first-child)::before {
+  content: "\00b7\00a0";
+  color: var(--dz-muted-2);
+}
+
+.dz-distinction-badge,
+.dz-timeline-badge {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.83rem;
+  font-weight: 700;
+  color: var(--dz-accent);
+}
+
+/* ── Timeline (Education / Experience) ─────────────────────────── */
+.dz-timeline {
+  position: relative;
+  padding-left: 1.7rem;
+  border-left: 2px solid var(--dz-border);
+  margin: 0.6rem 0 1.4rem;
+}
+
+.dz-timeline-item {
+  position: relative;
+  background: var(--dz-panel-2);
+  border: 1px solid var(--dz-border-soft);
+  border-top: var(--dz-stripe) solid var(--dz-accent);
+  padding: 1rem 1.15rem 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+.dz-timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.7rem;
+  top: 1rem;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--dz-accent);
+  margin-left: 1px;
+}
+
+.dz-timeline-date { display: inline-block; font-size: 0.84rem; font-weight: 700; color: var(--dz-muted); }
+.dz-timeline-location { float: right; font-size: 0.84rem; color: var(--dz-muted-2); }
+.dz-timeline-institution { margin: 0.2rem 0 0; font-size: 1.04em; font-weight: 700; color: var(--dz-text); }
+.dz-timeline-degree { margin: 0 0 0.4rem; font-size: 0.9rem; font-style: italic; color: var(--dz-muted); }
+.dz-timeline-body { margin: 0; font-size: 0.93rem; line-height: 1.68; color: var(--dz-text-soft); }
+
+/* ── Lists ─────────────────────────────────────────────────────── */
+.dz-bullet-list, .dz-list-clean {
+  margin: 0.4rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--dz-text-soft);
+  font-size: 0.93rem;
+  line-height: 1.68;
+}
+
+.dz-bullet-list li, .dz-list-clean li { margin-bottom: 0.28rem; }
+.dz-bullet-list li::marker, .dz-list-clean li::marker { color: var(--dz-accent); }
+
+/* ── Divider ───────────────────────────────────────────────────── */
+.dz-divider { height: 1px; background: var(--dz-border); margin: 1.5rem 0; }
+
+/* ── Supervisor highlight ──────────────────────────────────────── */
+.dz-supervisor-card {
+  display: block;
+  padding: 0.85rem 1.1rem;
+  margin: 1rem 0;
+  background: var(--dz-panel-2);
+  border: 1px solid var(--dz-border-soft);
+  border-left: var(--dz-stripe) solid var(--dz-accent);
+}
+
+.dz-supervisor-label {
+  margin: 0 0 0.1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
   color: var(--dz-muted);
 }
 
-/* ── Leadership card internals ─────────────────────────────────── */
+.dz-supervisor-name { margin: 0; font-size: 1rem; font-weight: 700; }
+.dz-supervisor-role { margin: 0.1rem 0 0; font-size: 0.87rem; color: var(--dz-muted); }
+
 .dz-card-header { margin-bottom: 0.3rem; }
 
-/* ── CV page ───────────────────────────────────────────────────── */
+/* ── CV button ─────────────────────────────────────────────────── */
 .dz-cv-wrapper { margin: 1.2rem 0; }
-
-.dz-cv-button {
-  padding: 0.6rem 1.4rem;
-  font-size: 0.95rem;
-}
 
 .dz-cv-button,
 .btn-primary,
 .btn.btn-primary {
   display: inline-block;
-  background: #ffffff !important;
-  color: var(--dz-accent) !important;
+  padding: 0.6rem 1.4rem;
+  background: var(--dz-accent) !important;
+  color: #ffffff !important;
   border: 1px solid var(--dz-accent) !important;
   border-radius: var(--dz-radius);
+  font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none !important;
-  transition: background 140ms ease, color 140ms ease;
+  transition: background 140ms ease;
 }
 
 .dz-cv-button:hover,
 .btn-primary:hover,
-.btn.btn-primary:hover {
-  background: var(--dz-accent) !important;
-  color: #ffffff !important;
-}
+.btn.btn-primary:hover { background: var(--dz-accent-light) !important; border-color: var(--dz-accent-light) !important; }
 
 [class*="text-emerald"] { color: var(--dz-accent) !important; }
 [class*="bg-emerald"] { background-color: transparent !important; }
@@ -746,7 +656,7 @@ header nav a[aria-current="page"]::after {
 
 /* ── Footer ────────────────────────────────────────────────────── */
 footer {
-  border-top: 1px solid var(--dz-border-soft);
+  border-top: 1px solid var(--dz-border);
   padding-top: 1.2rem !important;
   color: var(--dz-muted) !important;
   font-size: 0.85rem !important;
@@ -761,10 +671,8 @@ time[datetime="0001-01-01"] { display: none; }
 
 /* ── Responsive ────────────────────────────────────────────────── */
 @media (max-width: 900px) {
-  .dz-research-block,
-  .dz-phd-block { padding: 0.5rem 1.1rem 1.2rem; }
+  .dz-research-block, .dz-phd-block { padding: 0.5rem 1.1rem 1.2rem; }
 
-  /* Profile column goes full width; photo scales down but stays large */
   .dz-home-hero .resume-biography > div:first-child,
   .dz-home-hero .m-w-\[130px\],
   .dz-home-hero #profile,
@@ -783,51 +691,46 @@ time[datetime="0001-01-01"] { display: none; }
     max-height: 210px !important;
   }
 
-  .dz-title-gradient { font-size: 1.15em; }
-  .dz-heading-xl     { font-size: 1.6em;  }
-  .dz-timeline       { padding-left: 1.4rem; }
-
-  .dz-timeline-location {
-    float: none;
-    display: block;
-    margin-top: 0.2rem;
-  }
+  .dz-heading-xl { font-size: 1.6em; }
+  .dz-timeline { padding-left: 1.4rem; }
+  .dz-timeline-location { float: none; display: block; margin-top: 0.2rem; }
 }
 
-/* ── Keyframes ─────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .dz-box-grid,
+  .dz-box-grid-2,
+  .dz-clean-grid,
+  .dz-projects-grid,
+  .dz-nav-grid,
+  .dz-awards-grid,
+  .dz-workshop-grid,
+  .dz-reference-grid,
+  .dz-leadership-wrap { grid-template-columns: 1fr; }
+}
+
+/* ── Motion — quiet scroll reveal ──────────────────────────────── */
 @keyframes dz-fade-up {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0);   }
 }
-
-/* ================================================================
-   Motion System v3 — quiet scroll reveal
-   Activated only when JS adds `dz-anim` to <html>; otherwise the
-   site renders fully static (no-JS / reduced-motion safe).
-   ================================================================ */
 
 html.dz-anim .dz-stagger > *,
 html.dz-anim .hbb-section,
 html.dz-anim .dz-phd-block,
 html.dz-anim .dz-research-block { animation: none; }
 
-/* Reveal targets: gentle rise, brief and unobtrusive */
 html.dz-anim .dz-io {
   opacity: 0;
   transform: translateY(10px);
   transition:
-    opacity 480ms cubic-bezier(0.16, 1, 0.3, 1),
-    transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
+    opacity 460ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 460ms cubic-bezier(0.16, 1, 0.3, 1);
   transition-delay: var(--dz-io-delay, 0ms);
   will-change: opacity, transform;
 }
 
-html.dz-anim .dz-io.dz-in {
-  opacity: 1;
-  transform: translateY(0);
-}
+html.dz-anim .dz-io.dz-in { opacity: 1; transform: translateY(0); }
 
-/* Hero entrance — soft fade only */
 html.dz-anim .dz-home-hero img.avatar {
   animation: dz-fade-up 550ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
@@ -836,7 +739,6 @@ html.dz-anim .dz-home-hero .portrait-title {
   animation: dz-fade-up 550ms cubic-bezier(0.16, 1, 0.3, 1) 90ms both;
 }
 
-/* ── Reduced motion: render everything statically ──────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -844,6 +746,5 @@ html.dz-anim .dz-home-hero .portrait-title {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-
   html.dz-anim .dz-io { opacity: 1; transform: none; }
 }

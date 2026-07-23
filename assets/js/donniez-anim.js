@@ -15,6 +15,8 @@
 
   var SELECTORS = [
     '.dz-stagger > *',
+    '.dz-box',
+    '.dz-entry-list > li',
     '.dz-clean-card',
     '.dz-project-card',
     '.dz-nav-card',
@@ -61,4 +63,15 @@
   }, { rootMargin: '0px 0px -6% 0px', threshold: 0 });
 
   targets.forEach(function (el) { observer.observe(el); });
+
+  // Failsafe: if the observer never reports (background tab on load,
+  // bfcache restore, odd browser), reveal everything so content is
+  // never left permanently invisible.
+  function revealAll() {
+    targets.forEach(function (el) { el.classList.add('dz-in'); });
+    observer.disconnect();
+  }
+
+  window.setTimeout(revealAll, 2500);
+  window.addEventListener('pageshow', function (e) { if (e.persisted) revealAll(); });
 })();

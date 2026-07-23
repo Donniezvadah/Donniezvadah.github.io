@@ -50,6 +50,12 @@ markup:
   _merge: deep
   highlight:
     lineNos: false
+  goldmark:
+    renderHooks:
+      link:
+        # Replaces the theme's deprecated `enableDefault: true`
+        useEmbedded: fallback
+        enableDefault: null
 security:
   _merge: deep
 sitemap:
