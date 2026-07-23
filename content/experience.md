@@ -93,61 +93,104 @@ sections:
       text: |-
         <div class="dz-timeline dz-stagger">
 
-          <div class="dz-timeline-item">
-            <span class="dz-timeline-date">Nov 2025 – Present</span>
-            <span class="dz-timeline-location">Dublin, Ireland</span>
-            <p class="dz-timeline-institution">Trinity College Dublin</p>
-            <p class="dz-timeline-degree">Teaching Assistant & Demonstrator</p>
-            <p class="dz-timeline-body">
-              Teaching four courses: Time Series Analysis, Multivariate Analysis, Engineering Practice 2,
-              and Mathematics II (Mathematical Logic). Lab sessions in RStudio, plus grading and feedback.
-            </p>
+          <div class="dz-timeline-item dz-has-logo">
+            <div class="dz-timeline-logo">
+              <img src="/media/logos/tcd.png" alt="Trinity College Dublin" width="256" height="68" loading="lazy">
+            </div>
+            <div class="dz-timeline-main">
+              <span class="dz-timeline-date">Nov 2025 – Present</span>
+              <span class="dz-timeline-location">Dublin, Ireland</span>
+              <p class="dz-timeline-institution">Trinity College Dublin</p>
+              <p class="dz-timeline-degree">Teaching Assistant &amp; Demonstrator</p>
+              <p class="dz-timeline-body">
+                Demonstrating on four undergraduate modules, running lab sessions in RStudio, and
+                marking coursework.
+              </p>
+              <ul class="dz-course-list">
+                <li>
+                  <span class="dz-course-name">Time Series Analysis</span>
+                  <span class="dz-course-note">Lab sessions in RStudio</span>
+                </li>
+                <li>
+                  <span class="dz-course-name">Multivariate Analysis</span>
+                  <span class="dz-course-note">Lab sessions in RStudio</span>
+                </li>
+                <li>
+                  <span class="dz-course-name">Engineering Practice 2</span>
+                  <span class="dz-course-note">Grading and report writing support</span>
+                </li>
+                <li>
+                  <span class="dz-course-name">Mathematics II</span>
+                  <span class="dz-course-note">Mathematical logic for computer science</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="dz-timeline-item">
-            <span class="dz-timeline-date">Sep 2025 – Present</span>
-            <span class="dz-timeline-location">Dublin, Ireland</span>
-            <p class="dz-timeline-institution">Trinity College Dublin</p>
-            <p class="dz-timeline-degree">Doctoral Researcher — T-DIET Project</p>
-            <p class="dz-timeline-body">
-              Developing statistical methods for the analysis of longitudinal dietary patterns
-              and their association with health outcomes.
-            </p>
+          <div class="dz-timeline-item dz-has-logo">
+            <div class="dz-timeline-logo">
+              <img src="/media/logos/tcd.png" alt="Trinity College Dublin" width="256" height="68" loading="lazy">
+            </div>
+            <div class="dz-timeline-main">
+              <span class="dz-timeline-date">Sep 2025 – Present</span>
+              <span class="dz-timeline-location">Dublin, Ireland</span>
+              <p class="dz-timeline-institution">Trinity College Dublin</p>
+              <p class="dz-timeline-degree">Doctoral Researcher — T-DIET Project</p>
+              <p class="dz-timeline-body">
+                Developing statistical methods for the analysis of longitudinal dietary patterns
+                and their association with health outcomes.
+              </p>
+            </div>
           </div>
 
-          <div class="dz-timeline-item">
-            <span class="dz-timeline-date">Dec 2023 – Aug 2024</span>
-            <span class="dz-timeline-location">Harare, Zimbabwe</span>
-            <p class="dz-timeline-institution">EY Zimbabwe</p>
-            <p class="dz-timeline-degree">Quantitative Risk Analyst</p>
-            <p class="dz-timeline-body">
-              Developed and validated credit risk models for clients under the IFRS 9 standard. Built
-              and reviewed PD, LGD, EAD, and MEV models, supported audit assignments, and worked on
-              IFRS 9 frameworks and tooling.
-            </p>
+          <div class="dz-timeline-item dz-has-logo">
+            <div class="dz-timeline-logo">
+              <img src="/media/logos/ey.svg" alt="EY" width="120" height="120" loading="lazy">
+            </div>
+            <div class="dz-timeline-main">
+              <span class="dz-timeline-date">Dec 2023 – Aug 2024</span>
+              <span class="dz-timeline-location">Harare, Zimbabwe</span>
+              <p class="dz-timeline-institution">EY Zimbabwe</p>
+              <p class="dz-timeline-degree">Quantitative Risk Analyst</p>
+              <p class="dz-timeline-body">
+                Developed and validated credit risk models for clients under the IFRS 9 standard. Built
+                and reviewed PD, LGD, EAD, and MEV models, supported audit assignments, and worked on
+                IFRS 9 frameworks and tooling.
+              </p>
+            </div>
           </div>
 
-          <div class="dz-timeline-item">
-            <span class="dz-timeline-date">Sep 2024 – Aug 2025</span>
-            <span class="dz-timeline-location">Cape Town, South Africa</span>
-            <p class="dz-timeline-institution">AIMS House of Science Outreach Programme</p>
-            <p class="dz-timeline-degree">Tutoring Lead</p>
-            <p class="dz-timeline-body">
-              Led tutoring sessions for school children, planned and scheduled tutorial sessions,
-              and mentored students in mathematics and science.
-            </p>
+          <div class="dz-timeline-item dz-has-logo">
+            <div class="dz-timeline-logo">
+              <img src="/media/logos/aims.png" alt="African Institute for Mathematical Sciences, South Africa" width="256" height="51" loading="lazy">
+            </div>
+            <div class="dz-timeline-main">
+              <span class="dz-timeline-date">Sep 2024 – Aug 2025</span>
+              <span class="dz-timeline-location">Cape Town, South Africa</span>
+              <p class="dz-timeline-institution">AIMS House of Science Outreach Programme</p>
+              <p class="dz-timeline-degree">Tutoring Lead</p>
+              <p class="dz-timeline-body">
+                Led tutoring sessions for school children, planned and scheduled tutorial sessions,
+                and mentored students in mathematics and science.
+              </p>
+            </div>
           </div>
 
-          <div class="dz-timeline-item">
-            <span class="dz-timeline-date">2021 – 2022</span>
-            <span class="dz-timeline-location">Harare, Zimbabwe</span>
-            <p class="dz-timeline-institution">EcoCash Holdings</p>
-            <p class="dz-timeline-degree">Reporting Analyst Intern — Product Solutions & Operations</p>
-            <p class="dz-timeline-body">
-              Produced product and operations reports, ran product testing (dev / beta environment),
-              performed data analysis, competitor analysis, and delivered business insights using
-              Microsoft Excel and Power BI.
-            </p>
+          <div class="dz-timeline-item dz-has-logo">
+            <div class="dz-timeline-logo">
+              <img src="/media/logos/ecocash.png" alt="EcoCash" width="136" height="136" loading="lazy">
+            </div>
+            <div class="dz-timeline-main">
+              <span class="dz-timeline-date">2021 – 2022</span>
+              <span class="dz-timeline-location">Harare, Zimbabwe</span>
+              <p class="dz-timeline-institution">EcoCash Holdings</p>
+              <p class="dz-timeline-degree">Reporting Analyst Intern — Product Solutions &amp; Operations</p>
+              <p class="dz-timeline-body">
+                Produced product and operations reports, ran product testing (dev / beta environment),
+                performed data analysis, competitor analysis, and delivered business insights using
+                Microsoft Excel and Power BI.
+              </p>
+            </div>
           </div>
 
         </div>
