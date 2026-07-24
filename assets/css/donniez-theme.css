@@ -145,9 +145,11 @@ header nav a[aria-current="page"]::after {
   align-items: center !important;
 }
 
+/* Portrait frame at the photo's own 3:4 ratio, so the whole picture is
+   shown rather than cropped to a circle. */
 .dz-home-hero .avatar-wrapper {
   width: 280px !important;
-  height: 280px !important;
+  height: 373px !important;
   margin: 0 auto !important;
   flex-shrink: 0 !important;
   position: relative;
@@ -155,16 +157,23 @@ header nav a[aria-current="page"]::after {
 
 .dz-home-hero img.avatar {
   width: 280px !important;
-  height: 280px !important;
+  height: 373px !important;
   max-width: 280px !important;
-  max-height: 280px !important;
-  border-radius: 50% !important;
+  max-height: 373px !important;
+  border-radius: var(--dz-radius-box) !important;
   object-fit: cover !important;
+  object-position: center !important;
   padding: 0 !important;
   display: block !important;
   margin: 0 auto !important;
-  border: 4px solid var(--dz-panel-2) !important;
+  border: 1px solid var(--dz-border-soft) !important;
   box-shadow: none !important;
+}
+
+/* Keep the status emoji tucked in the corner of the new frame */
+.dz-home-hero .avatar-emoji {
+  right: 0.4rem !important;
+  bottom: 0.4rem !important;
 }
 
 .dz-home-hero .portrait-title {
@@ -782,10 +791,10 @@ time[datetime="0001-01-01"] { display: none; }
 
   .dz-home-hero .avatar-wrapper,
   .dz-home-hero img.avatar {
-    width: 210px !important;
-    height: 210px !important;
-    max-width: 210px !important;
-    max-height: 210px !important;
+    width: 220px !important;
+    height: 293px !important;   /* keeps the photo's 3:4 ratio */
+    max-width: 220px !important;
+    max-height: 293px !important;
   }
 
   .dz-heading-xl { font-size: 1.6em; }
