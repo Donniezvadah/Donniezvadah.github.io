@@ -64,9 +64,9 @@ sections:
               Mitsubishi Electric as the industry partner.
             </p>
             <p class="dz-box-links">
-              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_report.pdf" target="_blank" rel="noopener">[report]</a>
-              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_pres.pdf" target="_blank" rel="noopener">[slides]</a>
-              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/g-rips2025_en.html" target="_blank" rel="noopener">[programme]</a>
+              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_report.pdf" target="_blank" rel="noopener">Report</a>
+              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_pres.pdf" target="_blank" rel="noopener">Slides</a>
+              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/g-rips2025_en.html" target="_blank" rel="noopener">Programme</a>
             </p>
           </div>
 
@@ -85,7 +85,7 @@ sections:
               postgraduate learners.
             </p>
             <p class="dz-box-links">
-              <a class="dz-pub-link" href="https://donniezvadah.github.io/R_programming/" target="_blank" rel="noopener">[course]</a>
+              <a class="dz-pub-link" href="https://donniezvadah.github.io/R_programming/" target="_blank" rel="noopener">Course</a>
             </p>
           </div>
 

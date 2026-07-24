@@ -32,8 +32,8 @@ sections:
               Tohoku University in partnership with Mitsubishi Electric.
             </p>
             <p class="dz-box-links">
-              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_report.pdf" target="_blank" rel="noopener">[paper]</a>
-              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_pres.pdf" target="_blank" rel="noopener">[slides]</a>
+              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_report.pdf" target="_blank" rel="noopener">Paper</a>
+              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_pres.pdf" target="_blank" rel="noopener">Slides</a>
             </p>
           </div>
 
@@ -59,7 +59,7 @@ sections:
             <p class="dz-box-meta">g-RIPS-Sendai 2025 · Sendai, Japan</p>
             <p>Closing presentation of the Mitsubishi B team's work to programme partners and academic staff.</p>
             <p class="dz-box-links">
-              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_pres.pdf" target="_blank" rel="noopener">[slides]</a>
+              <a class="dz-pub-link" href="https://www.mccs.tohoku.ac.jp/g-rips/report/2025/pdf/Mitsubishi%20B_final_pres.pdf" target="_blank" rel="noopener">Slides</a>
             </p>
           </div>
 

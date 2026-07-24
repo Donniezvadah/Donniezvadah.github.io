@@ -39,9 +39,17 @@
   --dz-gold-soft:    rgba(107, 107, 107, 0.08);
   --dz-gold-border:  #d6d6d6;
 
-  --dz-radius:       3px;
-  --dz-radius-sm:    3px;
-  --dz-radius-pill:  3px;
+  --dz-radius:       10px;
+  --dz-radius-sm:    10px;
+  --dz-radius-pill:  10px;
+
+  /* Rounded card + timeline geometry, taken from the reference site's
+     vertical timeline (16px rail, 45px markers, 25px card radius). */
+  --dz-radius-box:   20px;
+  --dz-tl-pad:       88px;   /* space the timeline reserves on the left */
+  --dz-tl-rail-x:    30px;   /* rail offset from the timeline's left edge */
+  --dz-tl-rail-w:    16px;   /* rail thickness */
+  --dz-tl-dot:       44px;   /* marker diameter */
 
   --dz-shadow-sm:    none;
   --dz-shadow-md:    none;
@@ -301,21 +309,18 @@ header nav a[aria-current="page"]::after {
   flex-direction: column;
   background: var(--dz-panel-2);
   border: 1px solid var(--dz-border-soft);
-  border-top: var(--dz-stripe) solid var(--dz-accent);
-  border-radius: 0;
-  padding: 1.15rem 1.2rem 1.2rem;
+  border-radius: var(--dz-radius-box);
+  padding: 1.35rem 1.5rem 1.4rem;
   transition: border-color 180ms ease, background 180ms ease;
 }
 
 .dz-box:hover {
   background: #ffffff;
   border-color: var(--dz-border);
-  border-top-color: var(--dz-accent-light);
 }
 
-/* Muted stripe variant for secondary entries */
-.dz-box-muted { border-top-color: var(--dz-muted-2); }
-.dz-box-muted:hover { border-top-color: var(--dz-muted); }
+/* Kept as a no-op so existing markup stays valid */
+.dz-box-muted {}
 
 .dz-box-title {
   margin: 0 0 0.2rem !important;
@@ -350,22 +355,35 @@ header nav a[aria-current="page"]::after {
   padding-top: 0.5rem;
 }
 
-/* ── Bracketed inline links, as the reference uses ─────────────── */
+/* ── Pill buttons, as the reference's timeline cards use ───────── */
 .dz-pub-link,
 .dz-pill-link {
   display: inline-block;
-  margin-right: 0.4rem;
-  padding: 0;
-  background: transparent;
+  margin: 0.3rem 0 0 0.45rem;
+  padding: 0.42rem 0.95rem;
+  background: var(--dz-accent);
   border: none;
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--dz-accent);
-  transition: color 140ms ease;
+  border-radius: var(--dz-radius);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  transition: background 150ms ease;
 }
 
 .dz-pub-link:hover,
-.dz-pill-link:hover { color: var(--dz-accent-light); text-decoration: underline; }
+.dz-pill-link:hover {
+  background: var(--dz-accent-light);
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Links sit bottom-right of a card, as in the reference */
+.dz-box-links {
+  text-align: right;
+  margin-bottom: 0 !important;
+}
 
 /* ── Entry list (publications, contact) ────────────────────────── */
 .dz-entry-list {
@@ -455,9 +473,8 @@ header nav a[aria-current="page"]::after {
   flex-direction: column;
   background: var(--dz-panel-2);
   border: 1px solid var(--dz-border-soft);
-  border-top: var(--dz-stripe) solid var(--dz-accent);
-  border-radius: 0;
-  padding: 1.15rem 1.2rem 1.2rem;
+  border-radius: var(--dz-radius-box);
+  padding: 1.35rem 1.5rem 1.4rem;
   margin: 0;
   transition: border-color 180ms ease, background 180ms ease;
 }
@@ -467,7 +484,7 @@ header nav a[aria-current="page"]::after {
 .dz-leadership-card:hover,
 .dz-award-card:hover,
 .dz-nav-card:hover,
-.dz-feature-box:hover { background: #ffffff; border-top-color: var(--dz-accent-light); }
+.dz-feature-box:hover { background: #ffffff; border-color: var(--dz-border); }
 
 .dz-project-card-inner { padding: 0; display: flex; flex-direction: column; height: 100%; }
 
@@ -554,33 +571,50 @@ header nav a[aria-current="page"]::after {
 }
 
 /* ── Timeline (Education / Experience) ─────────────────────────── */
+/* Thick rounded rail with large circular markers and rounded cards,
+   following the reference site's vertical timeline. */
 .dz-timeline {
   position: relative;
-  padding-left: 1.7rem;
-  border-left: 2px solid var(--dz-border);
-  margin: 0.6rem 0 1.4rem;
+  padding-left: var(--dz-tl-pad);
+  border-left: none;
+  margin: 0.8rem 0 1.6rem;
+}
+
+/* the rail */
+.dz-timeline::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: var(--dz-tl-rail-x);
+  width: var(--dz-tl-rail-w);
+  border-radius: calc(var(--dz-tl-rail-w) / 2);
+  background: var(--dz-accent);
 }
 
 .dz-timeline-item {
   position: relative;
   background: var(--dz-panel-2);
   border: 1px solid var(--dz-border-soft);
-  border-top: var(--dz-stripe) solid var(--dz-accent);
-  padding: 1rem 1.15rem 1.1rem;
-  margin-bottom: 1.1rem;
+  border-radius: var(--dz-radius-box);
+  padding: 1.35rem 1.5rem 1.4rem;
+  margin-bottom: 1.6rem;
 }
 
+/* the circular marker, centred on the rail */
 .dz-timeline-item::before {
   content: "";
   position: absolute;
-  left: -1.7rem;
-  top: 1rem;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
+  top: 26px;
+  left: calc(var(--dz-tl-rail-x) + var(--dz-tl-rail-w) / 2
+             - var(--dz-tl-dot) / 2 - var(--dz-tl-pad));
+  width: var(--dz-tl-dot);
+  height: var(--dz-tl-dot);
   border-radius: 50%;
   background: var(--dz-accent);
-  margin-left: 1px;
+  border: 4px solid var(--dz-page);
+  transform: none;
+  margin: 0;
 }
 
 /* Institution logo beside each entry. The three logos have very
@@ -674,6 +708,7 @@ header nav a[aria-current="page"]::after {
   background: var(--dz-panel-2);
   border: 1px solid var(--dz-border-soft);
   border-left: var(--dz-stripe) solid var(--dz-accent);
+  border-radius: var(--dz-radius-box);
 }
 
 .dz-supervisor-label {
@@ -754,8 +789,18 @@ time[datetime="0001-01-01"] { display: none; }
   }
 
   .dz-heading-xl { font-size: 1.6em; }
-  .dz-timeline { padding-left: 1.4rem; }
   .dz-timeline-location { float: none; display: block; margin-top: 0.2rem; }
+
+  /* Narrower rail and smaller markers on small screens */
+  :root {
+    --dz-tl-pad:    52px;
+    --dz-tl-rail-x: 14px;
+    --dz-tl-rail-w: 10px;
+    --dz-tl-dot:    26px;
+  }
+
+  .dz-timeline-item { padding: 1.1rem 1.15rem 1.15rem; }
+  .dz-timeline-item::before { top: 20px; border-width: 3px; }
 
   /* Stack the logo above the text on narrow screens */
   .dz-timeline-item.dz-has-logo { flex-direction: column; gap: 0.75rem; }
