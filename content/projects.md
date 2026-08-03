@@ -77,15 +77,15 @@ sections:
         <div class="dz-box-grid dz-box-grid-2">
 
           <div class="dz-box">
-            <p class="dz-box-title">R programming course</p>
+            <p class="dz-box-title">Open course material</p>
             <p class="dz-box-meta">2024 – present</p>
             <p>
-              Course material for statistics students covering data wrangling, visualisation,
-              modelling, and reproducible analysis in R and RStudio. Written for undergraduate and
-              postgraduate learners.
+              Three self-contained course websites: Bayesian statistics and inference, hidden
+              Markov models, and R programming from beginner to expert. See the
+              <a href="/courses/">Courses</a> page for details.
             </p>
             <p class="dz-box-links">
-              <a class="dz-pub-link" href="https://donniezvadah.github.io/R_programming/" target="_blank" rel="noopener">Course</a>
+              <a class="dz-pub-link" href="/courses/">All courses</a>
             </p>
           </div>
 
