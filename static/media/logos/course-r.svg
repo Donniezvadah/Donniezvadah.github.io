@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 68" width="120" height="68">
+  <!-- halo ring -->
+  <path fill-rule="evenodd" fill="rgba(43,122,140,0.14)" stroke="#349bb0" stroke-width="2"
+        d="M60 3 C29 3 4 17.5 4 35 C4 52.5 29 65 60 65 C91 65 116 52.5 116 35 C116 17.5 91 3 60 3 Z
+           M60 14 C83 14 101 23.5 101 35 C101 46.5 83 54 60 54 C37 54 19 46.5 19 35 C19 23.5 37 14 60 14 Z"/>
+  <!-- R -->
+  <text x="60" y="49" text-anchor="middle"
+        font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="40"
+        fill="#2b7a8c">R</text>
+</svg>
