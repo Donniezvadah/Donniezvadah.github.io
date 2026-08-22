@@ -12,8 +12,9 @@ sections:
       title: Courses
       text: |-
         <p class="dz-intro-text" style="margin-top:-0.6rem;margin-bottom:1.4rem;">
-          Open course material I have written in statistics and programming. Each course is a
-          full, self-contained website with rendered mathematics, worked examples, and code.
+          Open course material I have written in statistics, programming, and academic writing.
+          Each one is a full, self-contained website with worked examples, rendered mathematics
+          where it is needed, and code.
         </p>
 
         <div class="dz-timeline dz-stagger">
@@ -141,6 +142,50 @@ sections:
               </ul>
               <span class="dz-timeline-badge">
                 <a href="https://donnie98.quarto.pub/r-programming-course/" target="_blank" rel="noopener">View course →</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="dz-timeline-item dz-has-logo">
+            <div class="dz-timeline-logo">
+              <img src="/media/logos/course-writing.svg" alt="Academic writing guide icon" width="120" height="68" loading="lazy">
+            </div>
+            <div class="dz-timeline-main">
+              <span class="dz-timeline-date">PhD students &amp; researchers</span>
+              <span class="dz-timeline-location">9 modules · Living handbook</span>
+              <p class="dz-timeline-institution">
+                <a href="https://donniezvadah.github.io/writing/" target="_blank" rel="noopener">Ever Growing Academic Writing Guide</a>
+              </p>
+              <p class="dz-timeline-degree">A handbook on scientific writing, from narrative structure to punctuation</p>
+              <p class="dz-timeline-body">
+                Practical guidance for writing research papers across disciplines, worked through
+                every layer of a manuscript — the story it tells, the sections it is built from,
+                and the individual sentences and words that carry it.
+              </p>
+              <ul class="dz-course-list">
+                <li>
+                  <span class="dz-course-name">Writing</span>
+                  <span class="dz-course-note">Story, section, and paragraph level</span>
+                </li>
+                <li>
+                  <span class="dz-course-name">Sentences &amp; words</span>
+                  <span class="dz-course-note">Sentence-level control, word choice, vocabulary</span>
+                </li>
+                <li>
+                  <span class="dz-course-name">Paper sections</span>
+                  <span class="dz-course-note">Abstract, introduction, method, results, conclusion</span>
+                </li>
+                <li>
+                  <span class="dz-course-name">Tools &amp; extras</span>
+                  <span class="dz-course-note">Graphics, LaTeX, rebuttals, collaboration</span>
+                </li>
+                <li>
+                  <span class="dz-course-name">Resources</span>
+                  <span class="dz-course-note">Recommended reading and external guides</span>
+                </li>
+              </ul>
+              <span class="dz-timeline-badge">
+                <a href="https://donniezvadah.github.io/writing/" target="_blank" rel="noopener">View guide →</a>
               </span>
             </div>
           </div>
