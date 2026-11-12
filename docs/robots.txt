@@ -1,3 +1,1 @@
 User-agent: *
-
-Sitemap: https://donniezvadah.github.io/sitemap.xml

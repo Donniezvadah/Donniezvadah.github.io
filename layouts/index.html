@@ -1,0 +1,58 @@
+{{ define "main" }}
+<section id="hero" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-badges animate-fade-up">PhD student in Statistics · Trinity College Dublin</span>
+            <h1 class="animate-fade-up delay-1">Hi, I'm <span class="text-gradient">DONALD <span class="nick">(Donnie)</span> ZVADA</span>
+                <span class="hero-tag">just another man Trying!</span></h1>
+            <img class="hero-portrait animate-fade-up delay-2" src="/media/portrait.jpg" alt="Donald Zvada" width="1080" height="1080" fetchpriority="high">
+            <div class="hero-cta animate-fade-up delay-3">
+                <a href="/projects/" class="btn btn-primary"><i class="fa-solid fa-folder-open"></i> View My Work</a>
+                <a href="{{ site.Params.cv }}" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <div class="container">
+        <h2>About <span class="text-gradient">Me</span></h2>
+        <div class="page about-text">
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+
+<section class="section" id="gallery">
+    <div class="container">
+        <h2>Gallery</h2>
+    </div>
+    <div class="strip-wrap">
+        <button id="strip-prev" class="strip-btn" aria-label="Scroll photos left"><i class="fa-solid fa-chevron-left"></i></button>
+        <ul class="strip" id="strip">
+            {{ range slice
+                (dict "n" "14" "w" 810 "h" 1080)
+                (dict "n" "08" "w" 1440 "h" 1080)
+                (dict "n" "11" "w" 810 "h" 1080)
+                (dict "n" "10" "w" 1440 "h" 1080)
+                (dict "n" "07" "w" 810 "h" 1080)
+                (dict "n" "12" "w" 810 "h" 1080)
+                (dict "n" "06" "w" 1440 "h" 1080)
+                (dict "n" "09" "w" 810 "h" 1080)
+                (dict "n" "13" "w" 728 "h" 1080)
+                (dict "n" "05" "w" 810 "h" 1080)
+                (dict "n" "04" "w" 810 "h" 1080)
+                (dict "n" "02" "w" 810 "h" 1080)
+                (dict "n" "03" "w" 810 "h" 1080)
+                (dict "n" "01" "w" 715 "h" 953) }}
+            <li>
+                <a href="/media/photos/photo-{{ .n }}.jpg" target="_blank" rel="noopener" aria-label="Open photo at full size">
+                    <img src="/media/photos/photo-{{ .n }}-m.jpg" alt="Photo from Donald Zvada's gallery" width="{{ .w }}" height="{{ .h }}" loading="lazy" decoding="async">
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+        <button id="strip-next" class="strip-btn" aria-label="Scroll photos right"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+</section>
+{{ end }}

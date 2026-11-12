@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="section page-section">
+    <div class="container">
+        <h2 class="animate-fade-up">{{ .Params.heading }} <span class="text-gradient">{{ .Params.accent }}</span></h2>
+        <div class="page animate-fade-up delay-1">
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,62 +1,12 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
-# Website name
-title: Donald (Donnie) Zvada - Personal Website
-# Website URL
+# Site configuration. Layouts live in layouts/, pages in content/, styles in static/css/.
+title: Donald Zvada
 baseURL: 'https://donniezvadah.github.io/'
-
-############################
-## LANGUAGE
-############################
-
+languageCode: en-gb
 defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
-removePathAccents: true
 
-############################
-## ADVANCED
-############################
-
-build:
-  writeStats: true
-enableGitInfo: false
-summaryLength: 30
-pagination:
-  pagerSize: 10
-enableEmoji: true
+disableKinds: [taxonomy, term, RSS, section]
 enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
-permalinks:
-  authors: '/author/:slug/'
-disableAliases: true
-outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
-  section: [HTML, RSS]
-imaging:
-  resampleFilter: lanczos
-  quality: 80
-  anchor: smart
-timeout: 600000
-taxonomies:
-  author: authors
-  tag: tags
-  publication_type: publication_types
-markup:
-  _merge: deep
-  highlight:
-    lineNos: false
-  goldmark:
-    renderHooks:
-      link:
-        # Replaces the theme's deprecated `enableDefault: true`
-        useEmbedded: fallback
-        enableDefault: null
-security:
-  _merge: deep
-sitemap:
-  _merge: deep
+
+params:
+  description: 'Donald (Donnie) Zvada, PhD student in Statistics at Trinity College Dublin. Research, teaching, courses and publications.'
+  cv: /Donald_Zvada_CV.pdf

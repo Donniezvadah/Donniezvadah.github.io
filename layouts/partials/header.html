@@ -1,0 +1,26 @@
+<header>
+    <div class="container">
+        <nav>
+            <a href="/" class="logo">
+                <img src="/media/avatar.jpg" alt="" width="32" height="32">
+                Donald Zvada
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                {{ $current := .RelPermalink }}
+                {{ range slice
+                    (dict "name" "Home" "url" "/")
+                    (dict "name" "Education" "url" "/experience/")
+                    (dict "name" "Projects" "url" "/projects/")
+                    (dict "name" "Courses" "url" "/courses/")
+                    (dict "name" "Publications" "url" "/publications/")
+                    (dict "name" "Leadership" "url" "/leadership-page/")
+                    (dict "name" "Contact" "url" "/contact/") }}
+                <li><a href="{{ .url }}"{{ if eq $current .url }} class="active" aria-current="page"{{ end }}>{{ .name }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+</header>
